@@ -18,7 +18,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-build.txt
+      - name: Verify the committed release
+        run: python tests/check_release.py
       - run: python build.py
       - run: python tests/check_release.py
       - name: Check committed artifacts match the source
-        run: git diff --exit-code -- index.html downloads evidence/build-validation.json
+        run: git diff --exit-code -- index.html downloads/AI-ML-Hiring-Portfolio-Plan.html downloads/AI-ML-Hiring-Portfolio-Plan.md downloads/toolkit-manifest.json evidence/build-validation.json
