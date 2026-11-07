@@ -1,0 +1,142 @@
+{
+  "README.md": {
+    "bytes": 6243,
+    "sha256": "a90d7af7f6ef2d20f6be8a283ed5a1095dd07ee7231c125e3578106d19270112"
+  },
+  "START-HERE.md": {
+    "bytes": 3233,
+    "sha256": "e8b5f45716cf1d20f64cd4030b2a93756172f56559f91d00216a51bb8ea9d493"
+  },
+  "LICENSE": {
+    "bytes": 1066,
+    "sha256": "818ae7904209ca63d3ea631182d94a829fd14f606f0d5fbe1a9f12c90c4e9f6d"
+  },
+  "THIRD_PARTY_NOTICES.md": {
+    "bytes": 3000,
+    "sha256": "832c723924e1c6d984319bbbf730ffcac223a52c1e0bfc596de85c2f0874f85c"
+  },
+  "CONTRIBUTING.md": {
+    "bytes": 3647,
+    "sha256": "eb11f2cb7c7e13ac1b24efeae795468110f5cfa48ff2bc79439e1e4b4325aa2d"
+  },
+  "index.html": {
+    "bytes": 141854,
+    "sha256": "8c367717cc69d429cccafce342870f46daba4ce21c56da52ce1a2610b1ee100c"
+  },
+  "build.py": {
+    "bytes": 9977,
+    "sha256": "313db485f009bd67b45ee2ff0b9420b250190e49ae920891142ae2c8c316c6df"
+  },
+  "requirements-build.txt": {
+    "bytes": 16,
+    "sha256": "8d57742e7a0bb87adf2d3f3ecbe3dfcabaf3cb66c76d07912d3508e0d28d140c"
+  },
+  "requirements-browser.txt": {
+    "bytes": 19,
+    "sha256": "cfa2186c0470feac813f1ac67c71e54a53021ec949026946255874958d245e82"
+  },
+  "content/report_template.html": {
+    "bytes": 24475,
+    "sha256": "c28a947ef79f8729c36bf6b315fb5499bdd6caf981882087235e93a27bb9ac3b"
+  },
+  "content/strategy.md": {
+    "bytes": 55391,
+    "sha256": "0d441227c9b52d294756d8da1f0125c3a488aa3ed2757bb5a71b84000ddd56af"
+  },
+  "templates/README.md": {
+    "bytes": 2265,
+    "sha256": "d3790c7e9ccfe8c00f4eb62b8c31d67395b35cd8fd1f1cf9f3ef081f93102d86"
+  },
+  "templates/case-study.md": {
+    "bytes": 1761,
+    "sha256": "b2930de7bd3fd0770fb7b910aa664b96f18e68c26343d4f165f51ef507fe970d"
+  },
+  "templates/evaluation-plan-and-results.md": {
+    "bytes": 7179,
+    "sha256": "8197a346409e7ee506959b38bca2b287a20dc6df9faade76e74c603a61d08ae1"
+  },
+  "templates/experiment-log.md": {
+    "bytes": 1301,
+    "sha256": "c339e5d8bad5eef1e76214988e98cd17324d2c2fbb812dff6f84726bd194ce6c"
+  },
+  "templates/milestones.csv": {
+    "bytes": 1162,
+    "sha256": "ff79b4130f591be3004655187aef8455926d2814334afee616aa3feb3027ece9"
+  },
+  "templates/project-readme.md": {
+    "bytes": 3484,
+    "sha256": "d7ef8f7505b7c229b1321ecb167033169a0105da1ec501e2e0143585bb1eca52"
+  },
+  "templates/publishing-checklist-and-posts.md": {
+    "bytes": 4249,
+    "sha256": "4ec15cbd54bf1b1b836d6c521c540578c67cefbdcb1c6bd952f1151f9d147791"
+  },
+  "templates/results.csv": {
+    "bytes": 219,
+    "sha256": "8566eb3080105b91b0160210b4f84b4cef68c6eb35abfed47c743bdd427b28a7"
+  },
+  "templates/role-application-tracker.csv": {
+    "bytes": 378,
+    "sha256": "70f32b56e249a1353521a029a81a7cc21f7b876bab7f1dc0e299cf89c4e3a666"
+  },
+  "tests/check_browser.py": {
+    "bytes": 4481,
+    "sha256": "320d4e055a2062a1d666cb01f4fbfb56910327120767ea32730b2b757461ae2b"
+  },
+  "tests/check_release.py": {
+    "bytes": 2509,
+    "sha256": "f0f530ad04a46527bd95dbd8ca4fefed271cc0eadf7f3c96bcfad4057c9bf6f7"
+  },
+  "assets/project-1440.png": {
+    "bytes": 288400,
+    "sha256": "ee9849d33cccc30b390e024681d508d2c47f5c48bbfc20b07bec63f86ea6d3b3"
+  },
+  "assets/project-390.png": {
+    "bytes": 97021,
+    "sha256": "9b9edeb49b2affa02d428dd32c03c6b4639317ff32e22d6cad054da8d5adca9d"
+  },
+  "assets/report-1440.png": {
+    "bytes": 158874,
+    "sha256": "073bc65acfd5435ee74bcf661915545cb39ea3d9755d64cbf702341846f86653"
+  },
+  "assets/report-390.png": {
+    "bytes": 67634,
+    "sha256": "ee23cf4bcaef15da6932c229eaa6878b6cd33d33e89a05f06b377ecd50242dac"
+  },
+  "evidence/browser-checks.json": {
+    "bytes": 956,
+    "sha256": "e89ff1e8880db194fc65a439f10d833b13b9e0732b5fa0640cc99716d31f0dc9"
+  },
+  "evidence/build-validation.json": {
+    "bytes": 350,
+    "sha256": "c49379a7c952ab4713ccc80bee3ed1d9def7ab1f9418051f52d73f924b70b505"
+  },
+  "evidence/dataset-feasibility.json": {
+    "bytes": 938,
+    "sha256": "e50ec52bf9c7a5d541f2ebbcf13ace99e13656c96979a1925883ebc071eda1ce"
+  },
+  "evidence/pdf-provenance.json": {
+    "bytes": 282,
+    "sha256": "a30f94096f3d8874aa12e59f8412965247e3952ba7136f967e51d9d40bf851c4"
+  },
+  "evidence/reviewed-jobs.json": {
+    "bytes": 62995,
+    "sha256": "496314f3771917c7419c402dd3892d6ad800fea50509c0e709f0bbbd68825fbb"
+  },
+  "evidence/source-ledger.json": {
+    "bytes": 14177,
+    "sha256": "8e2aa6f387a3316938732fe387590deaaa8c2fdda9b9b960eea24bdeaa4629ec"
+  },
+  "downloads/AI-ML-Hiring-Portfolio-Plan.html": {
+    "bytes": 141854,
+    "sha256": "8c367717cc69d429cccafce342870f46daba4ce21c56da52ce1a2610b1ee100c"
+  },
+  "downloads/AI-ML-Hiring-Portfolio-Plan.md": {
+    "bytes": 99660,
+    "sha256": "8f3a62569b6966faaeade074e4e908b3f86d1132ab6a87e4c3f6aaf602295313"
+  },
+  "downloads/AI-ML-Hiring-Portfolio-Plan.pdf": {
+    "bytes": 475424,
+    "sha256": "9a72744a4b3bd19eab4a1a838de55525f0749cbb3ea8bfc748f92fb4f02f98c5"
+  }
+}

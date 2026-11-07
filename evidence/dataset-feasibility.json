@@ -1,0 +1,36 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+  "retrievedAt": "2026-11-07T12:05:49.042976+00:00",
+  "archiveSha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+  "dayRows": 731,
+  "hourRows": 17379,
+  "firstDate": "2011-01-01",
+  "lastDate": "2012-12-31",
+  "duplicateDailyDates": 0,
+  "emptyDailyCells": 0,
+  "targetEqualsCasualPlusRegisteredForAllRows": true,
+  "fields": [
+    "instant",
+    "dteday",
+    "season",
+    "yr",
+    "mnth",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed",
+    "casual",
+    "registered",
+    "cnt"
+  ],
+  "proposedSplitRows": {
+    "trainThrough2012June30": 547,
+    "validation2012JulyThroughSeptember": 92,
+    "test2012OctoberThroughDecember": 92
+  },
+  "scope": "Dataset feasibility and schema inspection only; no model trained or performance claim established."
+}

@@ -1,0 +1,46 @@
+{
+  "viewports": [
+    {
+      "viewport": 320,
+      "overflow": false,
+      "errors": [],
+      "externalRequests": [],
+      "navigation": "passed",
+      "jobHashExpansion": "passed"
+    },
+    {
+      "viewport": 390,
+      "overflow": false,
+      "errors": [],
+      "externalRequests": [],
+      "navigation": "passed",
+      "jobHashExpansion": "passed"
+    },
+    {
+      "viewport": 768,
+      "overflow": false,
+      "errors": [],
+      "externalRequests": [],
+      "navigation": "passed",
+      "jobHashExpansion": "passed"
+    },
+    {
+      "viewport": 1024,
+      "overflow": false,
+      "errors": [],
+      "externalRequests": [],
+      "navigation": "passed",
+      "jobHashExpansion": "passed"
+    },
+    {
+      "viewport": 1440,
+      "overflow": false,
+      "errors": [],
+      "externalRequests": [],
+      "navigation": "passed",
+      "jobHashExpansion": "passed"
+    }
+  ],
+  "noJavaScript": "passed",
+  "pdf": "generated"
+}

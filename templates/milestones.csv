@@ -1,0 +1,8 @@
+planned_weeks,focus,publishable_output,evidence_gate,actual_start,actual_finish,status,evidence_link,next_action
+1-2,Python foundations,Tiny exercises and first CSV checker,Add and explain a validation rule independently,,,not started,,
+3-5,"Data, SQL, HTTP and CLI",Tested and documented CSV checker,"Debug malformed input, write a join, explain request boundaries",,,not started,,
+6-8,"Math, regression and evaluation",Baseline experiment and split diagram,"Explain target, features, baseline, metrics and valid split",,,not started,,
+9-13,Demand Replay,"Forecast, predictions, evaluation, API and demo",Clean-clone execution and defensible temporal evaluation,,,not started,,
+14-18,Evidence Desk,"Retrieval assistant, evaluation and demo","Held-out evaluation, citation/abstention evidence and costs",,,not started,,
+19-21,Reliability and feedback,Controlled incident drill and tagged release,"Demonstrate recovery, monitoring limits and rollback",,,not started,,
+22-24,"Contribution, interviews, applications",Accurate contribution record and tailored applications,Independent change plus role-specific evidence and eligibility check,,,not started,,

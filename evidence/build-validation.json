@@ -1,0 +1,11 @@
+{
+  "reportDate": "2026-11-07",
+  "postings": 20,
+  "employers": 11,
+  "sourceDocuments": 25,
+  "researchCaptureChecks": "Verified during original research; public build does not redistribute or re-fetch raw source pages",
+  "internalLinkTargetsVerified": true,
+  "htmlBytes": 141854,
+  "markdownWords": 12886,
+  "markdownBuildDependency": "3.8.2"
+}

@@ -1,0 +1,1164 @@
+{
+  "title": "Reviewed hiring evidence for an AI/ML portfolio strategy",
+  "reviewedOn": "2026-11-07",
+  "captureDateUTC": "2026-11-06",
+  "captureDateAsiaDhaka": "2026-11-06",
+  "counts": {
+    "postings": 20,
+    "directAIorMLPostings": 17,
+    "adjacentEntrySoftwarePostings": 3,
+    "employers": 11,
+    "countries": [
+      "Canada",
+      "China",
+      "France",
+      "Ireland",
+      "Kuwait",
+      "Serbia",
+      "Spain",
+      "United Kingdom",
+      "United States"
+    ],
+    "earlyCareerOrStudentLabeledPostings": 8
+  },
+  "methodology": {
+    "selection": "Purposive review from 11 accessible employer-controlled Greenhouse feeds. Original selection contains17 AI/ML roles; three adjacent early-career software roles were added from the same captures to examine transition routes.",
+    "unit": "One distinct job ID; geography variants were not counted as separate examples of the same selected role.",
+    "notRepresentative": "Large technology employers and English-language accessible feeds are overrepresented. The sample does not estimate global skill prevalence, job counts, hiring odds, beginner accessibility or the effect of a portfolio on hiring.",
+    "dateCaution": "Feed updated_at is not treated as original publication date. Captures were made6Nov2026UTC; review completed7Nov2026.",
+    "requirementCoding": "Explicit numeric, degree, eligibility, essential, and logistics statements are separated from general listed expectations and sections marked Preferred, Nice to Have, Bonus, or Ideally. These summaries do not replace the actual employer wording.",
+    "futureLimit": "Current descriptions show examples of work and eligibility. They do not establish future demand or that a specific framework will remain valuable.",
+    "copyright": "Captured employer material remains third-party content. The user-facing report should quote briefly, summarize analytically, and link the original role URLs rather than redistribute full job descriptions.",
+    "sourceQuality": "H17 contains unfinished templates and is excluded from sponsorship/remote eligibility conclusions. H18 has a separate unqualified no-sponsorship statement without the H17 template block."
+  },
+  "jobs": [
+    {
+      "sourceId": "H01",
+      "employer": "Databricks",
+      "board": "databricks",
+      "jobId": 8927179002,
+      "title": "AI Forward Deployed Engineer",
+      "location": "London, United Kingdom",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8927179002",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.856542+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-04T08:03:08-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "de771026a0d3f13288f60fd2bb50edd1fa60e9ca3a591a2d477db7ad42026fad",
+      "rawContentSha256": "0c23f072a759c125da56fdc5c6641080366211d86eec0ce60511f1cdf4bb6532",
+      "normalizedTextSha256": "7db7185ee5d821b0ea5951c27ca1ef50f2c975cfb34eccc1a51df47405fc95dc",
+      "localTextFile": "jobs/databricks-8927179002.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Customer-facing applied AI / forward deployment",
+      "seniorityAssessment": "Advert says all levels, but explicitly asks for minimum four years.",
+      "country": "United Kingdom",
+      "explicitRequirementsOrEligibility": [
+        "Minimum four years in data science, ML, or AI.",
+        "Graduate quantitative degree or equivalent practical experience.",
+        "Willingness to travel to customers every four to eight weeks as needed."
+      ],
+      "listedQualificationSummary": [
+        "Production GenAI integration, evaluation and optimization.",
+        "Cloud ML deployment, technical communication, and collaboration."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Databricks platform and Spark experience explicitly marked preferred."
+      ],
+      "locationAndEligibility": "London role. Worldwide remote access and sponsorship are not established by this description.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "Min 4 years experience in DS, ML, AI"
+        },
+        {
+          "kind": "listed",
+          "quote": "Expertise in deploying production-grade GenAI applications, including evaluation and optimizations"
+        },
+        {
+          "kind": "preferred",
+          "quote": "[Preferred] Experience using the Databricks Intelligence Platform and Apache Spark\u2122 to process large-scale distributed datasets"
+        }
+      ],
+      "portfolioSignals": [
+        "evaluation",
+        "deployment",
+        "software",
+        "communication",
+        "customerProblem"
+      ],
+      "portfolioImplication": "Show one customer problem, a deployed AI workflow, evaluation cases, latency/cost trade-offs, and a clear technical explanation. This does not substitute for four years of requested experience.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H02",
+      "employer": "Databricks",
+      "board": "databricks",
+      "jobId": 8091041002,
+      "title": "Applied AI Engineer",
+      "location": "Belgrade, Serbia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.856542+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-09-24T06:30:36-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "de771026a0d3f13288f60fd2bb50edd1fa60e9ca3a591a2d477db7ad42026fad",
+      "rawContentSha256": "fe23f0564f02be03a66f634cc594ca63f1a56fb6f5ecb0c93f56c647aae9902b",
+      "normalizedTextSha256": "d510cfe5ff12a7e784b8a698fe893e735c1c04923d11a6af3b7d685073963d29",
+      "localTextFile": "jobs/databricks-8091041002.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Applied ML/AI product and infrastructure",
+      "seniorityAssessment": "Experienced engineer; explicit range of two to eight years.",
+      "country": "Serbia",
+      "explicitRequirementsOrEligibility": [
+        "Two to eight years of engineering experience is listed."
+      ],
+      "listedQualificationSummary": [
+        "Strong software engineering, testing, and deployment.",
+        "Production ML infrastructure, training/serving components, and end-to-end systems."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Production modeling beyond standard libraries described as a plus.",
+        "Deployment, scaling, monitoring, and critical-service infrastructure experience described as nice to have."
+      ],
+      "locationAndEligibility": "Belgrade role. No degree, sponsorship, or worldwide-remote eligibility rule is established in the selected description.",
+      "evidence": [
+        {
+          "kind": "listed",
+          "quote": "Infrastructure and system engineers with no ML background and willingness to excel in personal growth are welcome to apply."
+        },
+        {
+          "kind": "listed",
+          "quote": "Strong software engineering skills, and familiarity with software engineering principles around testing and deployment."
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "testing",
+        "deployment",
+        "monitoring",
+        "modeling"
+      ],
+      "portfolioImplication": "Software engineering can be a bridge into applied AI. Build reproducible tests, an API, data contracts and operational behavior; do not misread no ML background as no engineering experience.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H03",
+      "employer": "Datadog",
+      "board": "datadog",
+      "jobId": 7194969,
+      "title": "AI Research Engineer - Datadog AI Research (DAIR)",
+      "location": "Paris, France",
+      "url": "https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.857284+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-06T04:10:45-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "01dd65aeb0a1773d7147dc03c0afba9af587c2cef7d2feecda7cef8ca78119d1",
+      "rawContentSha256": "dbccfb301e710a172526c97f2c399045d9c05643471998b108de1aa3a00e89c2",
+      "normalizedTextSha256": "38868a221e2a5830e3b97ca57b4ac4a6dce666119b92d3345814d86b00d086fb",
+      "localTextFile": "jobs/datadog-7194969.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Research engineering / ML systems",
+      "seniorityAssessment": "Advanced practical systems and research experience; numeric minimum not specified.",
+      "country": "France",
+      "explicitRequirementsOrEligibility": [],
+      "listedQualificationSummary": [
+        "Python plus familiarity with a systems language.",
+        "Distributed training/inference, GPU acceleration, practical large-model training/fine-tuning and research contribution experience.",
+        "Clear explanation of performance and design trade-offs."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "CUDA, observability/SRE/security, production data pipelines and simulation environments are among bonus items."
+      ],
+      "locationAndEligibility": "Paris role. No numeric experience minimum, specific degree requirement, or sponsorship guarantee is stated in the selected text.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "Establish rigorous automated benchmarks and regression tests for world model predictions, agent performance, and simulation fidelity"
+        },
+        {
+          "kind": "listed",
+          "quote": "You can explain design and performance trade-offs clearly to both technical and non-technical audiences"
+        }
+      ],
+      "portfolioSignals": [
+        "evaluation",
+        "testing",
+        "performance",
+        "systems",
+        "communication"
+      ],
+      "portfolioImplication": "A later research-oriented artifact could reproduce an experiment and profile a training/inference bottleneck. Large-scale distributed RL is a specialization, not a sensible first project.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H04",
+      "employer": "Elastic",
+      "board": "elastic",
+      "jobId": 8079636,
+      "title": "Agentic AI Engineer",
+      "location": "United States",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8079636&gh_jid=8079636",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/elastic/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.857693+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-01T12:57:36-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "7ad7da04faeff6f0cc0195dd994bc3a41b32f68f1476d5daf7f68a621d8e3e41",
+      "rawContentSha256": "a3eb14b08a3ad2f784c3c9623e863385c8063a282dd5f56cf3cc9154f83e4a3a",
+      "normalizedTextSha256": "f7512fb19286c2711e1f3aaff68c52a6a513a99b192006693a14cc7043ce3b30",
+      "localTextFile": "jobs/elastic-8079636.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Enterprise agentic AI engineering",
+      "seniorityAssessment": "Advanced breadth is requested; no junior title or numeric experience minimum.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [],
+      "listedQualificationSummary": [
+        "Advanced Python or TypeScript; practical RAG/hybrid search, tools, structured outputs, and agent state.",
+        "Cloud infrastructure/IaC, CI/CD, security/identity, tracing, token costs and output evaluation.",
+        "Proven multi-agent implementation experience."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "United States posting. Distributed-company language is not evidence that this role is open from every country. Export-control language may affect employment; sponsorship is not stated.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "They will also help manage token spending and identify model drift or agent loops."
+        },
+        {
+          "kind": "listed",
+          "quote": "Advanced proficiency in Python or TypeScript for backend orchestration, agent memory systems, and API service development."
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "evaluation",
+        "observability",
+        "security",
+        "cost",
+        "toolUse"
+      ],
+      "portfolioImplication": "Demonstrate bounded tool execution, state transitions, schema validation, traces, cost limits and safe failure. Establish a single-workflow baseline before adding multi-agent complexity.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H05",
+      "employer": "Anthropic",
+      "board": "anthropic",
+      "jobId": 5455961008,
+      "title": "Applied AI Demo Engineer",
+      "location": "San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5455961008",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.858092+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-19T18:38:51-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "9610020c6e8e6cf788ba16f8870a14fcaf3def5acd475379d7d84065054a1719",
+      "rawContentSha256": "aeadf8be87c8ad0ac16fe19d2b56b941f2e50ada2659218e071388563ebafe80",
+      "normalizedTextSha256": "0fcd696dcebdc89dbf0c93c460f5361998cd13e6c3232e251d4fefbc4f444417",
+      "localTextFile": "jobs/anthropic-5455961008.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Applied AI demo / product engineering",
+      "seniorityAssessment": "Experienced cross-functional role; exact years depend on internal level.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Bachelor\u2019s degree or an equivalent combination of education, training, and experience.",
+        "Relevant field can be shown through coursework, training, or professional experience.",
+        "Office presence at least 25 percent under stated general hybrid policy; some roles may require more."
+      ],
+      "listedQualificationSummary": [
+        "End-to-end Python/TypeScript software; LLM APIs, tools/retrieval and third-party integrations.",
+        "Reliable prototypes, reusable assets, evaluation harnesses, realistic sanitized data and technical storytelling."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "The advert uses a broad good-fit list rather than a separate required/preferred partition; do not convert every item into a hard minimum."
+      ],
+      "locationAndEligibility": "San Francisco or New York. The employer says it sponsors visas, but explicitly cannot sponsor every role/candidate. This is not an individual sponsorship promise.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "accuracy and honesty matter as much as polish"
+        },
+        {
+          "kind": "listed",
+          "quote": "Experience building evaluation or validation harnesses for AI systems, including reliability checks and graceful fallbacks"
+        }
+      ],
+      "portfolioSignals": [
+        "demo",
+        "evaluation",
+        "software",
+        "reliability",
+        "communication",
+        "privacy"
+      ],
+      "portfolioImplication": "A polished demo should disclose what works and fails, use safe data, reproduce setup, and demonstrate graceful fallbacks. This is direct evidence against presenting visual polish alone as AI expertise.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H06",
+      "employer": "Reddit",
+      "board": "reddit",
+      "jobId": 7131932,
+      "title": "Machine Learning Engineer",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7131932",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/reddit/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.858378+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-23T10:06:06-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "6bec05b7e19cc8f23edcbcc5a02dd79c5e51f22c21dfacb488d3debd5440bfe9",
+      "rawContentSha256": "c477f8df83a09f32c6847cb50746a9de64cae5b95f2c110aaefe3d131a990332",
+      "normalizedTextSha256": "27678754c26d243cb08cd167ca9faad32c656a0eb86bd9efc7a5e502eb82e8f3",
+      "localTextFile": "jobs/reddit-7131932.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Production ML engineering across consumer and ads",
+      "seniorityAssessment": "Experienced role; basic qualifications list three to five-plus years.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Three to five-plus years building, deploying, and operating production ML systems."
+      ],
+      "listedQualificationSummary": [
+        "Software fundamentals, classic and deep-learning foundations, scalable pipelines and serving.",
+        "Full lifecycle ownership, measurable metrics, reliability, observability, retraining and cross-functional problem definition."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Recommenders/search/ads/representations, distributed tools, low latency, LLM methods and advanced degree are preferred."
+      ],
+      "locationAndEligibility": "Remote \u2013 United States. The word remote does not establish global eligibility; no sponsorship conclusion is drawn.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "3-5+ years of experience building, deploying, and operating machine learning systems in production"
+        },
+        {
+          "kind": "responsibility",
+          "quote": "Own the full ML lifecycle: from problem definition and feature engineering to training, evaluation, deployment, and monitoring"
+        }
+      ],
+      "portfolioSignals": [
+        "problemDefinition",
+        "dataPipelines",
+        "modeling",
+        "evaluation",
+        "deployment",
+        "monitoring"
+      ],
+      "portfolioImplication": "A classical ML project should include data boundaries, baseline, held-out evaluation, serving and monitoring rather than stopping at notebook accuracy. A personal replay is not production employment.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H07",
+      "employer": "Pinterest",
+      "board": "pinterest",
+      "jobId": 6121450,
+      "title": "Machine Learning Engineer, Core Engineering",
+      "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6121450",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:44.319856+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-27T18:38:50-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "51a24005fe35cb72393243b61c94c4e281d5d2bd3304752f666c5d8dd6e1a390",
+      "rawContentSha256": "c1eac32fb8182d5f348c6deee67823831a7bf7e6f648eae4cf87bcec877a9f9e",
+      "normalizedTextSha256": "0a9e04c988a57abb298c3aef31da5458d61fcc64c9653ab5c5782a3d04a7c9f3",
+      "localTextFile": "jobs/pinterest-6121450.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Applied recommendations / retrieval ML engineering",
+      "seniorityAssessment": "Two-plus years industry ML experience is listed.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Two-plus years industry experience applying ML methods.",
+        "Bachelor\u2019s degree in a related field or equivalent experience."
+      ],
+      "listedQualificationSummary": [
+        "End-to-end data processing pipelines and large-scale ML systems.",
+        "Experimentation and candidate retrieval for product surfaces."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Master\u2019s/PhD, publications, AI coding assistants, LLM productivity tools and scalable realtime systems are nice to have."
+      ],
+      "locationAndEligibility": "US-based applicants only; no relocation assistance. Location metadata includes named US offices and Remote, US.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "2+ years of industry experience applying machine learning methods"
+        },
+        {
+          "kind": "eligibility",
+          "quote": "US based applicants only"
+        },
+        {
+          "kind": "preferred",
+          "quote": "Experience using Cursor, Copilot, Codex, or similar AI coding assistants for development, debugging, testing, and refactoring"
+        }
+      ],
+      "portfolioSignals": [
+        "dataPipelines",
+        "retrieval",
+        "evaluation",
+        "software",
+        "aiAssistance"
+      ],
+      "portfolioImplication": "If targeting search/recommendations, publish a retrieval baseline, ranking evaluation, error slices and reproducible pipeline. Explain and verify AI-assisted changes yourself.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H08",
+      "employer": "Pinterest",
+      "board": "pinterest",
+      "jobId": 8244922,
+      "title": "Machine Learning Intern 2027 (Dublin)",
+      "location": "Dublin, IE",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8244922",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:44.319856+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-04T15:01:27-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "51a24005fe35cb72393243b61c94c4e281d5d2bd3304752f666c5d8dd6e1a390",
+      "rawContentSha256": "eb7b39202feaa219ec3ad60915bc230bb5115da6d2ddb0f405cd3fa61a00d173",
+      "normalizedTextSha256": "0b0bfe0f81b627c5cc1803e211aa92c0f90b2e95e557b6d2dd9aea9197ac0b8a",
+      "localTextFile": "jobs/pinterest-8244922.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "ML internship",
+      "seniorityAssessment": "Student internship with graduate enrollment requirement.",
+      "country": "Ireland",
+      "explicitRequirementsOrEligibility": [
+        "Working toward a master\u2019s or PhD in a related field.",
+        "Commutable to Dublin for two to three office days a week.",
+        "Full-time internship dates May 10\u2013August 27, 2027."
+      ],
+      "listedQualificationSummary": [
+        "Applied ML experience may come from research, coursework, projects or internships.",
+        "Programming/framework proficiency, research/analytical work, maintainable documented/tested code and communication."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section. Relocation assistance may be available; sponsorship is not stated."
+      ],
+      "locationAndEligibility": "Dublin hybrid internship. Graduate enrollment, location and dates must be checked separately from portfolio quality.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "Working towards a Master's or PhD degree in Computer Science, ML, NLP, Statistics, Information Sciences or related field"
+        },
+        {
+          "kind": "responsibility",
+          "quote": "Experience applying machine learning or AI concepts through research, coursework, projects or internships."
+        }
+      ],
+      "portfolioSignals": [
+        "problemDefinition",
+        "evaluation",
+        "software",
+        "testing",
+        "communication",
+        "aiAssistance"
+      ],
+      "portfolioImplication": "A scoped project covering problem definition through implementation and results presentation matches intern work. Projects can evidence skills here, but cannot waive enrollment requirements.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H09",
+      "employer": "Pinterest",
+      "board": "pinterest",
+      "jobId": 8140219,
+      "title": "Master's University Grad Machine Learning Engineer 2027 (USA)",
+      "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140219",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:44.319856+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-27T18:38:52-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "51a24005fe35cb72393243b61c94c4e281d5d2bd3304752f666c5d8dd6e1a390",
+      "rawContentSha256": "50a730c219fd47623111fd02e9d81a413980dac7495ea95648a6d99196096fd9",
+      "normalizedTextSha256": "85c5ed87c361df04796328d080a2b1c774897269e2eca8b72c575091cc2ddf3e",
+      "localTextFile": "jobs/pinterest-8140219.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Graduate ML engineering",
+      "seniorityAssessment": "Master\u2019s university graduate cohort, title specifies 2027.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "A relevant master\u2019s degree is explicitly required.",
+        "US-based applicants only."
+      ],
+      "listedQualificationSummary": [
+        "ML methods, big data/realtime systems, a systems language or ML framework.",
+        "Research/analytical ability and validation of AI-generated code for correctness, performance, security and maintainability."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "Named US offices. The role may require commuting distance for in-person collaboration. Do not infer a precise graduation window absent from the body.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "Master's in Computer Science, ML, NLP, Statistics, Information Sciences or related field required"
+        },
+        {
+          "kind": "listed",
+          "quote": "Strong critical thinking when working with AI-generated suggestions, with a clear approach to validating correctness, performance, security, and maintainability."
+        }
+      ],
+      "portfolioSignals": [
+        "modeling",
+        "evaluation",
+        "software",
+        "aiAssistance",
+        "communication"
+      ],
+      "portfolioImplication": "Show a reproducible model study and the tests used to accept or reject AI-generated suggestions. This posting is not evidence that a non-graduate beginner can bypass its master\u2019s requirement.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H10",
+      "employer": "Roblox",
+      "board": "roblox",
+      "jobId": 8242623,
+      "title": "[2027] Senior Machine Learning Engineer - PhD Early Career",
+      "location": "San Mateo, CA, United States",
+      "url": "https://careers.roblox.com/jobs/8242623?gh_jid=8242623",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/roblox/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:44.492851+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-06T02:40:13-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "0570af6b89777166a58490c4a5804493f13c23c2c62c7d21371af65b453783dc",
+      "rawContentSha256": "ede58a51c3e5b588cd6ca7d8a77b79995eaf3eb0fcfdb17065b5fd67c15819c3",
+      "normalizedTextSha256": "84436666778d00d8a12161669c81fecbd8b4872eaecbd27fadd9fed265998c35",
+      "localTextFile": "jobs/roblox-8242623.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Research-oriented ML engineering",
+      "seniorityAssessment": "Title combines senior ML engineer with PhD early career.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Possess or be pursuing a relevant PhD with aligned thesis."
+      ],
+      "listedQualificationSummary": [
+        "Deep relevant domain expertise, programming and large-scale optimization.",
+        "Multiple peer-reviewed publications/presentations are listed as evidence of a strong research track record.",
+        "End-to-end research-to-production work."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred section."
+      ],
+      "locationAndEligibility": "San Mateo office. Office-based roles attend Tuesday\u2013Thursday. The posting cautions that certain US work-authorization categories or future H-1B sponsorship may not be supported.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "Possess or pursuing a PhD in computer science, engineering, or a related field, with a thesis aligned to Roblox\u2019s research areas."
+        },
+        {
+          "kind": "listed",
+          "quote": "A strong research track record, evidenced by multiple publications and presentations in rigorous peer-reviewed venues."
+        }
+      ],
+      "portfolioSignals": [
+        "research",
+        "modeling",
+        "deployment",
+        "systems",
+        "problemDefinition"
+      ],
+      "portfolioImplication": "Research replication is a later, role-specific route. The early-career label here describes PhD career stage, not suitability for someone starting programming.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H11",
+      "employer": "Duolingo",
+      "board": "duolingo",
+      "jobId": 8881612002,
+      "title": "AI Research Engineer, New PhD Graduate",
+      "location": "New York, NY; Pittsburgh, PA",
+      "url": "https://careers.duolingo.com/jobs/8881612002?gh_jid=8881612002",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/duolingo/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:44.690845+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-03T13:15:33-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "7e672564b1418d931cade8e498c22c6d41287b863d57907c6352c3ff933deedd",
+      "rawContentSha256": "f95467c52fa4c66f5423a7b0718e51f291631becb961abc4a2a196c9cfcbe691",
+      "normalizedTextSha256": "c78f4c9656f850b0e3e90da9ea47864775cc35c138326837eaca7dcc55e2e3e8",
+      "localTextFile": "jobs/duolingo-8881612002.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "AI research engineering",
+      "seniorityAssessment": "New PhD graduate role.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Relevant PhD completed or expected by August 2027.",
+        "Ability to relocate to Pittsburgh or New York."
+      ],
+      "listedQualificationSummary": [
+        "Impactful portfolio through publications, open-source projects or AI internships.",
+        "Debugging, critical thinking, interdisciplinary R&D and communicating findings."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "New York or Pittsburgh. A relocation ability is explicitly requested; sponsorship is not stated in the captured description.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "You have an Ph.D. in computer science or related technical field (or expect to by August 2027)"
+        },
+        {
+          "kind": "listed",
+          "quote": "A portfolio of impactful work, in the form of (for example) publications, open-source projects, or AI internships"
+        }
+      ],
+      "portfolioSignals": [
+        "research",
+        "portfolio",
+        "problemDefinition",
+        "communication",
+        "debugging"
+      ],
+      "portfolioImplication": "This explicitly supports meaningful public work as evidence, while also showing that portfolio and degree requirements can coexist.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H12",
+      "employer": "Airbnb",
+      "board": "airbnb",
+      "jobId": 7716341,
+      "title": "Machine Learning Engineer, Assistance Engineering",
+      "location": "China",
+      "url": "https://careers.airbnb.com/positions/7716341?gh_jid=7716341",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.064925+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-09-29T20:00:54-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "1aa1a51c3e1f9474dab005f956e6ab773b2f5c72e24d6409025d473d1ba80c03",
+      "rawContentSha256": "fa9d13fc97be83e5379c33ea302a9bbbdc318666d5882e9d682abd67c5bbdc2f",
+      "normalizedTextSha256": "1be4beaf1ad7782472524345e86fd97958cc16665e33fe07b788e58f5d400c5a",
+      "localTextFile": "jobs/airbnb-7716341.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Customer-support ML / GenAI engineering",
+      "seniorityAssessment": "Two to four years ML engineering experience is listed.",
+      "country": "China",
+      "explicitRequirementsOrEligibility": [
+        "PhD/master\u2019s degree or equivalent experience.",
+        "Two to four years ML engineering experience with large-scale software ownership.",
+        "English and Mandarin fluency is essential."
+      ],
+      "listedQualificationSummary": [
+        "Scalable AI/ML systems, product integrations, performance and cross-functional collaboration."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "LLM chatbot and agentic product experience is described as a big plus."
+      ],
+      "locationAndEligibility": "China-based; permitted city depends on legal working identity and company policy. The description does not establish global remote eligibility.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "2-4 years of ML engineering experience, with ownership responsibility over large-scale software systems."
+        },
+        {
+          "kind": "eligibility",
+          "quote": "Fluency in both English and Mandarin is essential."
+        }
+      ],
+      "portfolioSignals": [
+        "retrieval",
+        "evaluation",
+        "deployment",
+        "product",
+        "communication"
+      ],
+      "portfolioImplication": "An evidence-grounded support workflow with evaluation and guardrails is relevant. Language and legal-location requirements remain separate filters.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H13",
+      "employer": "Scale AI",
+      "board": "scaleai",
+      "jobId": 4751059005,
+      "title": "Applied AI Engineer",
+      "location": "Kuwait City, Kuwait",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4751059005",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.077324+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-06T09:25:57-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "9902affb95f4af0ff387cc816c0bccb1b0bda8f74b0d591c9a2ee76dbf09f018",
+      "rawContentSha256": "13ae386d88ead929a6a1d11629c6e22fc98832d60763ffb21dd1ccb2e772283f",
+      "normalizedTextSha256": "aba53bd63cac6474782eb79c3cb4f28d490a3d05e7f9b9339fa8be61e640cdc5",
+      "localTextFile": "jobs/scaleai-4751059005.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Applied AI component / backend integration",
+      "seniorityAssessment": "Scoped engineering ownership; no numeric experience minimum specified.",
+      "country": "Kuwait",
+      "explicitRequirementsOrEligibility": [],
+      "listedQualificationSummary": [
+        "Production software experience; Python and another language.",
+        "Model/API/tool integration, ML evaluation and regression diagnosis.",
+        "Own implementation through testing, release, production debugging and client communication."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Backend/full-stack background, cloud ML, agentic/RAG/context engineering, regulated data experience."
+      ],
+      "locationAndEligibility": "Kuwait City. No explicit degree minimum or sponsorship/remote policy is stated in this description. Absence of a requirement is not proof it is waived.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "Run and extend evaluations within an established framework, interpret results, investigate common failure modes, and flag regressions"
+        },
+        {
+          "kind": "listed",
+          "quote": "Experience owning a defined piece of work through testing, release, and production debugging"
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "toolUse",
+        "evaluation",
+        "debugging",
+        "customerProblem",
+        "communication"
+      ],
+      "portfolioImplication": "Choose a tractable AI component and show its API, tests, eval set, failure investigation and release history. This is a closer portfolio-shaped scope than attempting a frontier model, but production experience is still requested.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H14",
+      "employer": "Scale AI",
+      "board": "scaleai",
+      "jobId": 4631848005,
+      "title": "Machine Learning Engineer, Public Sector",
+      "location": "Denver, CO; Honolulu, HI; Washington, DC",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4631848005",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.077324+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-05T14:01:00-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "9902affb95f4af0ff387cc816c0bccb1b0bda8f74b0d591c9a2ee76dbf09f018",
+      "rawContentSha256": "5600e28d14126008a22fb7af42f765ea7a566f44be7817455aa28ab0c574bb3a",
+      "normalizedTextSha256": "694617cee12ec278e48b12128c68248facfbfcf7b221a53ec28d5af81e9aa6a4",
+      "localTextFile": "jobs/scaleai-4631848005.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Public-sector production ML engineering",
+      "seniorityAssessment": "Experienced production ML profile; experience list is under ideally-have heading.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "Active TS security clearance is explicitly required.",
+        "Comfort with about ten percent travel."
+      ],
+      "listedQualificationSummary": [
+        "Production models, retraining, scalable infrastructure and product/research collaboration."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Two-plus years production applied ML and strong algorithms/programming appear under Ideally You\u2019d Have.",
+        "Fine-tuning, evaluations, constrained deployment, government experience and post-launch ownership appear under Nice to Haves."
+      ],
+      "locationAndEligibility": "Denver/Honolulu/Washington DC locations. Active clearance is a hard stated access barrier; do not treat a public portfolio as a substitute.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "This role will require an active TS security clearance"
+        },
+        {
+          "kind": "preferred",
+          "quote": "A shipped project with real users behind it, where you owned it after launch rather than handing it off at merge."
+        }
+      ],
+      "portfolioSignals": [
+        "deployment",
+        "evaluation",
+        "monitoring",
+        "ownership",
+        "testing"
+      ],
+      "portfolioImplication": "The general evidence lesson is post-launch ownership, regression checks and operational maintenance. This is not an eligible target for someone without the required clearance; no defense-specific project is recommended.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H15",
+      "employer": "Scale AI",
+      "board": "scaleai",
+      "jobId": 4534631005,
+      "title": "ML Research Engineer, ML Systems",
+      "location": "San Francisco, CA; Seattle, WA; New York, NY",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4534631005",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.077324+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-05T14:01:00-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "9902affb95f4af0ff387cc816c0bccb1b0bda8f74b0d591c9a2ee76dbf09f018",
+      "rawContentSha256": "9a573a24871af250b6f9ad20712d2b82869ae9b8fc721fc8df63839678930b00",
+      "normalizedTextSha256": "d6f248a321888c4e751b73942dceb22820d33128b1ec01b7626106187e89f0b1",
+      "localTextFile": "jobs/scaleai-4534631005.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "ML systems / research infrastructure",
+      "seniorityAssessment": "Specialized distributed ML systems; qualifications framed as ideally-have.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [],
+      "listedQualificationSummary": [
+        "Build, profile and optimize training/inference infrastructure.",
+        "Collaboration across ML/research teams."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Multi-node LLM training/inference, distributed ML systems, CUDA/PyTorch/transformers and communication listed as ideal.",
+        "Post-training methods and next-generation LLM use cases are nice to have."
+      ],
+      "locationAndEligibility": "San Francisco, Seattle or New York. Degree, numeric minimum and sponsorship are not specified in the captured text.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "Build, profile and optimize our training and inference framework"
+        },
+        {
+          "kind": "listed",
+          "quote": "Experience with multi-node LLM training and inference"
+        }
+      ],
+      "portfolioSignals": [
+        "performance",
+        "systems",
+        "training",
+        "research",
+        "communication"
+      ],
+      "portfolioImplication": "A specialist track would require actual profiling, throughput/memory measurements and a reproducible optimization experiment. Do not start by buying multi-GPU infrastructure.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H16",
+      "employer": "Affirm",
+      "board": "affirm",
+      "jobId": 7822389003,
+      "title": "Machine Learning Engineer II (Underwriting ML)",
+      "location": "Remote Canada",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7822389003",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.079090+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-10-30T17:15:12-04:00",
+      "originalPublicationDate": null,
+      "feedSha256": "aa7e40d75ff64c9bb1928157a44d70f3c5ff1cb32173ed83d9e55bb4fefa70d5",
+      "rawContentSha256": "5429ce3281df5a9db642f7ed6e1e5a6b23928b10b9f9e48dbd50a37e763b2d0b",
+      "normalizedTextSha256": "4e2ff60401c6b220a831e375cf205dbbae61bbd2c3520a59dc92653d2c5c5dba",
+      "localTextFile": "jobs/affirm-7822389003.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Tabular/sequential underwriting ML engineering",
+      "seniorityAssessment": "ML Engineer II; two-plus years ML experience or relevant PhD.",
+      "country": "Canada",
+      "explicitRequirementsOrEligibility": [
+        "Two-plus years as an MLE or a relevant PhD.",
+        "Bachelor\u2019s degree in a related field or equivalent practical experience.",
+        "Residence in one of the expressly listed Canadian provinces."
+      ],
+      "listedQualificationSummary": [
+        "Production Python, classification, pipelines, offline experiments, model serving, monitoring, backtesting and code review.",
+        "AI-powered developer tools with code-quality judgment."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "Gradient-boosted trees preferred for classification; PyTorch and Spark explicitly preferred among framework options."
+      ],
+      "locationAndEligibility": "Remote Canada only: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, or Saskatchewan. Not worldwide remote.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "You have a total of 2+ years of experience as a machine learning engineer or a PhD in a relevant field."
+        },
+        {
+          "kind": "responsibility",
+          "quote": "You will instrument and monitor model and data health, and help define retraining/backtesting workflows"
+        }
+      ],
+      "portfolioSignals": [
+        "dataPipelines",
+        "classification",
+        "evaluation",
+        "deployment",
+        "monitoring",
+        "software"
+      ],
+      "portfolioImplication": "A careful tabular decision project with validation boundaries, cost-aware evaluation, feature pipeline, serving and monitoring maps directly to this work. A historical demo must not claim real credit-risk readiness.",
+      "earlyCareerOrStudentRole": false,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H17",
+      "employer": "Affirm",
+      "board": "affirm",
+      "jobId": 8008645003,
+      "title": "Software Engineer (Machine Learning) Intern (Summer 2027)",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8008645003",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.079090+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-03T16:50:46-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "aa7e40d75ff64c9bb1928157a44d70f3c5ff1cb32173ed83d9e55bb4fefa70d5",
+      "rawContentSha256": "c5cbc0eed9de9be696be3fb28ea72f59ad0e0f3bf98c91d9a56180ba04765300",
+      "normalizedTextSha256": "28aa265e230f6c7f8b804a8fef41d385b6ab6c6c3872422502d336400d7bde61",
+      "localTextFile": "jobs/affirm-8008645003.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "ML-labeled software engineering internship",
+      "seniorityAssessment": "Summer 2027 student internship; degree level is not precisely specified.",
+      "country": "United States",
+      "explicitRequirementsOrEligibility": [
+        "An unqualified no-sponsorship sentence appears before the unfinished template block; because the same captured document retains conditional sponsorship instructions and other placeholders, confirm the applicable policy before using this role as an eligibility example."
+      ],
+      "listedQualificationSummary": [
+        "Python/C++/Java, frontend experience, OOP and communication.",
+        "Testing/deployment frameworks, API documentation and cloud/PaaS.",
+        "Ship a project, verify it in production, monitor it and present results."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "Listed as San Francisco, summer 2027, twelve-to-sixteen-week internship. The text targets students without a precise degree/enrollment rule. Template contamination makes some conditions unreliable; do not infer worldwide access or a definitive sponsorship policy from the conditional boilerplate.",
+      "evidence": [
+        {
+          "kind": "responsibility",
+          "quote": "Interns are responsible for developing and shipping a project and verifying that it works in production."
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "testing",
+        "deployment",
+        "documentation",
+        "communication",
+        "ownership"
+      ],
+      "portfolioImplication": "Internship-style proof is a small component delivered and maintained with tests, deployment and a presentation. Do not infer global access from an international company name.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": false,
+      "reviewWarnings": [
+        "The source contains unfinished compensation, geography, remote-work and sponsorship templates. A no-sponsorship sentence appears both before the template block and inside a conditional instruction. This record is excluded from sponsorship/remote eligibility conclusions in the main analysis; verify the current official listing. Placeholder pay ranges are not usable evidence."
+      ]
+    },
+    {
+      "sourceId": "H18",
+      "employer": "Affirm",
+      "board": "affirm",
+      "jobId": 8011718003,
+      "title": "Software Engineer I, Early Career (London)",
+      "location": "London",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011718003",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:45.079090+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-02T04:56:09-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "aa7e40d75ff64c9bb1928157a44d70f3c5ff1cb32173ed83d9e55bb4fefa70d5",
+      "rawContentSha256": "2452fba9734a804fbfc1b53fcc1e6da033fe4e651060d819eb3e1703cd800959",
+      "normalizedTextSha256": "31ea9d765e6ca6c3d5c864648c0d1e699bed96424d162640c68ff85fffc6054b",
+      "localTextFile": "jobs/affirm-8011718003.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Adjacent early-career software engineering",
+      "seniorityAssessment": "Early Career / Software Engineer I.",
+      "country": "United Kingdom",
+      "explicitRequirementsOrEligibility": [
+        "Bachelor\u2019s degree in a related field or equivalent practical experience.",
+        "Visa sponsorship unavailable.",
+        "Hybrid London office attendance three days per week during the early-career program."
+      ],
+      "listedQualificationSummary": [
+        "Turn a problem into multiple interacting software components with clear, tested, extensible code.",
+        "Navigate/debug an existing codebase, review code and communicate trade-offs."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "London hybrid for the first year. Later remote flexibility remains within the country-of-employment framework; no worldwide remote eligibility is implied.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "This position requires either equivalent practical experience or a Bachelor\u2019s degree in a related field."
+        },
+        {
+          "kind": "eligibility",
+          "quote": "Please note that visa sponsorship is not available for this position."
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "testing",
+        "debugging",
+        "collaboration",
+        "communication"
+      ],
+      "portfolioImplication": "An adjacent software role can value the same API, testing, code review and debugging evidence needed for AI products. Equivalent practical experience is explicitly allowed, but work authorization remains a separate gate.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": true,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H19",
+      "employer": "Databricks",
+      "board": "databricks",
+      "jobId": 8847747002,
+      "title": "Software Engineer - New Grad (2027 Start) - London",
+      "location": "London, United Kingdom",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8847747002",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.856542+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-05T12:47:28-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "de771026a0d3f13288f60fd2bb50edd1fa60e9ca3a591a2d477db7ad42026fad",
+      "rawContentSha256": "9f006e71d0086ac7fb74a1bdaf26c5fae9f21a2dbdc9e51ae364baf8993d6f62",
+      "normalizedTextSha256": "b4518378572c9024f27df67924dab71a8626f5624658aa306bd8b4e7ff61cb37",
+      "localTextFile": "jobs/databricks-8847747002.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Adjacent new-graduate software engineering",
+      "seniorityAssessment": "New-grad 2027 cohort.",
+      "country": "United Kingdom",
+      "explicitRequirementsOrEligibility": [
+        "Graduate between autumn 2026 and summer 2027 with a related degree."
+      ],
+      "listedQualificationSummary": [
+        "General-purpose programming, algorithms/data structures/OOP and end-to-end projects.",
+        "Design, test and operate reliable, scalable and secure software."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "London role. Graduation window is explicit; sponsorship is not established. Employer asks candidates to select one preferred office rather than submit multiple location applications.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "You will graduate between autumn 2026 and summer 2027 with a degree in Computer Science, Engineering, or related subject"
+        },
+        {
+          "kind": "listed",
+          "quote": "You have experience managing end-to-end projects"
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "testing",
+        "deployment",
+        "systems",
+        "ownership"
+      ],
+      "portfolioImplication": "A well-scoped end-to-end application with readable design, tests and operational evidence is useful preparation for software entry routes when the candidate meets the graduation window.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": true,
+      "reviewWarnings": []
+    },
+    {
+      "sourceId": "H20",
+      "employer": "Datadog",
+      "board": "datadog",
+      "jobId": 8114161,
+      "title": "Software Engineering Intern",
+      "location": "Madrid, Spain",
+      "url": "https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161",
+      "descriptionSourceUrl": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs?content=true",
+      "retrievedAt": "2026-11-06T17:34:43.857284+00:00",
+      "reviewedOn": "2026-11-07",
+      "boardUpdatedAt": "2026-11-05T12:12:56-05:00",
+      "originalPublicationDate": null,
+      "feedSha256": "01dd65aeb0a1773d7147dc03c0afba9af587c2cef7d2feecda7cef8ca78119d1",
+      "rawContentSha256": "5c2c2e14de9cad35105612c3549fbe945e007d53630b7f14b4087a833f87d34a",
+      "normalizedTextSha256": "a571fa7c0e4a071efff4282042fff6e9046c0c569507b4c762d827524d385721",
+      "localTextFile": "jobs/datadog-8114161.txt",
+      "verifiedVia": "Employer-controlled public Greenhouse JSON feed; exact excerpts checked against captured description.",
+      "availabilityLimit": "Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible.",
+      "roleFamily": "Adjacent software engineering internship",
+      "seniorityAssessment": "Student internship with country/university and timing constraints.",
+      "country": "Spain",
+      "explicitRequirementsOrEligibility": [
+        "Expected 2027 graduation in a relevant degree from a university in Spain.",
+        "Availability for a February 2027 internship start; no other start dates supported in the text."
+      ],
+      "listedQualificationSummary": [
+        "CS fundamentals, programming and productive use or interest in AI-assisted development.",
+        "Deliver technical projects through deployment with guidance; reliability/performance collaboration."
+      ],
+      "preferredOrNiceToHaveSummary": [
+        "No separately labeled preferred qualifications section."
+      ],
+      "locationAndEligibility": "Madrid hybrid role, available full-time or part-time under stated program. Relocation support may apply, but the university-location requirement is explicit; sponsorship is not established.",
+      "evidence": [
+        {
+          "kind": "required",
+          "quote": "with a degree in Computer Science, Software Engineering, or a related technical field from a university in Spain"
+        },
+        {
+          "kind": "listed",
+          "quote": "Demonstrate strong computer science fundamentals, including data structures, algorithms, and software design"
+        }
+      ],
+      "portfolioSignals": [
+        "software",
+        "systems",
+        "deployment",
+        "communication",
+        "aiAssistance"
+      ],
+      "portfolioImplication": "An early software project should also show basic algorithms, data modeling and design choices, not only API prompting. Student and program-location constraints may make this role ineligible.",
+      "earlyCareerOrStudentRole": true,
+      "adjacentSoftwareRole": true,
+      "reviewWarnings": []
+    }
+  ]
+}

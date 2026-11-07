@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="A research-informed AI and ML engineering portfolio plan: focused projects, inspectable evidence, honest evaluation, and a practical path from beginner to credible candidate.">
+  <title>Build evidence. Earn trust. — AI &amp; ML Engineering Portfolio Field Guide</title>
+  <style>
+    :root{--paper:#f7f7f2;--surface:#fffefa;--ink:#152b35;--muted:#52646a;--teal:#246658;--teal-dark:#164b40;--mint:#e7efe8;--line:#d7dfd8;--ochre:#946228;--sand:#f4ecdd;--code:#172e38;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--mono:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+    *{box-sizing:border-box}
+    [hidden]{display:none!important}
+    html{scroll-behavior:smooth;scroll-padding-top:32px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+    h1,h2,h3,h4,p,ul,ol,blockquote,figure,pre{margin:0}
+    :where(h1,h2,h3,h4,p,li,a,th,td,summary){overflow-wrap:anywhere}
+    a{color:var(--teal-dark);text-decoration-thickness:1px;text-underline-offset:3px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #267b66;outline-offset:5px;border-radius:2px}
+    button{font:inherit}
+    .wrap{width:min(1320px,calc(100% - 96px));margin-inline:auto}
+    .skip-link{position:absolute;top:12px;left:18px;z-index:10;transform:translateY(-160%);background:var(--ink);color:white;padding:10px 16px;border-radius:4px}
+    .skip-link:focus{transform:translateY(0)}
+    .page-header{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:106px;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+    .brand-mark{display:grid;place-items:center;width:44px;height:48px;background:var(--mint);border:1px solid #d2dfd1;border-radius:12px 12px 12px 2px;font:italic 32px var(--serif);color:var(--teal)}
+    .brand strong{display:block;font-size:12px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase;line-height:1.5}
+    .brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;margin-top:2px}
+    .header-actions{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:650}
+    .header-actions a{text-decoration:none}
+    .print-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:40px;padding:8px 14px;border:1px solid #a7bab0;background:transparent;border-radius:5px;color:var(--ink);cursor:pointer;font-size:12px;font-weight:650}
+    .print-button:hover{background:var(--mint)}
+    .print-button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .hero{padding-top:72px;padding-bottom:57px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--teal-dark);font-size:10px;font-weight:750;letter-spacing:2px;text-transform:uppercase;line-height:1.6}
+    .eyebrow::before{content:'';width:24px;height:1px;background:currentColor;flex:none}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:65px;align-items:end;margin-top:25px}
+    .hero h1{font:400 clamp(3.6rem,6vw,5.7rem)/1.02 var(--serif);letter-spacing:-.055em;max-width:850px}
+    .hero h1 em{color:var(--teal);font-weight:400}
+    .hero-description{max-width:700px;margin-top:28px;color:var(--muted);font-size:18px;line-height:1.65}
+    .brief-profile{border-top:2px solid var(--teal);padding-top:22px}
+    .brief-profile h2{font:700 10px/1.6 var(--sans);letter-spacing:1.4px;text-transform:uppercase;color:var(--teal-dark);margin-bottom:20px}
+    .profile-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:12px}
+    .profile-row span{color:var(--muted)}
+    .profile-row strong{font-weight:650;text-align:right}
+    .brief-profile p{font:italic 13px/1.65 var(--serif);margin-top:17px;color:var(--muted)}
+    .hero-meta{display:flex;align-items:center;gap:11px;flex-wrap:wrap;color:var(--muted);font-size:11px;letter-spacing:.25px;margin-top:28px}
+    .meta-dot{width:5px;height:5px;background:var(--teal);border-radius:50%;display:inline-block}
+    .scope-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:46px;padding:24px 0}
+    .scope-item{display:flex;align-items:center;gap:16px;padding:0 28px}
+    .scope-item:first-child{padding-left:0}
+    .scope-item+.scope-item{border-left:1px solid var(--line)}
+    .scope-item strong{font:400 40px/1 var(--serif);color:var(--teal);letter-spacing:-1.4px;flex:none}
+    .scope-item span{font-size:12px;color:var(--muted);line-height:1.6}
+    .scope-item b{display:block;color:var(--ink);font-weight:650}
+    .report-layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:65px;align-items:start;padding-bottom:80px}
+    .contents-rail{position:sticky;top:26px;max-height:calc(100vh - 52px);overflow-y:auto;scrollbar-width:thin;padding-right:12px}
+    .toc-panel{border-top:1px solid var(--line)}
+    .toc-panel>summary{font-size:10px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-dark);cursor:pointer;padding:19px 0 14px;list-style-position:outside;margin-left:12px}
+    .toc-panel>summary::marker{font-size:10px}
+    .toc ul,.toc ol{padding:0;list-style:none}
+    .toc li{margin:0}
+    .toc ul ul,.toc ol ol,.toc ul ol,.toc ol ul{padding-left:12px}
+    .toc a,.reference-links a{display:block;padding:8px 10px;border-left:2px solid transparent;border-radius:0 4px 4px 0;color:var(--muted);font-size:12px;line-height:1.55;text-decoration:none}
+    .toc a:hover,.reference-links a:hover{color:var(--teal-dark);background:#edf1e9}
+    .toc a[aria-current="location"],.reference-links a[aria-current="location"]{color:var(--teal-dark);background:var(--mint);border-left-color:var(--teal);font-weight:650}
+    .reference-links{margin-top:17px;padding-top:15px;border-top:1px solid var(--line)}
+    .rail-note{font-size:11px;color:var(--muted);line-height:1.7;margin-top:22px;padding:0 10px}
+    .report{min-width:0;max-width:1020px;padding-bottom:10px}
+    .report-body>section,.report-body>div.section{margin-top:56px}
+    .report-body>section:first-child,.report-body>div.section:first-child{margin-top:0}
+    .report h2{font:400 clamp(2rem,3vw,2.7rem)/1.15 var(--serif);letter-spacing:-1px;margin:54px 0 22px;padding-top:24px;border-top:1px solid var(--line);scroll-margin-top:26px}
+    .report-body>h2:first-child,.report-body>section:first-child>h2:first-child{margin-top:0;padding-top:0;border-top:0}
+    .report h3{font:400 25px/1.3 var(--serif);letter-spacing:-.4px;margin:31px 0 13px;scroll-margin-top:26px}
+    .report h4{font-size:14px;line-height:1.5;margin:24px 0 10px;font-weight:750}
+    .report p{margin:14px 0;color:#31474e}
+    .report strong{color:var(--ink);font-weight:680}
+    .report ul,.report ol{padding-left:25px;margin:15px 0 20px}
+    .report li{padding-left:3px;margin:7px 0;color:#31474e}
+    .report li::marker{color:var(--teal)}
+    .report li p{margin:7px 0}
+    .report li>ul,.report li>ol{margin:8px 0 12px}
+    .report blockquote{margin:24px 0;padding:18px 24px;border-left:3px solid var(--teal);background:var(--mint);border-radius:0 7px 7px 0}
+    .report blockquote p{margin:0;color:#24493e}
+    .report blockquote p+p{margin-top:12px}
+    .report :not(pre)>code{background:#eaf0e9;padding:2px 5px;border:1px solid #dce5d9;border-radius:4px;color:#215343;font:0.85em/1.5 var(--mono);overflow-wrap:anywhere}
+    .report pre{margin:23px 0;padding:22px 24px;background:var(--code);color:#e6eee8;border:1px solid #2c434d;border-radius:8px;overflow-x:auto;font:12px/1.8 var(--mono);tab-size:2;max-width:100%}
+    .report pre code{font:inherit;color:inherit;background:none;border:0;white-space:pre;overflow-wrap:normal}
+    .report table{display:block;max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:7px;border-spacing:0;border-collapse:separate;background:var(--surface);margin:24px 0;font-size:12.5px;line-height:1.65;scrollbar-width:thin}
+    .report caption{text-align:left;font-size:12px;color:var(--muted);padding:12px 15px}
+    .report th{font-size:10px;font-weight:750;letter-spacing:.6px;color:var(--teal-dark);background:#eaf0e7;text-align:left;text-transform:uppercase;padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}
+    .report td{padding:14px 15px;vertical-align:top;min-width:125px;max-width:340px;color:#344c51}
+    .report tr+tr td{border-top:1px solid #e1e6de}
+    .report tbody tr:nth-child(even){background:#f8f9f4}
+    .report table p{margin:0;font-size:inherit}
+    .report table ul,.report table ol{padding-left:18px;margin:0}
+    .report table li{margin:4px 0;padding:0}
+    .report details{border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:0 21px;margin:20px 0}
+    .report summary{padding:17px 0;cursor:pointer;font-size:14px;font-weight:650;color:var(--teal-dark);line-height:1.5}
+    .report details[open]{padding-bottom:16px}
+    .report details>h3:first-of-type{margin-top:12px}
+    .report hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+    .report .callout,.report .note,.report .decision{background:var(--mint);border:1px solid #d4e0d1;border-radius:8px;padding:20px 24px;margin:25px 0}
+    .report .warning{background:var(--sand);border:1px solid #e5d8c0;border-radius:8px;padding:20px 24px;margin:25px 0}
+    .report :is(.callout,.note,.decision,.warning)>:first-child{margin-top:0}
+    .report :is(.callout,.note,.decision,.warning)>:last-child{margin-bottom:0}
+    .report .muted,.report small{color:var(--muted)}
+    .report small{font-size:12px}
+    .report .checklist{list-style:none;padding-left:0}
+    .report .checklist li{padding-left:25px;position:relative}
+    .report .checklist li::before{content:'';position:absolute;left:0;top:7px;width:13px;height:13px;border:1px solid #96b2a1;border-radius:3px}
+    .appendix{margin-top:66px;padding-top:12px;scroll-margin-top:24px}
+    .appendix .eyebrow{margin-bottom:13px}
+    .appendix>h2{margin-top:0;border:0;padding-top:0}
+    .appendix-intro{font-size:14px;color:var(--muted)!important;max-width:760px}
+    .source-body{font-size:14px}
+    .source-body li{margin-block:14px}
+    .source-body a{overflow-wrap:anywhere}
+    .page-footer{border-top:1px solid var(--line);padding:30px 0 44px;display:flex;justify-content:space-between;gap:30px;align-items:start}
+    .footer-title{font:24px/1.3 var(--serif);letter-spacing:-.5px}
+    .footer-note{font-size:12px;color:var(--muted);max-width:570px;margin-top:7px}
+    .back-top{font-size:12px;white-space:nowrap;padding-top:6px}
+    @media(min-width:1600px){.hero h1{font-size:6rem}}
+    @media(max-width:1100px){.wrap{width:calc(100% - 56px)}.report-layout{grid-template-columns:205px minmax(0,1fr);gap:38px}.hero-grid{grid-template-columns:minmax(0,1fr) 255px;gap:38px}.hero h1{font-size:4.6rem}.hero-description{font-size:17px}.scope-item{padding-inline:20px;gap:12px}}
+    @media(max-width:900px){.header-actions{gap:18px}.header-actions .header-read{display:none}.hero{padding-top:48px;padding-bottom:35px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero h1{font-size:clamp(3.8rem,9vw,5.1rem)}.hero-description{max-width:690px}.brief-profile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}.brief-profile h2{grid-column:1/-1;margin-bottom:8px}.profile-row{display:block;padding-bottom:15px}.profile-row strong{display:block;text-align:left;margin-top:5px}.brief-profile p{grid-column:1/-1;margin-top:12px}.scope-strip{margin-top:28px}.report-layout{display:block}.contents-rail{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:36px}.toc-panel{background:#eef2e9;border:1px solid var(--line);border-radius:7px;padding:0 20px}.toc-panel>summary{padding-block:17px;margin-bottom:0}.toc{padding-bottom:10px}.toc>ul,.toc>ol{columns:2;column-gap:25px}.toc li{break-inside:avoid}.reference-links{display:flex;flex-wrap:wrap;gap:6px 15px;padding:12px 0;margin-top:3px}.rail-note{display:none}.report{max-width:none}.report h2{margin-top:46px}}
+    @media(max-width:600px){.wrap{width:calc(100% - 36px)}.page-header{min-height:85px;gap:12px}.brand{gap:10px}.brand-mark{width:34px;height:41px;font-size:28px;border-radius:10px 10px 10px 2px}.brand strong{font-size:10px;letter-spacing:1px}.brand small{font-size:8px;letter-spacing:1px}.header-actions{gap:0}.header-actions>a{display:none}.print-button{min-height:38px;padding:7px 10px;font-size:11px}.print-button svg{display:none}.hero{padding-top:35px}.hero-grid{margin-top:19px;gap:28px}.hero h1{font-size:clamp(3.15rem,12vw,4.2rem);letter-spacing:-.06em}.hero-description{font-size:16px;line-height:1.65;margin-top:22px}.eyebrow{font-size:9px;letter-spacing:1.4px}.hero-meta{font-size:10px;gap:8px;margin-top:21px}.brief-profile{gap:0 14px}.profile-row{font-size:10.5px}.brief-profile p{font-size:12px}.scope-strip{padding-block:19px}.scope-item{display:block;padding-inline:13px}.scope-item strong{font-size:31px;display:block;margin-bottom:9px}.scope-item span{font-size:10px}.toc>ul,.toc>ol{columns:1}.report{font-size:15px;line-height:1.8}.report h2{font-size:31px;letter-spacing:-.7px;margin-bottom:18px}.report h3{font-size:23px}.report h4{font-size:14px}.report blockquote{padding:17px 18px}.report pre{padding:18px;font-size:11px}.report table{font-size:12px}.report td,.report th{padding:12px;min-width:135px}.report :is(.callout,.note,.decision,.warning){padding:18px}.report details{padding-inline:17px}.report summary{font-size:13px}.appendix{margin-top:48px}.page-footer{display:block;padding-block:25px 35px}.back-top{display:inline-block;margin-top:16px}.report-layout{padding-bottom:40px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{@page{margin:17mm 15mm}html{scroll-behavior:auto}body{background:white;color:#122a32;font-size:10pt;line-height:1.6}.wrap{width:100%;max-width:none}.skip-link,.header-actions,.contents-rail,.back-top{display:none!important}.page-header{min-height:0;padding-bottom:12pt}.brand-mark{width:28pt;height:30pt;font-size:24pt}.brand strong{font-size:9pt}.brand small{font-size:7pt}.hero{padding-block:26pt 20pt}.hero-grid{grid-template-columns:1fr 180pt;gap:25pt}.hero h1{font-size:46pt}.hero-description{font-size:12pt;margin-top:16pt}.hero-meta{font-size:8pt;margin-top:16pt}.brief-profile{display:block;padding-top:14pt}.brief-profile h2{font-size:8pt;margin-bottom:10pt}.profile-row{display:flex;font-size:8pt;padding-block:7pt}.profile-row strong{display:inline;text-align:right;margin:0}.brief-profile p{font-size:9pt}.scope-strip{padding-block:15pt;margin-top:24pt}.scope-item{display:flex;gap:12pt;padding-inline:18pt}.scope-item strong{font-size:27pt;margin:0}.scope-item span{font-size:8pt}.report-layout{display:block;padding:0}.report{max-width:none;font-size:10pt;line-height:1.65}.report h2{font-size:24pt;margin-top:26pt;padding-top:16pt;break-after:avoid}.report h3{font-size:17pt;margin-top:19pt;break-after:avoid}.report h4{font-size:11pt;break-after:avoid}.report p,.report li{orphans:3;widows:3}.report a{color:inherit;text-decoration:underline}.report table{display:table;width:100%;max-width:100%;table-layout:fixed;overflow:visible;font-size:8pt;border-collapse:collapse;break-inside:auto;border-radius:0}.report td,.report th{min-width:0;max-width:none;padding:7pt;word-break:normal;overflow-wrap:anywhere;border:1px solid #d5ded7}.report th{font-size:7pt}.report tr{break-inside:avoid}.report pre{white-space:pre-wrap;overflow:visible;background:#edf1ed;color:#183b39;font-size:8pt;padding:12pt;break-inside:avoid;border:1px solid #cfdbd1}.report pre code{white-space:pre-wrap;overflow-wrap:anywhere}.report blockquote,.report :is(.callout,.note,.decision,.warning){break-inside:avoid;padding:12pt}.report details{border:0;padding:0}.report details summary{font-size:10pt;font-weight:700;padding-block:8pt;break-after:avoid}.report details>*{display:block!important}.report details::details-content{display:block!important;content-visibility:visible!important;height:auto!important}.appendix{break-before:page;margin-top:0;padding-top:0}.appendix-intro,.source-body{font-size:9pt}.page-footer{padding-block:18pt;margin-top:25pt;display:block}.footer-title{font-size:17pt}.footer-note{font-size:8pt;max-width:none}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the report</a>
+  <header class="page-header wrap" id="top">
+    <a class="brand" href="#top" aria-label="Portfolio field guide, back to top"><span class="brand-mark" aria-hidden="true">p</span><span><strong>First Principles</strong><small>Career field guide</small></span></a>
+    <nav class="header-actions" aria-label="Quick navigation">
+      <a class="header-read" href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio">GitHub</a>
+      <a href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest/download/AI-ML-Hiring-Portfolio-Toolkit.zip">Download toolkit</a>
+      <a href="#appendix-jobs">Hiring evidence</a>
+      <a href="#appendix-sources">Sources</a>
+      <button class="print-button" type="button" id="print-report" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7V2h10v5M5 14H2V7h16v7h-3M5 11h10v7H5z"/></svg>Print / save PDF</button>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="report-title">
+      <p class="eyebrow">A researched path from learning to evidence</p>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="report-title">Build evidence.<br><em>Earn trust.</em></h1>
+          <p class="hero-description">An AI &amp; ML engineering portfolio plan, from your first program to work an employer can inspect.</p>
+          <div class="hero-meta"><span class="meta-dot" aria-hidden="true"></span><time>__REPORT_DATE__</time><span aria-hidden="true">/</span><span>Open portfolio field guide</span></div>
+        </div>
+        <aside class="brief-profile" aria-label="Your starting point">
+          <h2>Designed for a beginner’s starting point</h2>
+          <div class="profile-row"><span>Experience</span><strong>Starting from zero</strong></div>
+          <div class="profile-row"><span>Study budget</span><strong>6 hours a day</strong></div>
+          <div class="profile-row"><span>Job search</span><strong>Global, eligibility first</strong></div>
+          <p>Build something useful. Measure it honestly.<br>Make your work easy to inspect.</p>
+        </aside>
+      </div>
+      <div class="scope-strip" aria-label="The scope of this plan">
+        <div class="scope-item"><strong>02</strong><span><b>Flagship projects</b>Complementary proof of ability</span></div>
+        <div class="scope-item"><strong>01</strong><span><b>Reliability release</b>Evidence that the system holds up</span></div>
+        <div class="scope-item"><strong>__SAMPLE_COUNT__</strong><span><b>Postings reviewed</b>A targeted hiring sample</span></div>
+      </div>
+    </section>
+
+    <div class="report-layout">
+      <aside class="contents-rail" aria-label="Report navigation">
+        <details class="toc-panel" id="contents" open>
+          <summary>Inside this field guide</summary>
+          <nav class="toc" aria-label="Table of contents">__TOC__</nav>
+          <div class="reference-links"><a href="#appendix-jobs">The hiring evidence</a><a href="#appendix-sources">Sources &amp; research notes</a></div>
+        </details>
+        <p class="rail-note">Read the recommendation first. Use the project briefs while building. Return to the evidence when choosing where to apply.</p>
+      </aside>
+
+      <article class="report" aria-label="Your portfolio strategy">
+        <div class="report-body" id="report-start">__REPORT_BODY__</div>
+        <section class="appendix" id="appendix-jobs" aria-labelledby="jobs-title">
+          <p class="eyebrow">Evidence appendix · Hiring</p>
+          <h2 id="jobs-title">What the postings actually ask for.</h2>
+          <p class="appendix-intro">Inspect the role, geography, seniority, and qualification boundaries alongside the skills. A posting is a dated observation; a portfolio does not replace its eligibility requirements.</p>
+          <div class="jobs-body">__JOBS_BODY__</div>
+        </section>
+        <section class="appendix" id="appendix-sources" aria-labelledby="sources-title">
+          <p class="eyebrow">Evidence appendix · Sources</p>
+          <h2 id="sources-title">Follow the reasoning back to its source.</h2>
+          <p class="appendix-intro">Source-backed observations, planning estimates, and recommendations serve different purposes. Keep the source dates and sampling limits attached to the claims.</p>
+          <div class="source-body">__SOURCE_BODY__</div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="page-footer wrap">
+    <div><p class="footer-title">One useful project. Evidence you can explain.</p><p class="footer-note">This is a plan for building and presenting credible work. Project scopes and study budgets are recommendations; hiring outcomes depend on demonstrated ability, eligibility, fit, and available roles.</p></div>
+    <a class="back-top" href="#top">Back to the beginning ↑</a>
+  </footer>
+
+  <script>
+  (() => {
+    'use strict';
+    const printButton = document.getElementById('print-report');
+    if (typeof window.print === 'function') {
+      printButton.hidden = false;
+      printButton.addEventListener('click', () => window.print());
+    }
+    const contents = document.getElementById('contents');
+    function revealLinkedEvidence() {
+      let target;
+      try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); }
+      catch (_) { return; }
+      if (target && target.matches('details')) target.open = true;
+    }
+    window.addEventListener('hashchange', revealLinkedEvidence);
+    revealLinkedEvidence();
+    const compact = window.matchMedia('(max-width: 900px)');
+    if (compact.matches) contents.open = false;
+    const matchLayout = event => { contents.open = !event.matches; };
+    if (compact.addEventListener) compact.addEventListener('change', matchLayout);
+    const links = [...document.querySelectorAll('.toc-panel a[href^="#"]')];
+    const targets = links.map(link => {
+      try { return {link, target: document.getElementById(decodeURIComponent(link.hash.slice(1)))}; }
+      catch (_) { return {link, target: null}; }
+    }).filter(item => item.target);
+    let queued = false;
+    function markPosition() {
+      queued = false;
+      let current = null;
+      for (const item of targets) {
+        if (item.target.getBoundingClientRect().top <= 130) current = item;
+      }
+      for (const item of targets) {
+        if (item === current) item.link.setAttribute('aria-current', 'location');
+        else item.link.removeAttribute('aria-current');
+      }
+    }
+    window.addEventListener('scroll', () => {
+      if (!queued) { queued = true; window.requestAnimationFrame(markPosition); }
+    }, {passive:true});
+    function prepareTables() {
+      for (const table of document.querySelectorAll('.report table')) {
+        if (table.scrollWidth > table.clientWidth + 1) {
+          table.tabIndex = 0;
+          if (!table.hasAttribute('aria-label')) table.setAttribute('aria-label', 'Scrollable evidence table');
+        } else table.removeAttribute('tabindex');
+      }
+    }
+    let openedForPrint = [];
+    window.addEventListener('beforeprint', () => {
+      openedForPrint = [...document.querySelectorAll('.report details:not([open])')];
+      openedForPrint.forEach(detail => { detail.open = true; });
+    });
+    window.addEventListener('afterprint', () => {
+      openedForPrint.forEach(detail => { detail.open = false; });
+      openedForPrint = [];
+    });
+    window.addEventListener('resize', () => { prepareTables(); markPosition(); }, {passive:true});
+    prepareTables();
+    markPosition();
+  })();
+  </script>
+</body>
+</html>

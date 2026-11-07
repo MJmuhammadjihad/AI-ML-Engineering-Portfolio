@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="A research-informed AI and ML engineering portfolio plan: focused projects, inspectable evidence, honest evaluation, and a practical path from beginner to credible candidate.">
+  <title>Build evidence. Earn trust. — AI &amp; ML Engineering Portfolio Field Guide</title>
+  <style>
+    :root{--paper:#f7f7f2;--surface:#fffefa;--ink:#152b35;--muted:#52646a;--teal:#246658;--teal-dark:#164b40;--mint:#e7efe8;--line:#d7dfd8;--ochre:#946228;--sand:#f4ecdd;--code:#172e38;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--mono:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+    *{box-sizing:border-box}
+    [hidden]{display:none!important}
+    html{scroll-behavior:smooth;scroll-padding-top:32px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+    h1,h2,h3,h4,p,ul,ol,blockquote,figure,pre{margin:0}
+    :where(h1,h2,h3,h4,p,li,a,th,td,summary){overflow-wrap:anywhere}
+    a{color:var(--teal-dark);text-decoration-thickness:1px;text-underline-offset:3px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #267b66;outline-offset:5px;border-radius:2px}
+    button{font:inherit}
+    .wrap{width:min(1320px,calc(100% - 96px));margin-inline:auto}
+    .skip-link{position:absolute;top:12px;left:18px;z-index:10;transform:translateY(-160%);background:var(--ink);color:white;padding:10px 16px;border-radius:4px}
+    .skip-link:focus{transform:translateY(0)}
+    .page-header{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:106px;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+    .brand-mark{display:grid;place-items:center;width:44px;height:48px;background:var(--mint);border:1px solid #d2dfd1;border-radius:12px 12px 12px 2px;font:italic 32px var(--serif);color:var(--teal)}
+    .brand strong{display:block;font-size:12px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase;line-height:1.5}
+    .brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;margin-top:2px}
+    .header-actions{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:650}
+    .header-actions a{text-decoration:none}
+    .print-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:40px;padding:8px 14px;border:1px solid #a7bab0;background:transparent;border-radius:5px;color:var(--ink);cursor:pointer;font-size:12px;font-weight:650}
+    .print-button:hover{background:var(--mint)}
+    .print-button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .hero{padding-top:72px;padding-bottom:57px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--teal-dark);font-size:10px;font-weight:750;letter-spacing:2px;text-transform:uppercase;line-height:1.6}
+    .eyebrow::before{content:'';width:24px;height:1px;background:currentColor;flex:none}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:65px;align-items:end;margin-top:25px}
+    .hero h1{font:400 clamp(3.6rem,6vw,5.7rem)/1.02 var(--serif);letter-spacing:-.055em;max-width:850px}
+    .hero h1 em{color:var(--teal);font-weight:400}
+    .hero-description{max-width:700px;margin-top:28px;color:var(--muted);font-size:18px;line-height:1.65}
+    .brief-profile{border-top:2px solid var(--teal);padding-top:22px}
+    .brief-profile h2{font:700 10px/1.6 var(--sans);letter-spacing:1.4px;text-transform:uppercase;color:var(--teal-dark);margin-bottom:20px}
+    .profile-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:12px}
+    .profile-row span{color:var(--muted)}
+    .profile-row strong{font-weight:650;text-align:right}
+    .brief-profile p{font:italic 13px/1.65 var(--serif);margin-top:17px;color:var(--muted)}
+    .hero-meta{display:flex;align-items:center;gap:11px;flex-wrap:wrap;color:var(--muted);font-size:11px;letter-spacing:.25px;margin-top:28px}
+    .meta-dot{width:5px;height:5px;background:var(--teal);border-radius:50%;display:inline-block}
+    .scope-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:46px;padding:24px 0}
+    .scope-item{display:flex;align-items:center;gap:16px;padding:0 28px}
+    .scope-item:first-child{padding-left:0}
+    .scope-item+.scope-item{border-left:1px solid var(--line)}
+    .scope-item strong{font:400 40px/1 var(--serif);color:var(--teal);letter-spacing:-1.4px;flex:none}
+    .scope-item span{font-size:12px;color:var(--muted);line-height:1.6}
+    .scope-item b{display:block;color:var(--ink);font-weight:650}
+    .report-layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:65px;align-items:start;padding-bottom:80px}
+    .contents-rail{position:sticky;top:26px;max-height:calc(100vh - 52px);overflow-y:auto;scrollbar-width:thin;padding-right:12px}
+    .toc-panel{border-top:1px solid var(--line)}
+    .toc-panel>summary{font-size:10px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-dark);cursor:pointer;padding:19px 0 14px;list-style-position:outside;margin-left:12px}
+    .toc-panel>summary::marker{font-size:10px}
+    .toc ul,.toc ol{padding:0;list-style:none}
+    .toc li{margin:0}
+    .toc ul ul,.toc ol ol,.toc ul ol,.toc ol ul{padding-left:12px}
+    .toc a,.reference-links a{display:block;padding:8px 10px;border-left:2px solid transparent;border-radius:0 4px 4px 0;color:var(--muted);font-size:12px;line-height:1.55;text-decoration:none}
+    .toc a:hover,.reference-links a:hover{color:var(--teal-dark);background:#edf1e9}
+    .toc a[aria-current="location"],.reference-links a[aria-current="location"]{color:var(--teal-dark);background:var(--mint);border-left-color:var(--teal);font-weight:650}
+    .reference-links{margin-top:17px;padding-top:15px;border-top:1px solid var(--line)}
+    .rail-note{font-size:11px;color:var(--muted);line-height:1.7;margin-top:22px;padding:0 10px}
+    .report{min-width:0;max-width:1020px;padding-bottom:10px}
+    .report-body>section,.report-body>div.section{margin-top:56px}
+    .report-body>section:first-child,.report-body>div.section:first-child{margin-top:0}
+    .report h2{font:400 clamp(2rem,3vw,2.7rem)/1.15 var(--serif);letter-spacing:-1px;margin:54px 0 22px;padding-top:24px;border-top:1px solid var(--line);scroll-margin-top:26px}
+    .report-body>h2:first-child,.report-body>section:first-child>h2:first-child{margin-top:0;padding-top:0;border-top:0}
+    .report h3{font:400 25px/1.3 var(--serif);letter-spacing:-.4px;margin:31px 0 13px;scroll-margin-top:26px}
+    .report h4{font-size:14px;line-height:1.5;margin:24px 0 10px;font-weight:750}
+    .report p{margin:14px 0;color:#31474e}
+    .report strong{color:var(--ink);font-weight:680}
+    .report ul,.report ol{padding-left:25px;margin:15px 0 20px}
+    .report li{padding-left:3px;margin:7px 0;color:#31474e}
+    .report li::marker{color:var(--teal)}
+    .report li p{margin:7px 0}
+    .report li>ul,.report li>ol{margin:8px 0 12px}
+    .report blockquote{margin:24px 0;padding:18px 24px;border-left:3px solid var(--teal);background:var(--mint);border-radius:0 7px 7px 0}
+    .report blockquote p{margin:0;color:#24493e}
+    .report blockquote p+p{margin-top:12px}
+    .report :not(pre)>code{background:#eaf0e9;padding:2px 5px;border:1px solid #dce5d9;border-radius:4px;color:#215343;font:0.85em/1.5 var(--mono);overflow-wrap:anywhere}
+    .report pre{margin:23px 0;padding:22px 24px;background:var(--code);color:#e6eee8;border:1px solid #2c434d;border-radius:8px;overflow-x:auto;font:12px/1.8 var(--mono);tab-size:2;max-width:100%}
+    .report pre code{font:inherit;color:inherit;background:none;border:0;white-space:pre;overflow-wrap:normal}
+    .report table{display:block;max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:7px;border-spacing:0;border-collapse:separate;background:var(--surface);margin:24px 0;font-size:12.5px;line-height:1.65;scrollbar-width:thin}
+    .report caption{text-align:left;font-size:12px;color:var(--muted);padding:12px 15px}
+    .report th{font-size:10px;font-weight:750;letter-spacing:.6px;color:var(--teal-dark);background:#eaf0e7;text-align:left;text-transform:uppercase;padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}
+    .report td{padding:14px 15px;vertical-align:top;min-width:125px;max-width:340px;color:#344c51}
+    .report tr+tr td{border-top:1px solid #e1e6de}
+    .report tbody tr:nth-child(even){background:#f8f9f4}
+    .report table p{margin:0;font-size:inherit}
+    .report table ul,.report table ol{padding-left:18px;margin:0}
+    .report table li{margin:4px 0;padding:0}
+    .report details{border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:0 21px;margin:20px 0}
+    .report summary{padding:17px 0;cursor:pointer;font-size:14px;font-weight:650;color:var(--teal-dark);line-height:1.5}
+    .report details[open]{padding-bottom:16px}
+    .report details>h3:first-of-type{margin-top:12px}
+    .report hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+    .report .callout,.report .note,.report .decision{background:var(--mint);border:1px solid #d4e0d1;border-radius:8px;padding:20px 24px;margin:25px 0}
+    .report .warning{background:var(--sand);border:1px solid #e5d8c0;border-radius:8px;padding:20px 24px;margin:25px 0}
+    .report :is(.callout,.note,.decision,.warning)>:first-child{margin-top:0}
+    .report :is(.callout,.note,.decision,.warning)>:last-child{margin-bottom:0}
+    .report .muted,.report small{color:var(--muted)}
+    .report small{font-size:12px}
+    .report .checklist{list-style:none;padding-left:0}
+    .report .checklist li{padding-left:25px;position:relative}
+    .report .checklist li::before{content:'';position:absolute;left:0;top:7px;width:13px;height:13px;border:1px solid #96b2a1;border-radius:3px}
+    .appendix{margin-top:66px;padding-top:12px;scroll-margin-top:24px}
+    .appendix .eyebrow{margin-bottom:13px}
+    .appendix>h2{margin-top:0;border:0;padding-top:0}
+    .appendix-intro{font-size:14px;color:var(--muted)!important;max-width:760px}
+    .source-body{font-size:14px}
+    .source-body li{margin-block:14px}
+    .source-body a{overflow-wrap:anywhere}
+    .page-footer{border-top:1px solid var(--line);padding:30px 0 44px;display:flex;justify-content:space-between;gap:30px;align-items:start}
+    .footer-title{font:24px/1.3 var(--serif);letter-spacing:-.5px}
+    .footer-note{font-size:12px;color:var(--muted);max-width:570px;margin-top:7px}
+    .back-top{font-size:12px;white-space:nowrap;padding-top:6px}
+    @media(min-width:1600px){.hero h1{font-size:6rem}}
+    @media(max-width:1100px){.wrap{width:calc(100% - 56px)}.report-layout{grid-template-columns:205px minmax(0,1fr);gap:38px}.hero-grid{grid-template-columns:minmax(0,1fr) 255px;gap:38px}.hero h1{font-size:4.6rem}.hero-description{font-size:17px}.scope-item{padding-inline:20px;gap:12px}}
+    @media(max-width:900px){.header-actions{gap:18px}.header-actions .header-read{display:none}.hero{padding-top:48px;padding-bottom:35px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero h1{font-size:clamp(3.8rem,9vw,5.1rem)}.hero-description{max-width:690px}.brief-profile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}.brief-profile h2{grid-column:1/-1;margin-bottom:8px}.profile-row{display:block;padding-bottom:15px}.profile-row strong{display:block;text-align:left;margin-top:5px}.brief-profile p{grid-column:1/-1;margin-top:12px}.scope-strip{margin-top:28px}.report-layout{display:block}.contents-rail{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:36px}.toc-panel{background:#eef2e9;border:1px solid var(--line);border-radius:7px;padding:0 20px}.toc-panel>summary{padding-block:17px;margin-bottom:0}.toc{padding-bottom:10px}.toc>ul,.toc>ol{columns:2;column-gap:25px}.toc li{break-inside:avoid}.reference-links{display:flex;flex-wrap:wrap;gap:6px 15px;padding:12px 0;margin-top:3px}.rail-note{display:none}.report{max-width:none}.report h2{margin-top:46px}}
+    @media(max-width:600px){.wrap{width:calc(100% - 36px)}.page-header{min-height:85px;gap:12px}.brand{gap:10px}.brand-mark{width:34px;height:41px;font-size:28px;border-radius:10px 10px 10px 2px}.brand strong{font-size:10px;letter-spacing:1px}.brand small{font-size:8px;letter-spacing:1px}.header-actions{gap:0}.header-actions>a{display:none}.print-button{min-height:38px;padding:7px 10px;font-size:11px}.print-button svg{display:none}.hero{padding-top:35px}.hero-grid{margin-top:19px;gap:28px}.hero h1{font-size:clamp(3.15rem,12vw,4.2rem);letter-spacing:-.06em}.hero-description{font-size:16px;line-height:1.65;margin-top:22px}.eyebrow{font-size:9px;letter-spacing:1.4px}.hero-meta{font-size:10px;gap:8px;margin-top:21px}.brief-profile{gap:0 14px}.profile-row{font-size:10.5px}.brief-profile p{font-size:12px}.scope-strip{padding-block:19px}.scope-item{display:block;padding-inline:13px}.scope-item strong{font-size:31px;display:block;margin-bottom:9px}.scope-item span{font-size:10px}.toc>ul,.toc>ol{columns:1}.report{font-size:15px;line-height:1.8}.report h2{font-size:31px;letter-spacing:-.7px;margin-bottom:18px}.report h3{font-size:23px}.report h4{font-size:14px}.report blockquote{padding:17px 18px}.report pre{padding:18px;font-size:11px}.report table{font-size:12px}.report td,.report th{padding:12px;min-width:135px}.report :is(.callout,.note,.decision,.warning){padding:18px}.report details{padding-inline:17px}.report summary{font-size:13px}.appendix{margin-top:48px}.page-footer{display:block;padding-block:25px 35px}.back-top{display:inline-block;margin-top:16px}.report-layout{padding-bottom:40px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{@page{margin:17mm 15mm}html{scroll-behavior:auto}body{background:white;color:#122a32;font-size:10pt;line-height:1.6}.wrap{width:100%;max-width:none}.skip-link,.header-actions,.contents-rail,.back-top{display:none!important}.page-header{min-height:0;padding-bottom:12pt}.brand-mark{width:28pt;height:30pt;font-size:24pt}.brand strong{font-size:9pt}.brand small{font-size:7pt}.hero{padding-block:26pt 20pt}.hero-grid{grid-template-columns:1fr 180pt;gap:25pt}.hero h1{font-size:46pt}.hero-description{font-size:12pt;margin-top:16pt}.hero-meta{font-size:8pt;margin-top:16pt}.brief-profile{display:block;padding-top:14pt}.brief-profile h2{font-size:8pt;margin-bottom:10pt}.profile-row{display:flex;font-size:8pt;padding-block:7pt}.profile-row strong{display:inline;text-align:right;margin:0}.brief-profile p{font-size:9pt}.scope-strip{padding-block:15pt;margin-top:24pt}.scope-item{display:flex;gap:12pt;padding-inline:18pt}.scope-item strong{font-size:27pt;margin:0}.scope-item span{font-size:8pt}.report-layout{display:block;padding:0}.report{max-width:none;font-size:10pt;line-height:1.65}.report h2{font-size:24pt;margin-top:26pt;padding-top:16pt;break-after:avoid}.report h3{font-size:17pt;margin-top:19pt;break-after:avoid}.report h4{font-size:11pt;break-after:avoid}.report p,.report li{orphans:3;widows:3}.report a{color:inherit;text-decoration:underline}.report table{display:table;width:100%;max-width:100%;table-layout:fixed;overflow:visible;font-size:8pt;border-collapse:collapse;break-inside:auto;border-radius:0}.report td,.report th{min-width:0;max-width:none;padding:7pt;word-break:normal;overflow-wrap:anywhere;border:1px solid #d5ded7}.report th{font-size:7pt}.report tr{break-inside:avoid}.report pre{white-space:pre-wrap;overflow:visible;background:#edf1ed;color:#183b39;font-size:8pt;padding:12pt;break-inside:avoid;border:1px solid #cfdbd1}.report pre code{white-space:pre-wrap;overflow-wrap:anywhere}.report blockquote,.report :is(.callout,.note,.decision,.warning){break-inside:avoid;padding:12pt}.report details{border:0;padding:0}.report details summary{font-size:10pt;font-weight:700;padding-block:8pt;break-after:avoid}.report details>*{display:block!important}.report details::details-content{display:block!important;content-visibility:visible!important;height:auto!important}.appendix{break-before:page;margin-top:0;padding-top:0}.appendix-intro,.source-body{font-size:9pt}.page-footer{padding-block:18pt;margin-top:25pt;display:block}.footer-title{font-size:17pt}.footer-note{font-size:8pt;max-width:none}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the report</a>
+  <header class="page-header wrap" id="top">
+    <a class="brand" href="#top" aria-label="Portfolio field guide, back to top"><span class="brand-mark" aria-hidden="true">p</span><span><strong>First Principles</strong><small>Career field guide</small></span></a>
+    <nav class="header-actions" aria-label="Quick navigation">
+      <a class="header-read" href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio">GitHub</a>
+      <a href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest/download/AI-ML-Hiring-Portfolio-Toolkit.zip">Download toolkit</a>
+      <a href="#appendix-jobs">Hiring evidence</a>
+      <a href="#appendix-sources">Sources</a>
+      <button class="print-button" type="button" id="print-report" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7V2h10v5M5 14H2V7h16v7h-3M5 11h10v7H5z"/></svg>Print / save PDF</button>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="report-title">
+      <p class="eyebrow">A researched path from learning to evidence</p>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="report-title">Build evidence.<br><em>Earn trust.</em></h1>
+          <p class="hero-description">An AI &amp; ML engineering portfolio plan, from your first program to work an employer can inspect.</p>
+          <div class="hero-meta"><span class="meta-dot" aria-hidden="true"></span><time>7 November 2026</time><span aria-hidden="true">/</span><span>Open portfolio field guide</span></div>
+        </div>
+        <aside class="brief-profile" aria-label="Your starting point">
+          <h2>Designed for a beginner’s starting point</h2>
+          <div class="profile-row"><span>Experience</span><strong>Starting from zero</strong></div>
+          <div class="profile-row"><span>Study budget</span><strong>6 hours a day</strong></div>
+          <div class="profile-row"><span>Job search</span><strong>Global, eligibility first</strong></div>
+          <p>Build something useful. Measure it honestly.<br>Make your work easy to inspect.</p>
+        </aside>
+      </div>
+      <div class="scope-strip" aria-label="The scope of this plan">
+        <div class="scope-item"><strong>02</strong><span><b>Flagship projects</b>Complementary proof of ability</span></div>
+        <div class="scope-item"><strong>01</strong><span><b>Reliability release</b>Evidence that the system holds up</span></div>
+        <div class="scope-item"><strong>20</strong><span><b>Postings reviewed</b>A targeted hiring sample</span></div>
+      </div>
+    </section>
+
+    <div class="report-layout">
+      <aside class="contents-rail" aria-label="Report navigation">
+        <details class="toc-panel" id="contents" open>
+          <summary>Inside this field guide</summary>
+          <nav class="toc" aria-label="Table of contents"><ul>
+<li><a href="#1-the-recommendation">1. The recommendation</a></li>
+<li><a href="#2-what-the-research-actually-supports">2. What the research actually supports</a></li>
+<li><a href="#3-choose-the-job-family-before-choosing-extra-tools">3. Choose the job family before choosing extra tools</a></li>
+<li><a href="#4-foundation-project-a-csv-quality-checking-cli">4. Foundation project: a CSV quality-checking CLI</a></li>
+<li><a href="#5-flagship-1-demand-replay">5. Flagship 1: Demand Replay</a></li>
+<li><a href="#6-flagship-2-evidence-desk">6. Flagship 2: Evidence Desk</a></li>
+<li><a href="#7-the-reliability-release-make-one-system-inspectably-operable">7. The reliability release: make one system inspectably operable</a></li>
+<li><a href="#8-a-real-contribution-and-a-small-feedback-loop">8. A real contribution and a small feedback loop</a></li>
+<li><a href="#9-package-every-claim-with-its-evidence">9. Package every claim with its evidence</a></li>
+<li><a href="#10-github-and-linkedin-make-the-work-easy-to-find">10. GitHub and LinkedIn: make the work easy to find</a></li>
+<li><a href="#11-a-24-week-first-pass-with-evidence-gates">11. A 24-week first pass, with evidence gates</a></li>
+<li><a href="#12-readiness-what-you-should-be-able-to-do-without-a-script">12. Readiness: what you should be able to do without a script</a></li>
+<li><a href="#13-turn-the-portfolio-into-an-application-process">13. Turn the portfolio into an application process</a></li>
+<li><a href="#14-what-to-postpone-and-why">14. What to postpone, and why</a></li>
+<li><a href="#15-your-next-seven-days">15. Your next seven days</a></li>
+</ul>
+</nav>
+          <div class="reference-links"><a href="#appendix-jobs">The hiring evidence</a><a href="#appendix-sources">Sources &amp; research notes</a></div>
+        </details>
+        <p class="rail-note">Read the recommendation first. Use the project briefs while building. Return to the evidence when choosing where to apply.</p>
+      </aside>
+
+      <article class="report" aria-label="Your portfolio strategy">
+        <div class="report-body" id="report-start"><p>Research and recommendations prepared <strong>7 November 2026</strong> for learners starting from zero, with a planning budget of six study hours per day and a global job-search goal. Adapt the plan to your actual education, work authorization, hardware and budget. The default assumes a normal laptop, no GPU, and a free-first build. Estimates are planning budgets after prerequisite skills, not promises of learning speed or employment.</p>
+<blockquote>
+<p><strong>Research provenance:</strong> This guide was prepared with AI assistance, source review and a direct dataset-schema inspection. It proposes projects; it does not claim the publisher has built these systems, measured their performance or obtained employment through them. The dated source records and limitations are included for review.</p>
+</blockquote>
+<h2 id="1-the-recommendation">1. The recommendation</h2>
+<p>Build <strong>two complementary flagship projects</strong>, give one a <strong>serious reliability release</strong>, and make <strong>one useful contribution to an existing project</strong>. Start with a small Python/data tool so you can actually own the work. Publish the evidence in a form that a hiring team can inspect and that you can explain without depending on generated answers.</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>What to build</th>
+<th>What an employer can inspect</th>
+<th>Where it belongs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundation</td>
+<td>A CSV quality-checking CLI</td>
+<td>Your Python, error handling, tests, Git habits, and ability to finish a small tool</td>
+<td>A learning repository; pin only while it is your strongest work</td>
+</tr>
+<tr>
+<td>Flagship 1</td>
+<td><strong>Demand Replay:</strong> a leakage-aware next-day demand forecast and API</td>
+<td>Data contracts, prediction-time reasoning, simple baselines, temporal evaluation, and reproducible model delivery</td>
+<td>A pinned GitHub repository, case study, and short demo</td>
+</tr>
+<tr>
+<td>Flagship 2</td>
+<td><strong>Evidence Desk:</strong> a bounded documentation assistant with citations and abstention</td>
+<td>Retrieval, LLM integration, evaluation design, grounded answers, failure analysis, cost and latency</td>
+<td>A pinned GitHub repository, evaluation report, and short demo</td>
+</tr>
+<tr>
+<td>Reliability release</td>
+<td>A monitored, bounded, recoverable version of one flagship</td>
+<td>Timeouts, schema failures, observability, load testing, release controls, rollback, and an incident report</td>
+<td>A tagged release and case study inside the flagship repository</td>
+</tr>
+<tr>
+<td>Collaboration</td>
+<td>A verified correction, regression test, or small bug fix in a tool you actually use</td>
+<td>Reproduction, review response, communication, and working within someone else's codebase</td>
+<td>Link to the real issue/PR and a precise contribution summary</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Default sequencing:</strong> foundation → Demand Replay → Evidence Desk → reliability release. This puts data and evaluation discipline before LLM orchestration. If your eligible target roles clearly emphasize AI product engineering, you can build Evidence Desk before the forecasting flagship once the software/evaluation prerequisites are met. The choice follows the target work, not a trend.</p>
+<p>Do not create a separate repository for every component. Two coherent, reproducible systems with documented decisions provide more inspectable evidence than a large collection of unfinished interfaces. The separate <a href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Roadmap">First Principles learning roadmap</a> is a related resource. A roadmap or documentation application can show interface design, packaging and delivery; it does not by itself establish independently trained models, valid ML experiments or professional production experience.</p>
+<h2 id="2-what-the-research-actually-supports">2. What the research actually supports</h2>
+<h3 id="method-and-limits">Method and limits</h3>
+<p>The hiring review examined <strong>20 distinct postings from 11 employers</strong>: 17 directly about AI/ML and three adjacent entry-level software roles. The employer-controlled feeds were captured on 6 November 2026 and reviewed on 7 November. The employers are Databricks, Datadog, Elastic, Anthropic, Reddit, Pinterest, Roblox, Duolingo, Airbnb, Scale AI, and Affirm. A separate appendix preserves titles, locations, exact evidence, requirements, warnings, and URLs.</p>
+<p>This is a <strong>purposive capability sample</strong>, heavily weighted toward large technology companies and accessible English-language job boards. It is not a representative global labor-market survey. It cannot estimate the share of employers requiring a degree, your chances of getting hired, the availability of worldwide remote jobs, or the best project for every country. A captured job description is also not a guarantee that the vacancy remains open. One posting contains unfinished template text; ambiguous conditions from that text must not be used as eligibility evidence.</p>
+<p>The review also uses first-party technical guidance, employer interview guidance, official dataset/documentation pages, GitHub/LinkedIn documentation, and broader labor-market reports. Evidence is linked below. The project selection, time budgets, readiness gates, and publishing cadence are recommendations in this guide, not an experimentally validated hiring formula.</p>
+<h3 id="the-clearest-hiring-signals">The clearest hiring signals</h3>
+<table>
+<thead>
+<tr>
+<th>Observed evidence</th>
+<th>What it means for your portfolio</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Databricks describes production GenAI deployment, evaluation, and optimization; its “all levels” FDE posting also explicitly asks for at least four years of relevant experience. <a href="#job-h01">H01</a></td>
+<td>Show a complete, evaluated workflow and customer-facing explanation.</td>
+<td>“All levels” does not mean suitable for a beginner.</td>
+</tr>
+<tr>
+<td>Databricks welcomes infrastructure engineers without an ML background while emphasizing software testing and deployment. <a href="#job-h02">H02</a></td>
+<td>Strong software fundamentals are a useful bridge into applied AI.</td>
+<td>“No ML background” is not “no engineering experience.”</td>
+</tr>
+<tr>
+<td>Anthropic's demo-engineering role says accuracy and honesty matter alongside polish and mentions evaluation/validation harnesses and graceful fallbacks. <a href="#job-h05">H05</a></td>
+<td>A beautiful demo should expose reliable behavior, limits, and failure handling.</td>
+<td>This is an experienced engineering role, not a promise that a demo qualifies you.</td>
+</tr>
+<tr>
+<td>Reddit describes ownership from problem definition and feature engineering through training, deployment, and monitoring. <a href="#job-h06">H06</a></td>
+<td>Build the chain around the model, with a reproducible baseline and a service/replay.</td>
+<td>The posting also requests production experience.</td>
+</tr>
+<tr>
+<td>Scale AI asks for extending evaluations, investigating failure modes, flagging regressions, and owning work through release/debugging. <a href="#job-h13">H13</a></td>
+<td>Publish experiments, failures, regression checks, and the release decision.</td>
+<td>A portfolio replay should not be described as professional production ownership.</td>
+</tr>
+<tr>
+<td>Pinterest's master's graduate role explicitly asks for critical validation of AI-generated suggestions. <a href="#job-h09">H09</a></td>
+<td>Explain your AI assistance and demonstrate independent debugging and judgment.</td>
+<td>This particular role also has an explicit master's requirement.</td>
+</tr>
+<tr>
+<td>Affirm's early-career SWE role accepts equivalent practical experience or a related bachelor's degree. <a href="#job-h18">H18</a></td>
+<td>Junior software work can be a relevant adjacent route while you develop ML depth.</td>
+<td>Its location and authorization conditions still apply.</td>
+</tr>
+</tbody>
+</table>
+<p>The practical conclusion is to demonstrate <strong>problem definition, data judgment, evaluation, readable software, delivery, and independent explanation</strong>. Framework familiarity is useful when it supports those behaviors. A framework list alone gives a reviewer little evidence.</p>
+<h3 id="eligibility-comes-before-portfolio-matching">Eligibility comes before portfolio matching</h3>
+<p>Several reviewed student/new-graduate roles are restricted by degree, enrollment, graduation date, or location. Pinterest's master's graduate role, Roblox's PhD early-career role, Duolingo's new-PhD role, and the Datadog internship illustrate different restrictions; they do not establish a universal degree rule. <a href="#job-h09">H09</a> <a href="#job-h10">H10</a> <a href="#job-h11">H11</a> <a href="#job-h20">H20</a></p>
+<p>“Remote” is also scoped: the reviewed Pinterest role is US-based, while Affirm's MLE role specifies Canadian eligibility details. Airbnb's China role explicitly requires English and Mandarin. Scale AI's public-sector role requires an active security clearance. These are not gaps you can fix by adding another notebook. <a href="#job-h07">H07</a> <a href="#job-h16">H16</a> <a href="#job-h12">H12</a> <a href="#job-h14">H14</a></p>
+<p>If you are not enrolled in a qualifying degree, filter student-only roles out of your primary list. Include eligible junior software/backend, data-platform, QA automation, or applied-AI implementation roles where the work and requirements match your actual skills. This is a search strategy to test in your market, not a claim that those jobs are easy or available everywhere.</p>
+<h3 id="demand-and-the-future">Demand and the future</h3>
+<p>The retrieved US BLS data-scientist page projects 35% employment growth in 2025–2035; its software developer/QA/tester group projects 10%. These are broad US occupational projections, with openings including replacement needs. They are not forecasts of globally accessible junior AI-engineering vacancies or individual job chances. <a href="#source-s01">S01</a> <a href="#source-s02">S02</a></p>
+<p>WEF's 2025 report summarizes expectations from more than 1,000 employers across 55 economies and highlights AI/big data alongside analytical thinking and other broader capabilities. Those are surveyed expectations through 2030. Stanford's 2026 economy chapter describes uneven labor effects, including pressure in young-worker hiring pipelines; it does not prove that a particular applicant will be helped or displaced by AI. <a href="#source-s03">S03</a> <a href="#source-s04">S04</a></p>
+<p><strong>Planning principle:</strong> as tools change, keep investing in understanding the problem, constructing valid tests, tracing data, measuring constraints, integrating systems, and communicating decisions. If code generation improves, those capabilities help you check and own its output. If budgets tighten, a measured baseline and a smaller dependable solution become valuable. These are conditional planning arguments, not predictions of a winning framework or a hiring boom.</p>
+<h2 id="3-choose-the-job-family-before-choosing-extra-tools">3. Choose the job family before choosing extra tools</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Main engineering question</th>
+<th>Portfolio emphasis</th>
+<th>Additional preparation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applied AI / AI product engineer</td>
+<td>Can you turn a model capability into a bounded, useful workflow?</td>
+<td>Evidence Desk, evaluations, API integration, user feedback, cost/latency, failure handling</td>
+<td>Python or TypeScript, HTTP, SQL, basic frontend, auth/secrets, retrieval and LLM failure modes</td>
+</tr>
+<tr>
+<td>ML engineer</td>
+<td>Can you make predictions that remain valid and useful after training?</td>
+<td>Demand Replay, prediction-time data boundaries, temporal evaluation, deployment, model/data monitoring</td>
+<td>Python, SQL, probability/statistics, feature pipelines, optimization basics, software testing</td>
+</tr>
+<tr>
+<td>ML platform / MLOps-oriented engineer</td>
+<td>Can other people train, deploy, diagnose, and recover a system reproducibly?</td>
+<td>Reliability release, artifact versioning, CI, containers, observability, rollback</td>
+<td>Stronger Linux/networking/cloud/automation and distributed-system fundamentals</td>
+</tr>
+<tr>
+<td>Research engineer / research scientist</td>
+<td>Can you reproduce and extend a technical result rigorously?</td>
+<td>A later replication with ablations and uncertainty, plus mathematical/experimental depth</td>
+<td>Often a substantially higher research/degree bar in this sample; not the default first target from zero</td>
+</tr>
+</tbody>
+</table>
+<p>Titles overlap. Read responsibilities and requirements rather than treating this table as a universal job taxonomy. For your starting point, I would build a common software/data base, then orient the first case study toward <strong>eligible applied-AI or junior software roles</strong>, while the forecasting project supplies genuine ML evidence. Keep the ML-engineering path open rather than claiming research readiness prematurely.</p>
+<h3 id="a-repeatable-project-selection-rule">A repeatable project-selection rule</h3>
+<p>Use this process again when your target or resources change:</p>
+<ol>
+<li><strong>Define the opportunity:</strong> collect a small recent set of roles you could actually accept. Separate location, authorization, degree/enrollment and experience constraints from preferred tools. Record unknowns instead of assuming eligibility.</li>
+<li><strong>Extract observable work:</strong> turn responsibilities into things a reviewer could inspect—for example, a defensible train/test boundary, a failing-input regression test, a measured retrieval comparison, or a recovery procedure.</li>
+<li><strong>Reject infeasible ideas:</strong> require lawful usable data, a baseline, a measurable outcome, and a build you can run within your available hardware and money. An exciting idea without these is a research question, not yet a portfolio commitment.</li>
+<li><strong>Choose complementary evidence:</strong> pick one project with the strongest match to repeated responsibilities, then a second that proves an important missing capability. Prefer depth on an existing system over a third project that repeats the same API wrapper.</li>
+<li><strong>Release the smallest useful version:</strong> run the baseline and one real evaluation before expanding the interface or model stack. Stop adding features when you cannot explain or validate the current ones.</li>
+<li><strong>Update from observations:</strong> after a release, use actual errors, user feedback, technical reviews and application-stage feedback to choose the next change. Recheck role requirements periodically because job pages and eligibility rules change.</li>
+</ol>
+<p>This is a decision procedure, not a mathematically proven optimum. I chose forecasting because it makes data timing and ML evaluation visible, and a documentation assistant because it makes retrieval, generative-model integration and evidence handling visible. Their reliability work shares software skills while exposing different model failures. A third chatbot would add relatively little evidence at this stage.</p>
+<h2 id="4-foundation-project-a-csv-quality-checking-cli">4. Foundation project: a CSV quality-checking CLI</h2>
+<p><strong>Purpose:</strong> prove that you can save, run, test, document, and repair a useful Python program before composing larger AI systems. A small data team wants to know whether a daily file is safe to ingest.</p>
+<p><strong>Build:</strong> a command-line tool that reads a small CSV, validates an explicit schema, reports missing/duplicate/invalid values, and writes a machine-readable summary. Use a tiny synthetic fixture first, then the bike dataset described below. Keep the original file unchanged.</p>
+<p><strong>MVP contract:</strong> required columns are declared; dates parse; counts are nonnegative integers; duplicate dates are reported; malformed rows produce an actionable message and a nonzero exit code; a valid input produces deterministic JSON. Add one test for each failure, plus a clean-input test. Document exactly which checks are and are not implemented.</p>
+<p><strong>Learn through it:</strong> functions, loops, dictionaries, exceptions, files, paths, command-line arguments, tests, virtual environments, Git, and a readable README. Add SQLite only after the file tool is understandable; a database is not needed to prove the first contract.</p>
+<p><strong>Publish when:</strong> another person can run the documented command in a fresh environment and you can explain the parsing, validation, and error paths from the code. A reasonable initial work allowance is 30–60 focused hours after basic Python exercises; extend it if the independent explanation gate is not met.</p>
+<p><strong>Independent gate:</strong> close the assistant/tutorial, add one new validation rule and a regression test, and explain why it belongs at that boundary. Do not replace this with collecting a course certificate.</p>
+<h2 id="5-flagship-1-demand-replay">5. Flagship 1: Demand Replay</h2>
+<h3 id="problem-audience-and-honest-scope">Problem, audience, and honest scope</h3>
+<p>A hypothetical bike-service planner wants a next-day usage estimate to prepare staffing or capacity. You will build a <strong>historical demand-planning replay</strong>, not claim a live city deployment or current demand prediction. The dataset is the UCI Bike Sharing collection from 2011–2012. Its official page identifies CC BY 4.0; preserve attribution and the source/version record. <a href="#source-s13">S13</a></p>
+<p>During this guide’s AI-assisted preparation, the actual official ZIP was inspected to check feasibility: <code>day.csv</code> has <strong>731 rows</strong>, <code>hour.csv</code> has <strong>17,379 rows</strong>, and the daily dates span 1 January 2011 through 31 December 2012. No duplicate dates or empty daily cells were found in that specific file. In every daily row, <code>cnt = casual + registered</code>. This was a schema/feasibility inspection, not a trained-model experiment or a performance result. The archive hash is included in the evidence files.</p>
+<p>The dataset is familiar; your differentiator is the forecast contract, leakage control, reproducibility, and delivery. Its age, small size, and single-system context are material limitations. A later extension can use a richer openly licensed dataset after you can defend the small system.</p>
+<h3 id="fix-the-prediction-contract-before-modeling">Fix the prediction contract before modeling</h3>
+<p><strong>At the end of day t, predict total rentals for day t+1 using only information available by the end of t.</strong> The actual previous day's count may enter the next day's forecast in the historical replay. Model parameters remain frozen during the final test unless a separately specified retraining protocol is being evaluated.</p>
+<p>Assume each daily count becomes available at that day's close for this experiment. UCI does not supply arrival timestamps, so this availability is an explicit replay assumption, not a verified operational service guarantee. A real deployment would need its actual reporting delay built into the feature contract.</p>
+<p>Allowed MVP inputs: calendar information known in advance, counts lagged from the forecast origin, and trailing summaries computed only from past observations. Exclude the target day's actual weather, temperature, humidity, and wind unless you have genuine historical weather forecasts available at prediction time. A model using observed future weather must be labeled as a different, oracle-information experiment.</p>
+<p>Never use same-day <code>casual</code> or <code>registered</code> to predict <code>cnt</code>: those fields contain components of the answer. Avoid arbitrary row IDs as predictive features. A pipeline can run perfectly while answering the wrong prediction-time question. Scikit-learn's guidance on leakage and preprocessing is directly relevant here. <a href="#source-s06">S06</a></p>
+<h3 id="build-and-evaluate-in-this-order">Build and evaluate in this order</h3>
+<ol>
+<li><strong>Data contract:</strong> validate schema, units, dates, duplicates, missingness, and target composition. Save the source URL, license, download date, and checksum.</li>
+<li><strong>Exploratory analysis on the training period:</strong> inspect seasonality, growth, holidays, zeros, and unusual days. Record hypotheses before trying models.</li>
+<li><strong>Simple baselines:</strong> last observed day; same weekday one week earlier; a trailing average. Choose formulas that use only available history.</li>
+<li><strong>One simple trained model:</strong> regularized linear regression with calendar/lag features; then at most one tree-based candidate such as histogram gradient boosting. Establish why the added complexity might help.</li>
+<li><strong>Time-aware validation:</strong> use chronological splits and, when useful, several expanding-window checks inside the training/development period. Fit preprocessors on training data only. A time split alone does not repair an incorrectly shifted feature. <a href="#source-s07">S07</a></li>
+<li><strong>Locked final test:</strong> freeze the chosen feature/model configuration and evaluate once on the untouched period. Repeatedly changing the model after seeing test errors turns that period into development data.</li>
+<li><strong>Service and replay:</strong> a small FastAPI service with a health endpoint, validated request/response schema, model/data version metadata, and a local historical-replay command. Reuse one feature-building implementation across training, replay and serving to avoid inconsistent inputs. A simple interface is enough.</li>
+</ol>
+<p><strong>Concrete initial split, assigned by target date:</strong> train through 30 June 2012 (547 daily rows), validate July–September 2012 (92), and test October–December 2012 (92), before any lag warm-up exclusions. Record exclusions explicitly. Check that no training example's target crosses the cutoff even when its feature date precedes it. A rolling one-day-ahead replay can use previously observed test-period history at each origin; it is not a 92-day-ahead forecast from 30 September. Show a timeline in the evaluation report.</p>
+<h3 id="metrics-that-answer-a-decision">Metrics that answer a decision</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Definition/use</th>
+<th>Pitfall to avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAE</td>
+<td>Mean of <code>abs(actual − prediction)</code> over the declared forecast rows</td>
+<td>An overall average can hide holiday or peak-period failures.</td>
+</tr>
+<tr>
+<td>WAPE</td>
+<td><code>sum(abs(actual − prediction)) / sum(actual)</code> on a stated set</td>
+<td>Undefined when the denominator is zero; aggregation can hide small-group errors.</td>
+</tr>
+<tr>
+<td>Slice error</td>
+<td>The same metric by weekday/holiday/season or a predeclared demand band</td>
+<td>Tiny slices are uncertain; never present one good slice as the overall result.</td>
+</tr>
+<tr>
+<td>Prediction-interval coverage and width</td>
+<td>Optional: fraction of actuals inside the interval, and interval size</td>
+<td>Check time/slice calibration; intervals that always contain everything are unhelpful.</td>
+</tr>
+<tr>
+<td>Decision-cost replay</td>
+<td>Optional: a clearly labeled cost function for under/over-preparation</td>
+<td>Assumed staffing/inventory costs do not establish real business savings.</td>
+</tr>
+</tbody>
+</table>
+<p>Report baseline and candidate results on the same rows. If you estimate uncertainty, respect temporal dependence—for example, a justified block-based comparison rather than pretending daily errors are independent. Keep the first release understandable; point estimates, row-level predictions, and honest limitations are better than a misapplied significance test.</p>
+<p><strong>There is no pre-earned target score.</strong> To claim that ML adds value, demonstrate a meaningful improvement against the baseline under the declared protocol and constraints. If it does not, ship or recommend the baseline and explain what you learned. Do not set a public “20% improvement” claim before measuring it.</p>
+<h3 id="what-to-publish">What to publish</h3>
+<ul>
+<li>A real replay demo showing a forecast origin, available inputs, prediction, later observed outcome, and model version.</li>
+<li><code>reports/predictions.csv</code>, an actual metrics JSON, a baseline comparison, and an error-slice report tied to a commit/configuration.</li>
+<li>A data card, split diagram, leakage checklist, and a short explanation of why target-day weather is excluded.</li>
+<li>Unit/data-contract tests, one API integration test, a clean-clone run command, a small sample mode, and CI that actually executes them.</li>
+<li>An architecture page and three observed failure cases. Add a one-page “why I kept/rejected the more complex model” decision note.</li>
+</ul>
+<p><strong>A useful work allowance:</strong> 100–160 focused hours after prerequisites, with further time for revisions or unfamiliar concepts. CPU-only scikit-learn, pandas or Polars, SQLite if useful, pytest, FastAPI, and one container are sufficient. Start locally; paid cloud infrastructure is optional.</p>
+<p><strong>Interview checks:</strong> Why was a random split inappropriate? Which feature could accidentally contain the answer? What exactly was known at the forecast origin? Why might a more accurate aggregate model still be a worse operational choice? What would you monitor if labels arrived late? You should be able to answer with your code and recorded examples.</p>
+<h2 id="6-flagship-2-evidence-desk">6. Flagship 2: Evidence Desk</h2>
+<h3 id="a-useful-bounded-assistant">A useful bounded assistant</h3>
+<p>Build an assistant for a narrow set of beginner Python questions about files, CSV/JSON, exceptions, and command-line arguments. Use a versioned subset of official Python documentation. An answer must cite the supporting page/section, or state that the supplied corpus does not support an answer.</p>
+<p>The original application code can use MIT; the Python documentation prose is under the PSF license, while specified code examples also have a 0BSD option. Do not relabel all documentation as MIT or public domain. Pin a snapshot/hash, preserve required notices, record transformations, and keep versioned citation URLs. The moving <code>/3/</code> URL is not by itself a reproducibility pin. <a href="#source-s14">S14</a> <a href="#source-s15">S15</a></p>
+<p><strong>User promise:</strong> “Find and explain an answer supported by this pinned documentation subset.” Do not promise a universally correct Python tutor. Treat unfamiliar versions, absent pages, ambiguous questions, and unsupported claims as first-class cases. A foundation model may already know public Python documentation; evaluation must check use of the supplied evidence, not just fluent recall.</p>
+<h3 id="architecture-and-baselines">Architecture and baselines</h3>
+<p>Start with <code>documents → normalized sections → lexical retrieval → cited passages</code>. This is a useful no-paid-model baseline. Then compare dense retrieval, hybrid retrieval, and optional reranking only when an error category motivates them. Add a constrained generation adapter after you can evaluate retrieval.</p>
+<p>The first interface can be a small web page and FastAPI backend. Keep the model adapter interchangeable. CI should use deterministic fixtures/fakes for behavior; clearly separate those from live-model quality evaluations. No API key belongs in browser code. Provide a keyless passage-search/sample mode so a reviewer can inspect the project without spending money.</p>
+<p>A useful comparison ladder is:</p>
+<ol>
+<li>Keyword/BM25 retrieval with direct evidence display.</li>
+<li>Dense retrieval with the same corpus and evaluation set.</li>
+<li>Hybrid retrieval or a reranker, if justified by measured retrieval failures.</li>
+<li>A grounded answer generator, evaluated for answer quality and citation support.</li>
+<li>Optional model/latency/cost comparison under the same frozen protocol.</li>
+</ol>
+<p>Do not start with an autonomous multi-agent framework. This task has a known workflow and bounded data. Anthropic's engineering guidance distinguishes workflows from agents and recommends simpler, composable approaches before unnecessary complexity. <a href="#source-s09">S09</a></p>
+<h3 id="design-the-evaluation-before-tuning">Design the evaluation before tuning</h3>
+<p>Create a small, manually reviewed question set with answerable, unanswerable, ambiguous, version-sensitive, and malicious-instruction cases. Record expected supporting sections and an answerability label. A proposed first target is about <strong>120 questions</strong>: 40 development, 20 threshold/calibration, and 60 held-out test questions. Those numbers are a practical workload choice, not a statistically sufficient universal benchmark.</p>
+<p>Keep paraphrases and close topic families in the same split. Do not use test questions to choose chunk sizes, prompts, retrieval settings, or abstention thresholds. Add independently authored questions where possible; if volunteers contribute, remove personal information and obtain permission to publish their examples. Synthetic questions are allowed if labeled and checked; they are not evidence of real-user demand.</p>
+<p>Include near-miss passages, contradictions between versions, questions with no supporting page, and attempts to make the assistant follow instructions embedded in retrieved text. Treat retrieved content as data. Avoid giving the assistant tools that can execute code, send messages, or make external changes in the first version. OWASP's prompt-injection guidance is useful for designing these boundaries, but a short attack set does not prove security. <a href="#source-s10">S10</a></p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Define it this way</th>
+<th>Report it with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retrieval hit@k</td>
+<td>Answerable queries for which at least one gold supporting section appears in the top k, divided by answerable queries</td>
+<td>k, query count, gold-label method, and whether full evidence requires more than one section</td>
+</tr>
+<tr>
+<td>Citation support</td>
+<td>Number of assessed factual claims supported by the cited passage divided by assessed factual claims</td>
+<td>The claim-segmentation/rating rubric; missing citations counted as unsupported; inter-reviewer disagreements if reviewed twice</td>
+</tr>
+<tr>
+<td>Answer correctness</td>
+<td>Human-rubric score or pass rate against the expected answer under the pinned docs</td>
+<td>Separate answerable/unanswerable slices; do not collapse every behavior into “accuracy”</td>
+</tr>
+<tr>
+<td>Unsupported answer rate</td>
+<td>Unanswerable queries on which the system nevertheless asserts an answer divided by unanswerable queries</td>
+<td>Test set size and cases; zero observed failures in a small set is not zero real-world risk</td>
+</tr>
+<tr>
+<td>Answer coverage</td>
+<td>Queries for which the system gives an answer divided by all queries; also report answered answerable queries divided by all answerable queries</td>
+<td>Correctness/support among answered queries, plus the answerability mixture, so abstaining on everything cannot look successful</td>
+</tr>
+<tr>
+<td>Latency and cost</td>
+<td>p50/p95 request time and measured tokens/API usage under stated conditions</td>
+<td>Hardware, model/provider/date, prompt/output size, concurrency, repetitions, warm/cold state, and price date</td>
+</tr>
+</tbody>
+</table>
+<p>An LLM judge can assist triage, but validate its rubric on a human-reviewed subset and publish disagreements. It is not an independent ground truth simply because another model produced the score. OpenAI's evaluation guidance is useful for the process; it does not remove the need to define task-specific evidence. <a href="#source-s08">S08</a></p>
+<h3 id="ship-only-what-you-can-demonstrate">Ship only what you can demonstrate</h3>
+<p>Publish an actual evaluation runner, question/label schema, frozen split manifest, row-level outputs, an error taxonomy, and a baseline table. Give three examples: a supported answer, a deliberate abstention, and a remaining failure. Log the configuration/corpus/model versions so another person can reproduce the comparison as closely as the dependencies allow.</p>
+<p>Abstention should be calibrated using held-out development/calibration evidence, not a fabricated “confidence” percentage from the generator. A retrieval score is not automatically a probability of correctness. For small test sets, show numerators/denominators and uncertainty rather than theatrical precision.</p>
+<p><strong>A useful work allowance:</strong> 120–180 focused hours after software/retrieval prerequisites. Start with local lexical search and CPU-friendly embeddings. No GPU is required for that path. If you use a hosted LLM, set a personal hard spending cap, log actual usage, and evaluate a narrow corpus. A suggested optional experiment envelope is US$10–30 total, not a verified provider price quote or a requirement. A local/extractive version can remain free.</p>
+<p><strong>Interview checks:</strong> How did you choose the split unit? Could the model answer from memorization without retrieving the right version? What does your retrieval score mean? What happens when retrieval finds a plausible but irrelevant paragraph? How did you measure citation support? Why did you choose a fixed workflow? What would convince you to remove the generator?</p>
+<h2 id="7-the-reliability-release-make-one-system-inspectably-operable">7. The reliability release: make one system inspectably operable</h2>
+<p>After one flagship is useful, spend a bounded release improving how it behaves when conditions are bad. Keep this work inside that repository so reviewers can trace the same system from baseline to delivery. Do not manufacture another application merely to obtain a third pin.</p>
+<p>Google's ML Test Score work treats production readiness as broader than model quality; its Rules of ML emphasize straightforward engineering and useful baselines. Monitoring guidance also distinguishes changes in input distributions from actual prediction-quality degradation. <a href="#source-s05">S05</a> <a href="#source-s11">S11</a> <a href="#source-s12">S12</a></p>
+<h3 id="implement-a-small-operational-contract">Implement a small operational contract</h3>
+<ul>
+<li><strong>Input boundaries:</strong> schema validation, payload-size limits, explicit versions, missing-value behavior, and useful error messages.</li>
+<li><strong>Dependency boundaries:</strong> request timeouts, bounded retries where appropriate, rate/spending limits for paid inference, and a documented fallback. A fallback must be distinguishable from a normal model answer.</li>
+<li><strong>Observability:</strong> structured logs, request IDs, latency/error counters, and model/corpus/configuration IDs. Keep prompts, keys, and personal data out of routine logs unless a justified, consented, redacted design requires otherwise.</li>
+<li><strong>Release behavior:</strong> a versioned artifact/configuration, a small evaluation gate, and a tested way to restore the last known working version. CI should run affordable deterministic checks; costly quality evaluations can be a separate explicit job.</li>
+<li><strong>Documentation:</strong> an operator runbook, a system diagram, and an honest incident report from a controlled drill.</li>
+</ul>
+<h3 id="run-four-controlled-drills">Run four controlled drills</h3>
+<table>
+<thead>
+<tr>
+<th>Drill</th>
+<th>What to demonstrate</th>
+<th>What the report should say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Malformed input or missing data</td>
+<td>The service rejects or handles it according to its contract</td>
+<td>Exact request/fixture, response, logged event, and regression test</td>
+</tr>
+<tr>
+<td>Slow/unavailable dependency</td>
+<td>Bounded wait, visible fallback, no endless retry loop</td>
+<td>The injected fault, timeout/retry policy, and observed recovery</td>
+</tr>
+<tr>
+<td>Bad model/corpus/config release</td>
+<td>The evaluation gate or operator detects a problem and restores the prior version</td>
+<td>Actual rollback steps, elapsed recovery time in this drill, and remaining manual work</td>
+</tr>
+<tr>
+<td>Shifted inputs or delayed labels</td>
+<td>Input checks surface a change; quality conclusions wait for appropriate outcomes</td>
+<td>What the monitoring can observe, what it cannot establish, and how later labels are joined</td>
+</tr>
+</tbody>
+</table>
+<p>Measure p50/p95 latency, errors, and resource use under a declared small load, such as one and five concurrent clients with fixed request sizes. Record actual hardware and sample count. The chosen load is a development experiment, not proof of internet-scale operation. Define your latency/error budget before a run, then report whether you met it.</p>
+<p>Do not infer that a model is inaccurate just because a drift detector fired, or accurate because it stayed quiet. Do not automatically retrain from every alert in the first version. Explain the investigation and release policy. If you lack real users and production traffic, call the result a <strong>controlled reliability drill</strong> or <strong>historical replay</strong>, not “production-grade at scale.”</p>
+<p><strong>Publishing package:</strong> a tagged release, a one-page incident report, an actual before/after measurement table, the failure-injection commands, and a 60–90-second demonstration. Allow roughly 50–90 focused hours after a working flagship; this is an estimate, not a requirement to add a large infrastructure stack.</p>
+<h2 id="8-a-real-contribution-and-a-small-feedback-loop">8. A real contribution and a small feedback loop</h2>
+<p>Choose an open-source dependency or tool you genuinely used. Reproduce a specific problem or confusing setup step. Read its contribution guide and existing issues. Offer a minimal reproduction, a focused correction, and a test or executed example when appropriate. Respond to the maintainer's review. The official Open Source Guides provide useful process guidance. <a href="#source-s25">S25</a></p>
+<p>A meaningful contribution can be a verified setup correction, an example that previously failed, a useful regression test, or a small bug fix. It need not be a new model architecture. Record <strong>submitted</strong>, <strong>reviewed</strong>, and <strong>merged</strong> accurately; an unmerged self-authored PR is not a maintainer endorsement. Avoid mass typo changes or unsolicited rewrites.</p>
+<p>Separately, invite a small number of consenting testers to try one realistic task in a flagship. For the documentation assistant, ask them to find an answer and identify its supporting section. Record where they got stuck and one improvement you made. For the forecasting replay, a peer reviewer can inspect whether your prediction-time contract is valid. If no actual operator uses the tool, say so.</p>
+<p>A useful first target is three to five testers/reviewers if available. That is a formative usability/review exercise, not a representative user study. Do not claim customer adoption, business savings, or a success rate from a handful of friendly tests. These are proposed activities. Their inclusion does not imply that outreach, user testing, contributions or applications have been completed.</p>
+<h2 id="9-package-every-claim-with-its-evidence">9. Package every claim with its evidence</h2>
+<p>An employer's practical questions are: can you solve a relevant problem, make sound choices, handle failures, finish usable work, and explain your contribution? Organize each repository so the answer is easy to inspect.</p>
+<table>
+<thead>
+<tr>
+<th>Review path</th>
+<th>A useful design target</th>
+<th>What should be visible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quick skim</td>
+<td>About 30 seconds</td>
+<td>User/problem, one real demo, your contribution, one qualified result or current status, and evaluation/reproduction links</td>
+</tr>
+<tr>
+<td>Technical overview</td>
+<td>About five minutes</td>
+<td>Baseline, split/labels, architecture, three failure cases, measured constraints, and the important tradeoff</td>
+</tr>
+<tr>
+<td>Deep review/interview</td>
+<td>As needed</td>
+<td>Small readable modules, tests, raw outputs, configuration/version records, and an explanation you can modify under questioning</td>
+</tr>
+</tbody>
+</table>
+<p>These reading times are presentation heuristics, not empirical claims about recruiter behavior. The point is to reduce the work required to verify you.</p>
+<h3 id="a-compact-evidence-bundle">A compact evidence bundle</h3>
+<pre><code class="language-text">README.md
+pyproject.toml + a reproducible dependency specification
+src/                       actual application/model code
+tests/                     behavior, boundaries, data contracts, integration
+evals/                     evaluation runner, labels, split manifest
+configs/                   explicit experiment/runtime settings
+reports/                   measured outputs and row-level predictions
+docs/data-card.md          source, license, version, target, exclusions
+docs/evaluation.md         baseline, split, metrics, limitations
+docs/architecture.md       components and consequential tradeoffs
+docs/failure-cases.md       observed errors and attempted repairs
+docs/decisions/             short records of choices worth defending
+scripts/                   data acquisition, replay, training, evaluation
+.github/workflows/         checks that actually execute
+LICENSE + THIRD_PARTY_NOTICES.md where needed
+</code></pre>
+<p>Keep the structure proportional. An empty folder hierarchy does not improve a small project. A result should identify its code commit, data/corpus checksum, split, configuration, library/model version, seed where applicable, environment, and actual output. For hosted models, record provider/model/date and changing dependencies rather than promising exact deterministic reproduction.</p>
+<h3 id="what-the-readme-should-contain">What the README should contain</h3>
+<p>GitHub's own guidance emphasizes what the project does, why it is useful, how to start, where help is available, and who maintains it. <a href="#source-s16">S16</a> For your projects, add:</p>
+<ol>
+<li>A one-sentence problem and main scope limit.</li>
+<li>Links to a real demo/recording, evaluation report, and tested reproduction command.</li>
+<li>Your exact contribution and any collaborators or AI assistance.</li>
+<li>A baseline comparison with actual numbers, units, sample size, and split.</li>
+<li>A small architecture diagram and the main rejected alternative.</li>
+<li>Three concrete failures, not just “more data would improve it.”</li>
+<li>Data/model/code rights and dependency requirements.</li>
+<li>The next experiment that could change your decision.</li>
+</ol>
+<p>Give reviewers a small offline/sample mode and saved evaluation output. Label cached, replayed, and precomputed results. Do not make a paid API key, a sleeping cloud endpoint, or a large model download the only way to see evidence.</p>
+<p><strong>Example result sentence, with placeholders:</strong> “On [N] held-out [queries/days] using [split protocol], [candidate] achieved [actual metric] versus [baseline metric]. This was an [offline/replayed/live] evaluation; [main limitation].” Never publish the placeholders as a claim or fill them with a target you have not measured.</p>
+<h2 id="10-github-and-linkedin-make-the-work-easy-to-find">10. GitHub and LinkedIn: make the work easy to find</h2>
+<h3 id="github">GitHub</h3>
+<p>A GitHub profile README conventionally lives in a public repository named exactly after the username, with a nonempty root README. GitHub supports up to six pinned repositories/gists combined. You do not need six completed projects to use the feature. <a href="#source-s17">S17</a> <a href="#source-s18">S18</a></p>
+<p>Once the evidence exists, use this pin order:</p>
+<ol>
+<li>Strongest project aligned with your target role: Evidence Desk for applied-AI product roles, or Demand Replay for MLE roles.</li>
+<li>The complementary flagship.</li>
+<li>A meaningful collaboration/contribution record or a later distinct project, if genuinely substantial.</li>
+<li>A substantial documentation or learning application, if you have built one, as evidence of communication, interface design and delivery.</li>
+</ol>
+<p>Keep the reliability release inside its flagship. Link the incident/evaluation report prominently. Do not fill pins with scaffolds just to make the profile appear larger. Accurate About descriptions, relevant topics, a working demo link, and genuine release notes improve navigation; none guarantees stars or hiring.</p>
+<p>Use a truthful profile sentence. At the beginning: “Learning Python and ML engineering through reproducible projects.” Later, when supported: “Building evaluated AI applications and ML systems with Python; seeking junior/associate engineering opportunities.” A target role should not be presented as current employment.</p>
+<p>CI is evidence that the configured checks ran, not that every possible behavior is correct. Publish readable checks and their scope. If a credential is exposed, revoke/rotate it before treating file deletion as a fix; history and copies can retain it. <a href="#source-s19">S19</a> <a href="#source-s20">S20</a></p>
+<h3 id="linkedin-and-other-social-media">LinkedIn and other social media</h3>
+<p>LinkedIn's Featured section supports posts, articles, links, and media. Use it to surface the strongest case study, a short demo, and a concise portfolio overview or contribution. The platform documentation supports those capabilities; it does not establish a ranking formula or an optimal posting time. <a href="#source-s21">S21</a></p>
+<p>Make a 60–90-second captioned demonstration for each flagship:</p>
+<ul>
+<li><strong>0–10 seconds:</strong> who has the problem and one realistic input.</li>
+<li><strong>10–30 seconds:</strong> the actual useful behavior, including evidence/citations or the forecast origin.</li>
+<li><strong>30–50 seconds:</strong> an unsupported input or injected failure and the bounded response.</li>
+<li><strong>50–70 seconds:</strong> the baseline/evaluation result, with sample size and context visible.</li>
+<li><strong>70–90 seconds:</strong> one tradeoff, your contribution, and where to inspect the work.</li>
+</ul>
+<p>Use a clean demonstration profile. Label simulations, historical replay, cached answers, and edited timing. Provide a written equivalent. The purpose is to make real evidence understandable, not to hide weaknesses behind a polished video.</p>
+<h3 id="three-posts-worth-publishing-when-the-work-exists">Three posts worth publishing when the work exists</h3>
+<p><strong>An experiment:</strong> “I am building [tool] for [specific problem]. The baseline was [method]. On [N, held-out unit], [change] moved [metric] from [actual A] to [actual B], with [cost/latency tradeoff]. The largest remaining error category was [observed issue]. Evaluation and reproduction: [link].”</p>
+<p><strong>A failure and repair:</strong> “This input broke my [system]. I assumed [assumption]; [trace/test] showed [cause]. I changed [implementation] and added [regression]. It still struggles with [limit]. Before/after evidence: [link].”</p>
+<p><strong>A release and feedback:</strong> “I released [version] to test [user need]. [Actual number/type] of testers tried [task]; I observed [finding] and changed [behavior]. This is a small formative test, not a production-adoption claim. Demo, evaluation, and limitations: [link].”</p>
+<p>If nobody has tried it yet, say that and invite specific feedback. If a model loses to the baseline, explain why the simpler approach wins. Avoid vague “95% accuracy,” unmeasured time savings, invented clients, and “production scale” claims from a local test.</p>
+<p>Allow about <strong>2–3 hours of a 36-hour work week</strong> for documentation and communication once real artifacts exist. One substantive update a week or every two weeks is a reasonable starting cadence; it is not a quota, an algorithm trick, or a proven hiring intervention. Measure useful reviews, qualified conversations, reproducibility feedback, and application-stage outcomes. Stars and views help distribution, but do not certify skill.</p>
+<h2 id="11-a-24-week-first-pass-with-evidence-gates">11. A 24-week first pass, with evidence gates</h2>
+<p>This is a planning scaffold for <strong>six focused hours on six days per week</strong>, with one recovery/light-review day. That is 36 scheduled hours weekly. Actual useful time varies; carry unfinished work forward and reduce scope before sacrificing understanding. Completing this calendar is not a job guarantee or a substitute for the gates.</p>
+<table>
+<thead>
+<tr>
+<th>Weeks</th>
+<th>Main work</th>
+<th>Publishable output</th>
+<th>Gate before moving on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–2</td>
+<td>Python basics, terminal, files, functions, simple tests and Git</td>
+<td>Tiny exercises and the first CSV checker version</td>
+<td>Add a validation rule and explain its test without copying a solution</td>
+</tr>
+<tr>
+<td>3–5</td>
+<td>Collections, data cleaning, SQL basics, HTTP/API basics, readable modules</td>
+<td>A documented, tested CSV CLI; small SQL/API exercises</td>
+<td>Debug malformed input, write a join, and explain a request/response boundary</td>
+</tr>
+<tr>
+<td>6–8</td>
+<td>Arrays, core algebra/probability/statistics, regression, leakage, evaluation</td>
+<td>A small baseline experiment and a split diagram</td>
+<td>Explain target, features, baseline, loss/metric, and why the split is valid</td>
+</tr>
+<tr>
+<td>9–13</td>
+<td>Demand Replay</td>
+<td>First flagship repository, actual predictions/metrics, data card and demo</td>
+<td>Clean-clone run; honest temporal evaluation; code and failures you can defend</td>
+</tr>
+<tr>
+<td>14–18</td>
+<td>Evidence Desk</td>
+<td>Second flagship, retrieval/answerability evaluation, citation/abstention demo</td>
+<td>Held-out queries; reproducible retrieval; documented unsupported answers and costs</td>
+</tr>
+<tr>
+<td>19–21</td>
+<td>Reliability release and tester feedback</td>
+<td>Incident report, regression checks, tagged release, revised case study</td>
+<td>Demonstrate failure handling, monitoring limits, and a real rollback drill</td>
+</tr>
+<tr>
+<td>22–24</td>
+<td>Contribution, interview practice, tailored application loop</td>
+<td>Accurate contribution record, profile/Featured assets, targeted applications</td>
+<td>Match specific role requirements to evidence and solve a small unfamiliar change independently</td>
+</tr>
+</tbody>
+</table>
+<p>The project-hour estimates above are narrower implementation allowances after prerequisites. These calendar blocks also include learning, debugging, documentation, review, and contingency; they are not additional guaranteed durations. Some learners will need longer than 24 weeks. Apply earlier when an eligible role matches work you can already demonstrate, rather than waiting for every row to be complete.</p>
+<p>For an AI-product emphasis, swap the two flagship blocks after week 8 if your target roles justify it. For an MLE emphasis, keep forecasting first and deepen probability, optimization, SQL, and data pipelines. For research roles, treat mathematical depth and reproduction work as a later path, often with additional eligibility requirements.</p>
+<p>The related <a href="https://github.com/MJmuhammadjihad/AI-ML-Engineering-Roadmap">learning roadmap</a> can supply the learning sequence: guided foundations and Python/Git/data modules first; evaluation and classical ML for Demand Replay; retrieval/evaluation modules for Evidence Desk; packaging, serving, monitoring, and responsible-system modules for the reliability release. You do not need to finish every optional vision or research module before beginning a relevant project.</p>
+<h3 id="a-six-hour-active-work-pattern">A six-hour active-work pattern</h3>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Minutes</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retrieve and plan</td>
+<td>30</td>
+<td>Reconstruct yesterday's concept and choose one observable outcome</td>
+</tr>
+<tr>
+<td>Learn the next prerequisite</td>
+<td>90</td>
+<td>Read, work a small example, and answer a question before running code</td>
+</tr>
+<tr>
+<td>Build or investigate</td>
+<td>150</td>
+<td>Implement one bounded behavior or reproduce one failure</td>
+</tr>
+<tr>
+<td>Evaluate and test</td>
+<td>60</td>
+<td>Run meaningful checks and inspect actual outputs</td>
+</tr>
+<tr>
+<td>Explain and record</td>
+<td>30</td>
+<td>Write the decision, result, limitation, and next step</td>
+</tr>
+</tbody>
+</table>
+<p>The total is 360 active minutes; breaks are additional. Early weeks will need more guided learning; later weeks can transfer that time to implementation. On one day, use part of the documentation block for a real portfolio update. Do not turn every study session into a promotional post.</p>
+<h2 id="12-readiness-what-you-should-be-able-to-do-without-a-script">12. Readiness: what you should be able to do without a script</h2>
+<p>Use these as practice gates, not an external certification. Keep assistance and independent attempts distinct.</p>
+<ol>
+<li><strong>Build a small change:</strong> add a new validation rule, feature transform, or API behavior from a written requirement, with a meaningful test.</li>
+<li><strong>Debug an unfamiliar failure:</strong> trace a malformed record or retrieval miss through the system without guessing at random fixes.</li>
+<li><strong>Explain the baseline:</strong> describe why it is fair, where it fails, and whether complexity was justified.</li>
+<li><strong>Defend the split:</strong> identify time/entity/topic leakage and tell a reviewer what the final test does and does not establish.</li>
+<li><strong>Read the metrics:</strong> show numerator, denominator, sample size, slices, and uncertainty; identify a metric that would reward the wrong behavior.</li>
+<li><strong>Trace a request:</strong> explain the components, failure boundaries, logged metadata, model/data versions, and recovery path.</li>
+<li><strong>Discuss tradeoffs:</strong> name an alternative you rejected and the evidence that could change your mind.</li>
+<li><strong>Explain your contribution:</strong> distinguish original implementation, borrowed material, collaborators, and AI-assisted work.</li>
+</ol>
+<p>A useful AI-assistance note is: “I used [tool] for [specific tasks]. I independently reviewed/implemented [components], ran [checks], and can explain [decisions].” Match it to the truth. Generated code is useful assistance; independent ability must be demonstrated separately.</p>
+<p>Anthropic explicitly invites candidates to highlight independent research, thoughtful writing, and open-source work, and describes live coding. OpenAI's interview guide emphasizes reasoning, code quality, performance, test coverage, and communication. These are employer-specific examples, not promises of access to those companies. Their tool rules differ by assessment; follow the explicit instructions and ask the recruiter if unclear. <a href="#source-s22">S22</a> <a href="#source-s23">S23</a> <a href="#source-s24">S24</a></p>
+<h2 id="13-turn-the-portfolio-into-an-application-process">13. Turn the portfolio into an application process</h2>
+<p>Start a role inventory while learning. Once the first flagship is defensible, begin with a manageable set of genuinely relevant opportunities. For each role, record the employer URL/date, actual responsibilities, required versus preferred qualifications, eligible countries, authorization/sponsorship, language, time zone, degree/enrollment, and your strongest matching evidence.</p>
+<p>Use three decisions:</p>
+<ul>
+<li><strong>Eligible and evidence-aligned:</strong> tailor the application to two or three relevant behaviors and link directly to the proof.</li>
+<li><strong>Eligibility unclear:</strong> investigate the employer's stated policy or ask a concise appropriate question; do not infer worldwide eligibility from “remote.”</li>
+<li><strong>Hard eligibility mismatch or substantially different seniority:</strong> choose another opportunity or a longer-term preparation path. A portfolio cannot grant a required enrollment status, clearance, or work authorization.</li>
+</ul>
+<p>Do not mechanically reject yourself for every preferred tool you lack. Do not ignore explicit hard conditions. A job-description wish list and a legal/student-status condition are different kinds of constraints. Keep the application truthful.</p>
+<p><strong>Resume bullet pattern:</strong> “Built [system] for [problem]; compared [baseline] and [candidate] on [N, split], obtaining [actual metric] under [measured constraint]. Added [specific failure handling/tests], with [main scope limit].” For a contribution: “Contributed [change] to [project]; [submitted/reviewed/merged], addressing [specific behavior and review feedback].”</p>
+<p>Use a simple application log. If you get few screens, inspect eligibility, role alignment, and whether the evidence is visible. If you reach technical interviews but struggle, practice the observed gaps. If people cannot run your project, repair reproduction. Small samples are noisy; do not invent a causal explanation for each rejection or a conversion-rate guarantee.</p>
+<p>The global goal is a direction, not a location filter called “anywhere.” A reader’s country and work authorization must be checked separately; this report does not establish eligibility for any sampled vacancy. Build capability, then test the opportunity set available to your actual situation.</p>
+<h2 id="14-what-to-postpone-and-why">14. What to postpone, and why</h2>
+<table>
+<thead>
+<tr>
+<th>Temptation</th>
+<th>Better default at your stage</th>
+<th>When to reconsider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A generic chat UI with no evaluation</td>
+<td>A narrow assistant with a baseline, citations, abstention, and an error report</td>
+<td>Broader scope after a real use case and evaluation support it</td>
+</tr>
+<tr>
+<td>Training an LLM from scratch</td>
+<td>Understand small models, then use an existing model behind a bounded interface</td>
+<td>A research/infra goal with data, compute, math, and a meaningful experiment</td>
+</tr>
+<tr>
+<td>Fine-tuning before defining success</td>
+<td>Establish a baseline, failure taxonomy, clean data, and held-out evaluation first</td>
+<td>A measured failure that adaptation could plausibly address</td>
+</tr>
+<tr>
+<td>Multiple autonomous agents</td>
+<td>A fixed, inspectable workflow with bounded tools</td>
+<td>A task requiring dynamic decisions and an evaluation that justifies the extra failure surface</td>
+</tr>
+<tr>
+<td>Kubernetes, feature stores, distributed training everywhere</td>
+<td>One small service/container, explicit artifacts, simple CI and logs</td>
+<td>A concrete role/project requirement or a demonstrated scaling problem</td>
+</tr>
+<tr>
+<td>Dozens of cloned notebooks</td>
+<td>Two independently understood systems with reproducible evidence</td>
+<td>Small exercises remain useful for learning, without overstating their portfolio significance</td>
+</tr>
+<tr>
+<td>A huge model score without context</td>
+<td>Baseline, split, sample size, constraints, and failures</td>
+<td>More complexity only when the decision requires it</td>
+</tr>
+<tr>
+<td>Posting daily to appear active</td>
+<td>Publish when a real experiment, fix, review, or release teaches something</td>
+<td>Cadence can change with meaningful work and audience feedback</td>
+</tr>
+</tbody>
+</table>
+<p>A later specialization should follow repeated requirements in your actual eligible role list. Computer vision, recommendations, speech, multilingual NLP, and research replication can all be valuable. Choose one when you have a domain question, appropriate data rights, a measurable task, and a reason that it adds evidence your existing work lacks.</p>
+<h2 id="15-your-next-seven-days">15. Your next seven days</h2>
+<p>Begin with ownership of one small program before starting the flagships.</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Concrete work</th>
+<th>Evidence to keep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Practice running Python, save a small program, and explain each line</td>
+<td>Saved file, actual output, and a short explanation in your own words</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Practice functions, loops, and dictionaries on a tiny invented dataset</td>
+<td>One small change made without copying, plus its expected/actual output</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Read a ten-row CSV fixture and summarize its fields/counts</td>
+<td>The fixture, parser, output, and one malformed-input example</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Add date/count checks and clear errors</td>
+<td>Tests for good input, missing columns, invalid counts, and duplicates</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Use Git meaningfully; write run/setup instructions and a scope statement</td>
+<td>A clean-clone check and a README another person can follow</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Add one new requirement independently; inspect three real role descriptions</td>
+<td>A new regression test and an eligibility/evidence worksheet</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Rest or do light review; identify what is still not independently understood</td>
+<td>A short next-week plan based on actual gaps, not a completion streak</td>
+</tr>
+</tbody>
+</table>
+<p>If those prerequisites take longer, use more days. Do not claim that a seven-day exercise makes you ready for an AI-engineering job. Its purpose is to establish the working method that makes the later projects credible.</p>
+<p>The immediate objective is precise: <strong>finish one small program you can run, test, repair, and explain.</strong> The longer-term objective is a small body of work where each claim has a visible result, a valid evaluation, and a contribution you genuinely understand.</p></div>
+        <section class="appendix" id="appendix-jobs" aria-labelledby="jobs-title">
+          <p class="eyebrow">Evidence appendix · Hiring</p>
+          <h2 id="jobs-title">What the postings actually ask for.</h2>
+          <p class="appendix-intro">Inspect the role, geography, seniority, and qualification boundaries alongside the skills. A posting is a dated observation; a portfolio does not replace its eligibility requirements.</p>
+          <div class="jobs-body"><p class="note">The 20 postings are a purposive sample from 11 employers, including 17 AI/ML roles and three adjacent software roles. They are evidence of described work and eligibility, not a representative global survey. One source contains unfinished templates. Original publication dates were not inferred from feed update timestamps.</p><details id="job-h01"><summary>H01 · Databricks — AI Forward Deployed Engineer</summary><p><strong>London, United Kingdom</strong> · Customer-facing applied AI / forward deployment</p><p>Advert says all levels, but explicitly asks for minimum four years.</p><h4>Explicit requirements / eligibility</h4><ul><li>Minimum four years in data science, ML, or AI.</li><li>Graduate quantitative degree or equivalent practical experience.</li><li>Willingness to travel to customers every four to eight weeks as needed.</li></ul><h4>Other listed qualifications</h4><ul><li>Production GenAI integration, evaluation and optimization.</li><li>Cloud ML deployment, technical communication, and collaboration.</li></ul><h4>Preferred / nice to have</h4><ul><li>Databricks platform and Spark experience explicitly marked preferred.</li></ul><p><strong>Location boundary:</strong> London role. Worldwide remote access and sponsorship are not established by this description.</p><blockquote><p>“Min 4 years experience in DS, ML, AI”</p></blockquote><blockquote><p>“Expertise in deploying production-grade GenAI applications, including evaluation and optimizations”</p></blockquote><p><strong>Portfolio implication:</strong> Show one customer problem, a deployed AI workflow, evaluation cases, latency/cost trade-offs, and a clear technical explanation. This does not substitute for four years of requested experience.</p><p><a href="https://databricks.com/company/careers/open-positions/job?gh_jid=8927179002">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.856542+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h02"><summary>H02 · Databricks — Applied AI Engineer</summary><p><strong>Belgrade, Serbia</strong> · Applied ML/AI product and infrastructure</p><p>Experienced engineer; explicit range of two to eight years.</p><h4>Explicit requirements / eligibility</h4><ul><li>Two to eight years of engineering experience is listed.</li></ul><h4>Other listed qualifications</h4><ul><li>Strong software engineering, testing, and deployment.</li><li>Production ML infrastructure, training/serving components, and end-to-end systems.</li></ul><h4>Preferred / nice to have</h4><ul><li>Production modeling beyond standard libraries described as a plus.</li><li>Deployment, scaling, monitoring, and critical-service infrastructure experience described as nice to have.</li></ul><p><strong>Location boundary:</strong> Belgrade role. No degree, sponsorship, or worldwide-remote eligibility rule is established in the selected description.</p><blockquote><p>“Infrastructure and system engineers with no ML background and willingness to excel in personal growth are welcome to apply.”</p></blockquote><blockquote><p>“Strong software engineering skills, and familiarity with software engineering principles around testing and deployment.”</p></blockquote><p><strong>Portfolio implication:</strong> Software engineering can be a bridge into applied AI. Build reproducible tests, an API, data contracts and operational behavior; do not misread no ML background as no engineering experience.</p><p><a href="https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.856542+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h03"><summary>H03 · Datadog — AI Research Engineer - Datadog AI Research (DAIR)</summary><p><strong>Paris, France</strong> · Research engineering / ML systems</p><p>Advanced practical systems and research experience; numeric minimum not specified.</p><h4>Other listed qualifications</h4><ul><li>Python plus familiarity with a systems language.</li><li>Distributed training/inference, GPU acceleration, practical large-model training/fine-tuning and research contribution experience.</li><li>Clear explanation of performance and design trade-offs.</li></ul><h4>Preferred / nice to have</h4><ul><li>CUDA, observability/SRE/security, production data pipelines and simulation environments are among bonus items.</li></ul><p><strong>Location boundary:</strong> Paris role. No numeric experience minimum, specific degree requirement, or sponsorship guarantee is stated in the selected text.</p><blockquote><p>“Establish rigorous automated benchmarks and regression tests for world model predictions, agent performance, and simulation fidelity”</p></blockquote><blockquote><p>“You can explain design and performance trade-offs clearly to both technical and non-technical audiences”</p></blockquote><p><strong>Portfolio implication:</strong> A later research-oriented artifact could reproduce an experiment and profile a training/inference bottleneck. Large-scale distributed RL is a specialization, not a sensible first project.</p><p><a href="https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/datadog/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.857284+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h04"><summary>H04 · Elastic — Agentic AI Engineer</summary><p><strong>United States</strong> · Enterprise agentic AI engineering</p><p>Advanced breadth is requested; no junior title or numeric experience minimum.</p><h4>Other listed qualifications</h4><ul><li>Advanced Python or TypeScript; practical RAG/hybrid search, tools, structured outputs, and agent state.</li><li>Cloud infrastructure/IaC, CI/CD, security/identity, tracing, token costs and output evaluation.</li><li>Proven multi-agent implementation experience.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> United States posting. Distributed-company language is not evidence that this role is open from every country. Export-control language may affect employment; sponsorship is not stated.</p><blockquote><p>“They will also help manage token spending and identify model drift or agent loops.”</p></blockquote><blockquote><p>“Advanced proficiency in Python or TypeScript for backend orchestration, agent memory systems, and API service development.”</p></blockquote><p><strong>Portfolio implication:</strong> Demonstrate bounded tool execution, state transitions, schema validation, traces, cost limits and safe failure. Establish a single-workflow baseline before adding multi-agent complexity.</p><p><a href="https://jobs.elastic.co/jobs?gh_jid=8079636&amp;gh_jid=8079636">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/elastic/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.857693+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h05"><summary>H05 · Anthropic — Applied AI Demo Engineer</summary><p><strong>San Francisco, CA | New York City, NY</strong> · Applied AI demo / product engineering</p><p>Experienced cross-functional role; exact years depend on internal level.</p><h4>Explicit requirements / eligibility</h4><ul><li>Bachelor’s degree or an equivalent combination of education, training, and experience.</li><li>Relevant field can be shown through coursework, training, or professional experience.</li><li>Office presence at least 25 percent under stated general hybrid policy; some roles may require more.</li></ul><h4>Other listed qualifications</h4><ul><li>End-to-end Python/TypeScript software; LLM APIs, tools/retrieval and third-party integrations.</li><li>Reliable prototypes, reusable assets, evaluation harnesses, realistic sanitized data and technical storytelling.</li></ul><h4>Preferred / nice to have</h4><ul><li>The advert uses a broad good-fit list rather than a separate required/preferred partition; do not convert every item into a hard minimum.</li></ul><p><strong>Location boundary:</strong> San Francisco or New York. The employer says it sponsors visas, but explicitly cannot sponsor every role/candidate. This is not an individual sponsorship promise.</p><blockquote><p>“accuracy and honesty matter as much as polish”</p></blockquote><blockquote><p>“Experience building evaluation or validation harnesses for AI systems, including reliability checks and graceful fallbacks”</p></blockquote><p><strong>Portfolio implication:</strong> A polished demo should disclose what works and fails, use safe data, reproduce setup, and demonstrate graceful fallbacks. This is direct evidence against presenting visual polish alone as AI expertise.</p><p><a href="https://job-boards.greenhouse.io/anthropic/jobs/5455961008">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.858092+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h06"><summary>H06 · Reddit — Machine Learning Engineer</summary><p><strong>Remote - United States</strong> · Production ML engineering across consumer and ads</p><p>Experienced role; basic qualifications list three to five-plus years.</p><h4>Explicit requirements / eligibility</h4><ul><li>Three to five-plus years building, deploying, and operating production ML systems.</li></ul><h4>Other listed qualifications</h4><ul><li>Software fundamentals, classic and deep-learning foundations, scalable pipelines and serving.</li><li>Full lifecycle ownership, measurable metrics, reliability, observability, retraining and cross-functional problem definition.</li></ul><h4>Preferred / nice to have</h4><ul><li>Recommenders/search/ads/representations, distributed tools, low latency, LLM methods and advanced degree are preferred.</li></ul><p><strong>Location boundary:</strong> Remote – United States. The word remote does not establish global eligibility; no sponsorship conclusion is drawn.</p><blockquote><p>“3-5+ years of experience building, deploying, and operating machine learning systems in production”</p></blockquote><blockquote><p>“Own the full ML lifecycle: from problem definition and feature engineering to training, evaluation, deployment, and monitoring”</p></blockquote><p><strong>Portfolio implication:</strong> A classical ML project should include data boundaries, baseline, held-out evaluation, serving and monitoring rather than stopping at notebook accuracy. A personal replay is not production employment.</p><p><a href="https://job-boards.greenhouse.io/reddit/jobs/7131932">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/reddit/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.858378+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h07"><summary>H07 · Pinterest — Machine Learning Engineer, Core Engineering</summary><p><strong>San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US</strong> · Applied recommendations / retrieval ML engineering</p><p>Two-plus years industry ML experience is listed.</p><h4>Explicit requirements / eligibility</h4><ul><li>Two-plus years industry experience applying ML methods.</li><li>Bachelor’s degree in a related field or equivalent experience.</li></ul><h4>Other listed qualifications</h4><ul><li>End-to-end data processing pipelines and large-scale ML systems.</li><li>Experimentation and candidate retrieval for product surfaces.</li></ul><h4>Preferred / nice to have</h4><ul><li>Master’s/PhD, publications, AI coding assistants, LLM productivity tools and scalable realtime systems are nice to have.</li></ul><p><strong>Location boundary:</strong> US-based applicants only; no relocation assistance. Location metadata includes named US offices and Remote, US.</p><blockquote><p>“2+ years of industry experience applying machine learning methods”</p></blockquote><blockquote><p>“US based applicants only”</p></blockquote><p><strong>Portfolio implication:</strong> If targeting search/recommendations, publish a retrieval baseline, ranking evaluation, error slices and reproducible pipeline. Explain and verify AI-assisted changes yourself.</p><p><a href="https://www.pinterestcareers.com/jobs/?gh_jid=6121450">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:44.319856+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h08"><summary>H08 · Pinterest — Machine Learning Intern 2027 (Dublin)</summary><p><strong>Dublin, IE</strong> · ML internship</p><p>Student internship with graduate enrollment requirement.</p><h4>Explicit requirements / eligibility</h4><ul><li>Working toward a master’s or PhD in a related field.</li><li>Commutable to Dublin for two to three office days a week.</li><li>Full-time internship dates May 10–August 27, 2027.</li></ul><h4>Other listed qualifications</h4><ul><li>Applied ML experience may come from research, coursework, projects or internships.</li><li>Programming/framework proficiency, research/analytical work, maintainable documented/tested code and communication.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section. Relocation assistance may be available; sponsorship is not stated.</li></ul><p><strong>Location boundary:</strong> Dublin hybrid internship. Graduate enrollment, location and dates must be checked separately from portfolio quality.</p><blockquote><p>“Working towards a Master&#x27;s or PhD degree in Computer Science, ML, NLP, Statistics, Information Sciences or related field”</p></blockquote><blockquote><p>“Experience applying machine learning or AI concepts through research, coursework, projects or internships.”</p></blockquote><p><strong>Portfolio implication:</strong> A scoped project covering problem definition through implementation and results presentation matches intern work. Projects can evidence skills here, but cannot waive enrollment requirements.</p><p><a href="https://www.pinterestcareers.com/jobs/?gh_jid=8244922">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:44.319856+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h09"><summary>H09 · Pinterest — Master&#x27;s University Grad Machine Learning Engineer 2027 (USA)</summary><p><strong>San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US</strong> · Graduate ML engineering</p><p>Master’s university graduate cohort, title specifies 2027.</p><h4>Explicit requirements / eligibility</h4><ul><li>A relevant master’s degree is explicitly required.</li><li>US-based applicants only.</li></ul><h4>Other listed qualifications</h4><ul><li>ML methods, big data/realtime systems, a systems language or ML framework.</li><li>Research/analytical ability and validation of AI-generated code for correctness, performance, security and maintainability.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> Named US offices. The role may require commuting distance for in-person collaboration. Do not infer a precise graduation window absent from the body.</p><blockquote><p>“Master&#x27;s in Computer Science, ML, NLP, Statistics, Information Sciences or related field required”</p></blockquote><blockquote><p>“Strong critical thinking when working with AI-generated suggestions, with a clear approach to validating correctness, performance, security, and maintainability.”</p></blockquote><p><strong>Portfolio implication:</strong> Show a reproducible model study and the tests used to accept or reject AI-generated suggestions. This posting is not evidence that a non-graduate beginner can bypass its master’s requirement.</p><p><a href="https://www.pinterestcareers.com/jobs/?gh_jid=8140219">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/pinterest/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:44.319856+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h10"><summary>H10 · Roblox — [2027] Senior Machine Learning Engineer - PhD Early Career</summary><p><strong>San Mateo, CA, United States</strong> · Research-oriented ML engineering</p><p>Title combines senior ML engineer with PhD early career.</p><h4>Explicit requirements / eligibility</h4><ul><li>Possess or be pursuing a relevant PhD with aligned thesis.</li></ul><h4>Other listed qualifications</h4><ul><li>Deep relevant domain expertise, programming and large-scale optimization.</li><li>Multiple peer-reviewed publications/presentations are listed as evidence of a strong research track record.</li><li>End-to-end research-to-production work.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred section.</li></ul><p><strong>Location boundary:</strong> San Mateo office. Office-based roles attend Tuesday–Thursday. The posting cautions that certain US work-authorization categories or future H-1B sponsorship may not be supported.</p><blockquote><p>“Possess or pursuing a PhD in computer science, engineering, or a related field, with a thesis aligned to Roblox’s research areas.”</p></blockquote><blockquote><p>“A strong research track record, evidenced by multiple publications and presentations in rigorous peer-reviewed venues.”</p></blockquote><p><strong>Portfolio implication:</strong> Research replication is a later, role-specific route. The early-career label here describes PhD career stage, not suitability for someone starting programming.</p><p><a href="https://careers.roblox.com/jobs/8242623?gh_jid=8242623">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/roblox/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:44.492851+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h11"><summary>H11 · Duolingo — AI Research Engineer, New PhD Graduate</summary><p><strong>New York, NY; Pittsburgh, PA</strong> · AI research engineering</p><p>New PhD graduate role.</p><h4>Explicit requirements / eligibility</h4><ul><li>Relevant PhD completed or expected by August 2027.</li><li>Ability to relocate to Pittsburgh or New York.</li></ul><h4>Other listed qualifications</h4><ul><li>Impactful portfolio through publications, open-source projects or AI internships.</li><li>Debugging, critical thinking, interdisciplinary R&amp;D and communicating findings.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> New York or Pittsburgh. A relocation ability is explicitly requested; sponsorship is not stated in the captured description.</p><blockquote><p>“You have an Ph.D. in computer science or related technical field (or expect to by August 2027)”</p></blockquote><blockquote><p>“A portfolio of impactful work, in the form of (for example) publications, open-source projects, or AI internships”</p></blockquote><p><strong>Portfolio implication:</strong> This explicitly supports meaningful public work as evidence, while also showing that portfolio and degree requirements can coexist.</p><p><a href="https://careers.duolingo.com/jobs/8881612002?gh_jid=8881612002">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/duolingo/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:44.690845+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h12"><summary>H12 · Airbnb — Machine Learning Engineer, Assistance Engineering</summary><p><strong>China</strong> · Customer-support ML / GenAI engineering</p><p>Two to four years ML engineering experience is listed.</p><h4>Explicit requirements / eligibility</h4><ul><li>PhD/master’s degree or equivalent experience.</li><li>Two to four years ML engineering experience with large-scale software ownership.</li><li>English and Mandarin fluency is essential.</li></ul><h4>Other listed qualifications</h4><ul><li>Scalable AI/ML systems, product integrations, performance and cross-functional collaboration.</li></ul><h4>Preferred / nice to have</h4><ul><li>LLM chatbot and agentic product experience is described as a big plus.</li></ul><p><strong>Location boundary:</strong> China-based; permitted city depends on legal working identity and company policy. The description does not establish global remote eligibility.</p><blockquote><p>“2-4 years of ML engineering experience, with ownership responsibility over large-scale software systems.”</p></blockquote><blockquote><p>“Fluency in both English and Mandarin is essential.”</p></blockquote><p><strong>Portfolio implication:</strong> An evidence-grounded support workflow with evaluation and guardrails is relevant. Language and legal-location requirements remain separate filters.</p><p><a href="https://careers.airbnb.com/positions/7716341?gh_jid=7716341">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.064925+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h13"><summary>H13 · Scale AI — Applied AI Engineer</summary><p><strong>Kuwait City, Kuwait</strong> · Applied AI component / backend integration</p><p>Scoped engineering ownership; no numeric experience minimum specified.</p><h4>Other listed qualifications</h4><ul><li>Production software experience; Python and another language.</li><li>Model/API/tool integration, ML evaluation and regression diagnosis.</li><li>Own implementation through testing, release, production debugging and client communication.</li></ul><h4>Preferred / nice to have</h4><ul><li>Backend/full-stack background, cloud ML, agentic/RAG/context engineering, regulated data experience.</li></ul><p><strong>Location boundary:</strong> Kuwait City. No explicit degree minimum or sponsorship/remote policy is stated in this description. Absence of a requirement is not proof it is waived.</p><blockquote><p>“Run and extend evaluations within an established framework, interpret results, investigate common failure modes, and flag regressions”</p></blockquote><blockquote><p>“Experience owning a defined piece of work through testing, release, and production debugging”</p></blockquote><p><strong>Portfolio implication:</strong> Choose a tractable AI component and show its API, tests, eval set, failure investigation and release history. This is a closer portfolio-shaped scope than attempting a frontier model, but production experience is still requested.</p><p><a href="https://job-boards.greenhouse.io/scaleai/jobs/4751059005">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.077324+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h14"><summary>H14 · Scale AI — Machine Learning Engineer, Public Sector</summary><p><strong>Denver, CO; Honolulu, HI; Washington, DC</strong> · Public-sector production ML engineering</p><p>Experienced production ML profile; experience list is under ideally-have heading.</p><h4>Explicit requirements / eligibility</h4><ul><li>Active TS security clearance is explicitly required.</li><li>Comfort with about ten percent travel.</li></ul><h4>Other listed qualifications</h4><ul><li>Production models, retraining, scalable infrastructure and product/research collaboration.</li></ul><h4>Preferred / nice to have</h4><ul><li>Two-plus years production applied ML and strong algorithms/programming appear under Ideally You’d Have.</li><li>Fine-tuning, evaluations, constrained deployment, government experience and post-launch ownership appear under Nice to Haves.</li></ul><p><strong>Location boundary:</strong> Denver/Honolulu/Washington DC locations. Active clearance is a hard stated access barrier; do not treat a public portfolio as a substitute.</p><blockquote><p>“This role will require an active TS security clearance”</p></blockquote><blockquote><p>“A shipped project with real users behind it, where you owned it after launch rather than handing it off at merge.”</p></blockquote><p><strong>Portfolio implication:</strong> The general evidence lesson is post-launch ownership, regression checks and operational maintenance. This is not an eligible target for someone without the required clearance; no defense-specific project is recommended.</p><p><a href="https://job-boards.greenhouse.io/scaleai/jobs/4631848005">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.077324+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h15"><summary>H15 · Scale AI — ML Research Engineer, ML Systems</summary><p><strong>San Francisco, CA; Seattle, WA; New York, NY</strong> · ML systems / research infrastructure</p><p>Specialized distributed ML systems; qualifications framed as ideally-have.</p><h4>Other listed qualifications</h4><ul><li>Build, profile and optimize training/inference infrastructure.</li><li>Collaboration across ML/research teams.</li></ul><h4>Preferred / nice to have</h4><ul><li>Multi-node LLM training/inference, distributed ML systems, CUDA/PyTorch/transformers and communication listed as ideal.</li><li>Post-training methods and next-generation LLM use cases are nice to have.</li></ul><p><strong>Location boundary:</strong> San Francisco, Seattle or New York. Degree, numeric minimum and sponsorship are not specified in the captured text.</p><blockquote><p>“Build, profile and optimize our training and inference framework”</p></blockquote><blockquote><p>“Experience with multi-node LLM training and inference”</p></blockquote><p><strong>Portfolio implication:</strong> A specialist track would require actual profiling, throughput/memory measurements and a reproducible optimization experiment. Do not start by buying multi-GPU infrastructure.</p><p><a href="https://job-boards.greenhouse.io/scaleai/jobs/4534631005">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.077324+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h16"><summary>H16 · Affirm — Machine Learning Engineer II (Underwriting ML)</summary><p><strong>Remote Canada</strong> · Tabular/sequential underwriting ML engineering</p><p>ML Engineer II; two-plus years ML experience or relevant PhD.</p><h4>Explicit requirements / eligibility</h4><ul><li>Two-plus years as an MLE or a relevant PhD.</li><li>Bachelor’s degree in a related field or equivalent practical experience.</li><li>Residence in one of the expressly listed Canadian provinces.</li></ul><h4>Other listed qualifications</h4><ul><li>Production Python, classification, pipelines, offline experiments, model serving, monitoring, backtesting and code review.</li><li>AI-powered developer tools with code-quality judgment.</li></ul><h4>Preferred / nice to have</h4><ul><li>Gradient-boosted trees preferred for classification; PyTorch and Spark explicitly preferred among framework options.</li></ul><p><strong>Location boundary:</strong> Remote Canada only: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, or Saskatchewan. Not worldwide remote.</p><blockquote><p>“You have a total of 2+ years of experience as a machine learning engineer or a PhD in a relevant field.”</p></blockquote><blockquote><p>“You will instrument and monitor model and data health, and help define retraining/backtesting workflows”</p></blockquote><p><strong>Portfolio implication:</strong> A careful tabular decision project with validation boundaries, cost-aware evaluation, feature pipeline, serving and monitoring maps directly to this work. A historical demo must not claim real credit-risk readiness.</p><p><a href="https://job-boards.greenhouse.io/affirm/jobs/7822389003">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.079090+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h17"><summary>H17 · Affirm — Software Engineer (Machine Learning) Intern (Summer 2027)</summary><p><strong>San Francisco, California, United States</strong> · ML-labeled software engineering internship</p><p>Summer 2027 student internship; degree level is not precisely specified.</p><p class="warning"><strong>Source warning:</strong> The source contains unfinished compensation, geography, remote-work and sponsorship templates. A no-sponsorship sentence appears both before the template block and inside a conditional instruction. This record is excluded from sponsorship/remote eligibility conclusions in the main analysis; verify the current official listing. Placeholder pay ranges are not usable evidence.</p><h4>Explicit requirements / eligibility</h4><ul><li>An unqualified no-sponsorship sentence appears before the unfinished template block; because the same captured document retains conditional sponsorship instructions and other placeholders, confirm the applicable policy before using this role as an eligibility example.</li></ul><h4>Other listed qualifications</h4><ul><li>Python/C++/Java, frontend experience, OOP and communication.</li><li>Testing/deployment frameworks, API documentation and cloud/PaaS.</li><li>Ship a project, verify it in production, monitor it and present results.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> Listed as San Francisco, summer 2027, twelve-to-sixteen-week internship. The text targets students without a precise degree/enrollment rule. Template contamination makes some conditions unreliable; do not infer worldwide access or a definitive sponsorship policy from the conditional boilerplate.</p><blockquote><p>“Interns are responsible for developing and shipping a project and verifying that it works in production.”</p></blockquote><p><strong>Portfolio implication:</strong> Internship-style proof is a small component delivered and maintained with tests, deployment and a presentation. Do not infer global access from an international company name.</p><p><a href="https://job-boards.greenhouse.io/affirm/jobs/8008645003">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.079090+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h18"><summary>H18 · Affirm — Software Engineer I, Early Career (London)</summary><p><strong>London</strong> · Adjacent early-career software engineering</p><p>Early Career / Software Engineer I.</p><h4>Explicit requirements / eligibility</h4><ul><li>Bachelor’s degree in a related field or equivalent practical experience.</li><li>Visa sponsorship unavailable.</li><li>Hybrid London office attendance three days per week during the early-career program.</li></ul><h4>Other listed qualifications</h4><ul><li>Turn a problem into multiple interacting software components with clear, tested, extensible code.</li><li>Navigate/debug an existing codebase, review code and communicate trade-offs.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> London hybrid for the first year. Later remote flexibility remains within the country-of-employment framework; no worldwide remote eligibility is implied.</p><blockquote><p>“This position requires either equivalent practical experience or a Bachelor’s degree in a related field.”</p></blockquote><blockquote><p>“Please note that visa sponsorship is not available for this position.”</p></blockquote><p><strong>Portfolio implication:</strong> An adjacent software role can value the same API, testing, code review and debugging evidence needed for AI products. Equivalent practical experience is explicitly allowed, but work authorization remains a separate gate.</p><p><a href="https://job-boards.greenhouse.io/affirm/jobs/8011718003">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:45.079090+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h19"><summary>H19 · Databricks — Software Engineer - New Grad (2027 Start) - London</summary><p><strong>London, United Kingdom</strong> · Adjacent new-graduate software engineering</p><p>New-grad 2027 cohort.</p><h4>Explicit requirements / eligibility</h4><ul><li>Graduate between autumn 2026 and summer 2027 with a related degree.</li></ul><h4>Other listed qualifications</h4><ul><li>General-purpose programming, algorithms/data structures/OOP and end-to-end projects.</li><li>Design, test and operate reliable, scalable and secure software.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> London role. Graduation window is explicit; sponsorship is not established. Employer asks candidates to select one preferred office rather than submit multiple location applications.</p><blockquote><p>“You will graduate between autumn 2026 and summer 2027 with a degree in Computer Science, Engineering, or related subject”</p></blockquote><blockquote><p>“You have experience managing end-to-end projects”</p></blockquote><p><strong>Portfolio implication:</strong> A well-scoped end-to-end application with readable design, tests and operational evidence is useful preparation for software entry routes when the candidate meets the graduation window.</p><p><a href="https://databricks.com/company/careers/open-positions/job?gh_jid=8847747002">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.856542+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details><details id="job-h20"><summary>H20 · Datadog — Software Engineering Intern</summary><p><strong>Madrid, Spain</strong> · Adjacent software engineering internship</p><p>Student internship with country/university and timing constraints.</p><h4>Explicit requirements / eligibility</h4><ul><li>Expected 2027 graduation in a relevant degree from a university in Spain.</li><li>Availability for a February 2027 internship start; no other start dates supported in the text.</li></ul><h4>Other listed qualifications</h4><ul><li>CS fundamentals, programming and productive use or interest in AI-assisted development.</li><li>Deliver technical projects through deployment with guidance; reliability/performance collaboration.</li></ul><h4>Preferred / nice to have</h4><ul><li>No separately labeled preferred qualifications section.</li></ul><p><strong>Location boundary:</strong> Madrid hybrid role, available full-time or part-time under stated program. Relocation support may apply, but the university-location requirement is explicit; sponsorship is not established.</p><blockquote><p>“with a degree in Computer Science, Software Engineering, or a related technical field from a university in Spain”</p></blockquote><blockquote><p>“Demonstrate strong computer science fundamentals, including data structures, algorithms, and software design”</p></blockquote><p><strong>Portfolio implication:</strong> An early software project should also show basic algorithms, data modeling and design choices, not only API prompting. Student and program-location constraints may make this role ineligible.</p><p><a href="https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161">Original employer listing</a> · <a href="https://boards-api.greenhouse.io/v1/boards/datadog/jobs?content=true">Employer-controlled feed</a></p><p><small>Captured 2026-11-06T17:34:43.857284+00:00; reviewed 2026-11-07. Listed in the feed at capture time. This does not guarantee the role remains open or that this candidate is eligible. Feed update time is not original publication time.</small></p></details></div>
+        </section>
+        <section class="appendix" id="appendix-sources" aria-labelledby="sources-title">
+          <p class="eyebrow">Evidence appendix · Sources</p>
+          <h2 id="sources-title">Follow the reasoning back to its source.</h2>
+          <p class="appendix-intro">Source-backed observations, planning estimates, and recommendations serve different purposes. Keep the source dates and sampling limits attached to the claims.</p>
+          <div class="source-body"><p>These 25 source pages support the observations and technical guidance. The project choices, schedule, budgets and readiness gates are authored recommendations. Duplicate captures were not counted as extra sources. A LinkedIn FAQ returning 404, a Google hiring page containing only boilerplate, and unavailable Creative Commons legal pages were not used as evidence. The UCI page itself states the dataset license. Raw captures are retained in the working research directory; the toolkit includes analytical summaries, short attributed excerpts and hash ledgers instead of full third-party pages.</p><ol style="list-style:none;padding-left:0"><li id="source-s01"><strong>S01.</strong> <a href="https://www.bls.gov/ooh/math/data-scientists.htm">US BLS — Data scientists</a>. Accessed 2026-11-07. US occupational projection; not global junior AI vacancies.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.443952+00:00.</p><p>SHA-256: <code>140c4c267b1648b16b458503c163ded1a9cf11a36e395d538557c09c8f0246a7</code></p></details></li><li id="source-s02"><strong>S02.</strong> <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">US BLS — Software developers, QA analysts, and testers</a>. Accessed 2026-11-07. Broad combined US occupational group; not an AI-specific forecast.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.444902+00:00.</p><p>SHA-256: <code>adfa37ddf3d56f9c37d80ed4e60cd6ad49e9fcf07c6a21509368339d46e78ada</code></p></details></li><li id="source-s03"><strong>S03.</strong> <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">World Economic Forum — Future of Jobs Report 2025</a>. Accessed 2026-11-07. Employer expectations through 2030; not a probability of getting hired.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.445274+00:00.</p><p>SHA-256: <code>9ddf084eb058d02af09528fba43551c37e86c89bad677b405df73acd26f4fd91</code></p></details></li><li id="source-s04"><strong>S04.</strong> <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">Stanford AI Index 2026 — Economy</a>. Accessed 2026-11-07. Broad economic and labor evidence; uneven effects and limits to causal attribution.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.446059+00:00.</p><p>SHA-256: <code>d5694021b95586cfba0695c7c56687828a52771e2455d5d4ecec98ccc7efeea2</code></p></details></li><li id="source-s05"><strong>S05.</strong> <a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Google — Rules of Machine Learning</a>. Accessed 2026-11-06. Engineering guidance on baselines, metrics and dependable pipelines.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>93c4c4935a9b0f40385d2aa9712bde9f1deab53b4dccbfb2f06330ea239f11ee</code></p></details></li><li id="source-s06"><strong>S06.</strong> <a href="https://scikit-learn.org/stable/common_pitfalls.html">Scikit-learn — Common pitfalls and recommended practices</a>. Accessed 2026-11-06. Preprocessing and leakage guidance; the prediction-time contract still needs explicit design.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>21fac11c181ab35624dcf8673f0475d403d4f6ecf0f9bead01a573d7642b515c</code></p></details></li><li id="source-s07"><strong>S07.</strong> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html">Scikit-learn — TimeSeriesSplit</a>. Accessed 2026-11-06. Chronological cross-validation mechanics; does not itself prevent feature leakage.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>bd5b51d06ac0ab50b62badb7d35de9bb2bdaa10a059235b3bf19cd17b57cdcc3</code></p></details></li><li id="source-s08"><strong>S08.</strong> <a href="https://platform.openai.com/docs/guides/evaluation-best-practices">OpenAI — Evaluation best practices</a>. Accessed 2026-11-06. Task-specific evaluation guidance; model judges require validation.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>0c0106b575b6886fb11cdea6a5c01b7f22a5ea19d23fbd147fd5f792196a3944</code></p></details></li><li id="source-s09"><strong>S09.</strong> <a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic — Building effective agents</a>. Accessed 2026-11-06. Distinguishes fixed workflows and agents; supports starting with simple composable systems.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>c3840081c5d8701cdea29cf72b98fec648aabf29fbdbac866107ba08518fe975</code></p></details></li><li id="source-s10"><strong>S10.</strong> <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/">OWASP — LLM01: Prompt injection</a>. Accessed 2026-11-06. Threat and mitigation guidance; a small attack set is not a security certification.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>8e36a5dff842ed950a70a3b1a05ea47f4ccd6bee82b92a9d488b711c3b511617</code></p></details></li><li id="source-s11"><strong>S11.</strong> <a href="https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/">Google Research — The ML Test Score</a>. Accessed 2026-11-06. Publication overview on ML production readiness and technical debt.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>5314f45d047bd21c483df1493bc12f3fe8aa77572fdf6618688f660880e7905f</code></p></details></li><li id="source-s12"><strong>S12.</strong> <a href="https://docs.evidentlyai.com/metrics/explainer_drift">Evidently — Data drift</a>. Accessed 2026-11-06. Distribution-shift monitoring; an alert alone does not establish predictive degradation.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-06.</p><p>SHA-256: <code>8945a14408ee6b16c3b22f394841e0b131fe5002327c2d35a774a4b5bfdf7c80</code></p></details></li><li id="source-s13"><strong>S13.</strong> <a href="https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset">UCI — Bike Sharing Dataset</a>. Accessed 2026-11-07. Official dataset description and CC BY 4.0 license statement; actual ZIP was separately inspected.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07.</p><p>SHA-256: <code>7462eb10852ea268a3f5db0f2fb5f21940b1570a22083ec90de8ad706877733d</code></p></details></li><li id="source-s14"><strong>S14.</strong> <a href="https://docs.python.org/3/license.html">Python — History and License</a>. Accessed 2026-11-07. PSF license for documentation; specified examples additionally available under 0BSD. Preserve applicable notices.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07.</p><p>SHA-256: <code>903ff8c671a2116fbb07ab041aa9322dc5882353fa5d31b45e33ddf7f8fe57c6</code></p></details></li><li id="source-s15"><strong>S15.</strong> <a href="https://docs.python.org/3/download.html">Python — Download documentation</a>. Accessed 2026-11-07. Official downloadable documentation. Pin exact version/artifact/hash; /3/ is a moving URL.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07.</p><p>SHA-256: <code>4775df7a79bb5fbac3389a14152786829c9039f46d05921e42ace083cecdc2e6</code></p></details></li><li id="source-s16"><strong>S16.</strong> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">GitHub — About READMEs</a>. Accessed 2026-11-07. README content and presentation guidance, not a hiring guarantee.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:13.910410+00:00.</p><p>SHA-256: <code>e972115a096e6c339402c864cebbd7b36d999a7675dc9fa25f4e655b407fa932</code></p></details></li><li id="source-s17"><strong>S17.</strong> <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile">GitHub — Pinning items to your profile</a>. Accessed 2026-11-07. Up to six repositories and gists combined can be pinned.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:13.909998+00:00.</p><p>SHA-256: <code>90d94ffcd73a47ad59b916dce4797d36d8183ea489648bb9be5d0260eb481c68</code></p></details></li><li id="source-s18"><strong>S18.</strong> <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">GitHub — Managing your profile README</a>. Accessed 2026-11-07. Profile README repository conventions and eligibility.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:13.909315+00:00.</p><p>SHA-256: <code>860caa390a30421d62ab02899a89e39efa5e1b21ec60e5f4dc3e47f52c83ad78</code></p></details></li><li id="source-s19"><strong>S19.</strong> <a href="https://docs.github.com/en/actions/about-github-actions/about-continuous-integration-with-github-actions">GitHub — About continuous integration</a>. Accessed 2026-11-07. Automated checks and results; passing CI only covers the configured checks.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:13.910879+00:00.</p><p>SHA-256: <code>7eae25a16329cd6f989ac75e8e42a196d099f9e155697f06b8a1cfeb79cfd46d</code></p></details></li><li id="source-s20"><strong>S20.</strong> <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">GitHub — Removing sensitive data from a repository</a>. Accessed 2026-11-07. Revoke/rotate exposed credentials; removal does not erase uncontrolled copies.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:14.078413+00:00.</p><p>SHA-256: <code>c1e8d8dbba2f3a2720a03ff06e78bef777ef8f9cd4d7d870bb2c58cd89366858</code></p></details></li><li id="source-s21"><strong>S21.</strong> <a href="https://www.linkedin.com/help/linkedin/answer/a550399/manage-featured-samples-of-your-work-on-your-linkedin-profile">LinkedIn — Manage Featured samples of your work</a>. Accessed 2026-11-07. Featured supports posts, articles, links and media. No ranking or posting-time claim.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:14.341549+00:00.</p><p>SHA-256: <code>a12b4c90c085c63bd4707ec25399c85b4cc7991af780a20fafaad2cd2a4ffe94</code></p></details></li><li id="source-s22"><strong>S22.</strong> <a href="https://www.anthropic.com/careers">Anthropic — Careers</a>. Accessed 2026-11-07. One employer values independent research, technical writing and open source; not a universal entry-level rule.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.863112+00:00.</p><p>SHA-256: <code>426afcec227a7a2145dfc04a882cd66962d73de85999788973ba38cb8ae185eb</code></p></details></li><li id="source-s23"><strong>S23.</strong> <a href="https://www.anthropic.com/candidate-ai-guidance">Anthropic — Candidate AI guidance</a>. Accessed 2026-11-07. Employer-specific AI-use guidance. Follow actual assessment instructions.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:14.607700+00:00.</p><p>SHA-256: <code>7803fa8eb5c0f5fae8a6ad3c27cbd05a1cb91d98c099dba9ddf0b904a98e4ee9</code></p></details></li><li id="source-s24"><strong>S24.</strong> <a href="https://openai.com/interview-guide/">OpenAI — Interview guide</a>. Accessed 2026-11-07. Employer-specific skill assessment and communication guidance; tool rules vary by format.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:48.685804+00:00.</p><p>SHA-256: <code>887f58285bf0d3cf9a59df7cff304a7d8439de68d17cdbed85d6614c8a4fe9fb</code></p></details></li><li id="source-s25"><strong>S25.</strong> <a href="https://opensource.guide/how-to-contribute/">GitHub Open Source Guides — How to contribute</a>. Accessed 2026-11-07. Contribution etiquette, project conventions and useful scope.<details><summary>Capture provenance</summary><p>HTTP 200; retrieved 2026-11-07T06:40:14.286849+00:00.</p><p>SHA-256: <code>8ff70a4586ba12ce3fd4c02ce0250041773086b9b809728aa60b622c19d2c036</code></p></details></li></ol><h3>Dataset feasibility check</h3><p>Official dataset archive inspected 2026-11-07T12:05:49.042976+00:00: 731 daily rows and 17,379 hourly rows. Archive SHA-256: b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401. This inspection established schema feasibility only; no model was trained.</p><p><a href="https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip">Official UCI archive</a></p></div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="page-footer wrap">
+    <div><p class="footer-title">One useful project. Evidence you can explain.</p><p class="footer-note">This is a plan for building and presenting credible work. Project scopes and study budgets are recommendations; hiring outcomes depend on demonstrated ability, eligibility, fit, and available roles.</p></div>
+    <a class="back-top" href="#top">Back to the beginning ↑</a>
+  </footer>
+
+  <script>
+  (() => {
+    'use strict';
+    const printButton = document.getElementById('print-report');
+    if (typeof window.print === 'function') {
+      printButton.hidden = false;
+      printButton.addEventListener('click', () => window.print());
+    }
+    const contents = document.getElementById('contents');
+    function revealLinkedEvidence() {
+      let target;
+      try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); }
+      catch (_) { return; }
+      if (target && target.matches('details')) target.open = true;
+    }
+    window.addEventListener('hashchange', revealLinkedEvidence);
+    revealLinkedEvidence();
+    const compact = window.matchMedia('(max-width: 900px)');
+    if (compact.matches) contents.open = false;
+    const matchLayout = event => { contents.open = !event.matches; };
+    if (compact.addEventListener) compact.addEventListener('change', matchLayout);
+    const links = [...document.querySelectorAll('.toc-panel a[href^="#"]')];
+    const targets = links.map(link => {
+      try { return {link, target: document.getElementById(decodeURIComponent(link.hash.slice(1)))}; }
+      catch (_) { return {link, target: null}; }
+    }).filter(item => item.target);
+    let queued = false;
+    function markPosition() {
+      queued = false;
+      let current = null;
+      for (const item of targets) {
+        if (item.target.getBoundingClientRect().top <= 130) current = item;
+      }
+      for (const item of targets) {
+        if (item === current) item.link.setAttribute('aria-current', 'location');
+        else item.link.removeAttribute('aria-current');
+      }
+    }
+    window.addEventListener('scroll', () => {
+      if (!queued) { queued = true; window.requestAnimationFrame(markPosition); }
+    }, {passive:true});
+    function prepareTables() {
+      for (const table of document.querySelectorAll('.report table')) {
+        if (table.scrollWidth > table.clientWidth + 1) {
+          table.tabIndex = 0;
+          if (!table.hasAttribute('aria-label')) table.setAttribute('aria-label', 'Scrollable evidence table');
+        } else table.removeAttribute('tabindex');
+      }
+    }
+    let openedForPrint = [];
+    window.addEventListener('beforeprint', () => {
+      openedForPrint = [...document.querySelectorAll('.report details:not([open])')];
+      openedForPrint.forEach(detail => { detail.open = true; });
+    });
+    window.addEventListener('afterprint', () => {
+      openedForPrint.forEach(detail => { detail.open = false; });
+      openedForPrint = [];
+    });
+    window.addEventListener('resize', () => { prepareTables(); markPosition(); }, {passive:true});
+    prepareTables();
+    markPosition();
+  })();
+  </script>
+</body>
+</html>
