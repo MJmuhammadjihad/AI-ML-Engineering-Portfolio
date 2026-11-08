@@ -1,12 +1,14 @@
 # Your AI & ML hiring portfolio toolkit
 
-Prepared 7 November 2026 for learners starting from zero, using a six-hour study-day planning budget and a global job-search goal.
+Research prepared 7 November 2026; edition 1.1.0 published 8 November 2026. Designed for learners starting from zero, with a six-hour study-day planning budget and a global job-search goal.
 
 ## Open the guide
 
 - Open `downloads/AI-ML-Hiring-Portfolio-Plan.html` in a browser. Its styling, navigation and content are self-contained; no installation, account, external font or API key is needed. Source links need internet access.
 - Use the PDF for reading/printing, or the Markdown for editing.
 - The HTML includes 15 sections, 20 reviewed job descriptions with qualification boundaries, and 25 linked source pages. The job sample is purposive and technology-company-heavy, not a global census or a list of confirmed current vacancies.
+
+Use **Build your portfolio plan** near the top to choose a role focus, adjust study time and export a Markdown checklist. Saving is optional and local to your browser; exported plans can move between devices. The calendar rescales an authored 864-hour allowance, and the checks record self-assessment. Neither establishes competence or predicts hiring.
 
 ## Start with a program you can own
 
@@ -19,6 +21,8 @@ The recommended sequence is a small CSV tool → Demand Replay → Evidence Desk
 ## Use the templates as work records
 
 The `templates/` folder contains a README, evaluation plan, experiment log, case study, publishing checklist/post drafts, application tracker, milestone sheet and results CSV. They are **unfilled templates**, not records of completed evaluations or applications. Keep personal application notes private. Never replace “not measured” with an intended target score.
+
+For sharing or participating, see [announcement drafts](docs/SHARE-KIT.md), [contribution ideas](CONTRIBUTING.md), and the [community showcase invitation](docs/PROJECT-SHOWCASE.md).
 
 ## Research records and limits
 

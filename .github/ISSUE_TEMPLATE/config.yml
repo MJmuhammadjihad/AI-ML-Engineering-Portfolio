@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the portfolio field guide
+    url: https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/
+    about: Start with the project briefs, evaluation contracts, and next-seven-days plan.
+  - name: Find a useful first contribution
+    url: https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/blob/main/CONTRIBUTING.md
+    about: See small contribution ideas, evidence conventions, and build instructions.

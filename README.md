@@ -1,63 +1,68 @@
 # AI & ML Engineering Portfolio
 
-**Build useful systems. Evaluate them honestly. Make your work easy to inspect.**
+**Choose what to build. Know how to evaluate it. Show evidence of your work.**
 
-A research-informed guide to choosing, building, and showcasing an AI/ML engineering portfolio—from a first Python program to two substantial projects, a reliability release, and a useful open-source contribution.
+An open guide for turning AI/ML study into a portfolio a hiring team can inspect: two flagship project briefs, evaluation protocols, a reliability release, and reusable GitHub/LinkedIn templates.
 
-[Read the guide](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/) · [Download the toolkit](downloads/AI-ML-Hiring-Portfolio-Toolkit.zip) · [PDF](downloads/AI-ML-Hiring-Portfolio-Plan.pdf) · [Portable HTML](downloads/AI-ML-Hiring-Portfolio-Plan.html) · [Markdown](downloads/AI-ML-Hiring-Portfolio-Plan.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-246658.svg)](LICENSE)
+[![Check published guide](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/actions/workflows/check.yml/badge.svg)](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/actions/workflows/check.yml)
+[![Latest release](https://img.shields.io/github/v/release/MJmuhammadjihad/AI-ML-Engineering-Portfolio?color=246658&label=release)](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest)
 
-![Preview of the light-theme portfolio guide](assets/report-1440.png)
+**[Open the interactive guide →](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/)** · **[Download the complete toolkit](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest/download/AI-ML-Hiring-Portfolio-Toolkit.zip)**
 
-## What to build
+[PDF](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest/download/AI-ML-Hiring-Portfolio-Plan.pdf) · [Portable HTML](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/releases/latest/download/AI-ML-Hiring-Portfolio-Plan.html) · [Editable Markdown](downloads/AI-ML-Hiring-Portfolio-Plan.md) · [Templates](templates/)
 
-| Step | Project | Evidence it develops |
-| --- | --- | --- |
-| Foundation | CSV quality checker | Python, data validation, tests, Git, and independent debugging |
-| Flagship 1 | **Demand Replay** | Prediction-time data boundaries, forecasting baselines, temporal evaluation, and a small API |
-| Flagship 2 | **Evidence Desk** | Retrieval, citations, abstention, grounded-answer evaluation, and measured cost/latency |
-| Reliability | A release inside one flagship | Timeouts, fallbacks, monitoring, regression checks, and a controlled rollback drill |
-| Collaboration | A focused contribution to a tool you use | Reproduction, a useful correction, review response, and accurate contribution credit |
+[![AI & ML Engineering Portfolio: two flagship project briefs, evaluation plans, and reusable templates](assets/social-preview.png)](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/)
 
-The guide specifies scope, prerequisites, evaluation protocols, failure cases, publishable evidence, and interview questions. The toolkit includes a project README, evaluation plan, experiment log, case study, post drafts, and CSV trackers for milestones, results, and applications.
+## Start where you are
 
-## Who this is for
+| Your next decision | Start here |
+| --- | --- |
+| “I am starting from zero.” | [Build a small CSV checker](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#4-foundation-project-a-csv-quality-checking-cli), then use the [first seven days](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#15-your-next-seven-days). |
+| “I want to build applied AI products.” | Read the [Evidence Desk brief](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#6-flagship-2-evidence-desk): retrieval, citations, abstention and answer evaluation. |
+| “I want to demonstrate ML engineering.” | Read the [Demand Replay brief](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#5-flagship-1-demand-replay): data timing, baselines, temporal evaluation and an API. |
+| “I have a project. How do I present it?” | Use the [evidence bundle](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#9-package-every-claim-with-its-evidence) and [case-study template](templates/case-study.md). |
 
-The default path assumes a complete beginner, a normal laptop, and roughly six focused study hours on six days each week. A 24-week first pass provides structure; progress depends on demonstrated understanding, and may take longer. Paid APIs and a GPU are optional. Eligibility, work authorization, location, and role requirements still determine which opportunities are relevant.
+The guide’s local planning panel lets you choose a role focus, adapt the study budget, track milestone checks and export a Markdown plan. Progress stays in your browser; checking a box records your own progress, not a skill certification. The full guide remains readable without JavaScript.
 
-The HTML is self-contained and works without JavaScript or external assets. Internet access is needed only to follow external source links. Open the downloaded HTML directly in a browser, or use the PDF for reading and printing.
+## What you get
 
-## What the research establishes
+| Deliverable | What it helps you demonstrate |
+| --- | --- |
+| **CSV quality checker** | Finish, test, debug and explain a small Python tool. |
+| **Demand Replay** | Define what is known at prediction time, compare fair baselines and publish reproducible forecast evidence. |
+| **Evidence Desk** | Build a bounded documentation assistant and measure whether its answers are supported. |
+| **Reliability release** | Show failures, timeouts, fallbacks, monitoring limits and a controlled rollback. |
+| **A useful contribution** | Reproduce a real problem, improve an existing tool and respond to review. |
 
-Prepared **7 November 2026**, the guide draws on **20 postings from 11 employers** and **25 source documents**, with dates, short attributed excerpts, qualification boundaries, and provenance records.
+Each brief includes prerequisites, scope, evaluation rules, failure cases, publishable artifacts and interview questions. Start with a normal laptop; paid APIs and a GPU are optional. The 24-week schedule is a first-pass planning scaffold at six focused hours on six days per week. Extend it when the evidence gates are unmet.
 
-This is an AI-assisted research and editorial project. The hiring sample is purposive and weighted toward large technology companies; it is not a global labor-market census or a list of guaranteed current vacancies. Project choices, schedules, budgets, and readiness gates are recommendations rather than a validated hiring formula.
+**Copy a worksheet and start:** [project README](templates/project-readme.md) · [evaluation plan](templates/evaluation-plan-and-results.md) · [experiment log](templates/experiment-log.md) · [case study](templates/case-study.md) · [publishing checklist](templates/publishing-checklist-and-posts.md) · [application tracker](templates/role-application-tracker.csv)
 
-The official Bike Sharing archive was inspected for schema and feasibility. **The proposed ML/AI projects were not built or evaluated as part of this research, and no model-performance results are claimed.** Templates are unfilled working documents. A portfolio can demonstrate skills; it cannot guarantee employment or replace explicit eligibility requirements.
+The portable HTML has no external runtime assets. Download it once and read it offline; following source links requires internet access. PDF and Markdown versions are included in every release.
 
-## Start here
+## Evidence you can inspect
 
-1. Read the recommendation, foundation project, and next-seven-days sections of the guide.
-2. Build a small CSV checker you can run, test, repair, and explain independently.
-3. Copy the relevant [templates](templates/) into your own project. Replace placeholders with verified information or `not measured`.
-4. Choose the first flagship according to the work in roles you could actually accept.
+The research was prepared **7 November 2026** from **20 job postings across 11 employers** and **25 source documents**. Explore the [hiring evidence](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#appendix-jobs), [sources](https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/#appendix-sources), and [machine-readable records](evidence/).
 
-For the broader learning sequence, see the separate [AI-ML-Engineering-Roadmap](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Roadmap). This repository focuses on portfolio decisions and evidence.
+This is an **AI-assisted research and editorial project**. The hiring sample is purposive and weighted toward large technology employers. It is not a global census or a list of guaranteed current vacancies. Location, work authorization, experience and degree requirements must be checked for each opportunity.
 
-## Repository layout
+The official Bike Sharing archive was inspected for schema and feasibility. The proposed ML/AI systems were **not built or evaluated as part of this research**; no model-performance or employment outcomes are claimed. Templates are deliberately unfilled. Project choices and time budgets are recommendations, not a validated hiring formula.
 
-```text
-content/       Authored strategy and HTML template
-evidence/      Reviewed jobs, source ledger, dataset inspection
-templates/     Editable project and publishing worksheets
-downloads/     Portable HTML, Markdown, PDF, and toolkit ZIP
-index.html     Browsable guide
-build.py       Rebuild generated artifacts
-tests/         Release consistency checks
-```
+## Help make the next edition better
 
-Raw full employer feeds, complete source-page captures, and the dataset itself are not redistributed. Capture identifiers and hashes record research provenance; they do not imply those raw files are included.
+Useful contributions include a source-backed correction, an unclear prerequisite, a broken reproduction step, an accessibility fix, or feedback from actually trying one of the briefs. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [open a focused issue](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/issues/new/choose).
 
-## Build and check
+If this guide helps you choose or evaluate a project, **star it to find it again**, share the section that helped, or send a specific improvement. A short explanation of what you tried is especially useful.
+
+For maintainers and readers who want to share it: [ready-to-adapt announcement drafts](docs/SHARE-KIT.md) · [a sustainable growth checklist](docs/MAINTAINER-GROWTH.md).
+
+For the broader learning sequence, visit the separate [AI-ML-Engineering-Roadmap](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Roadmap).
+
+<details>
+<summary><strong>Build, validate and contribute to the source</strong></summary>
+
+The authored guide lives in `content/`; evidence summaries in `evidence/`; worksheets in `templates/`. `build.py` generates the HTML, Markdown and toolkit. The PDF is a maintained generated artifact.
 
 With Python and an isolated virtual environment:
 
@@ -67,9 +72,7 @@ python build.py
 python tests/check_release.py
 ```
 
-The PDF is a maintained generated artifact. Refresh and inspect it when guide content changes; the standard build must not be assumed to regenerate it automatically. Check links, mobile layout, print output, and download consistency before releasing a revision.
-
-To refresh the PDF, previews and browser-check records after rebuilding the HTML:
+After changing guide content or presentation, refresh the PDF, previews and browser-check records:
 
 ```bash
 python -m pip install -r requirements-browser.txt
@@ -79,14 +82,10 @@ python build.py
 python tests/check_release.py
 ```
 
-The release check verifies that the PDF was generated from the current HTML and that the toolkit matches its checksum manifest. The optional browser check uses a local HTTP server and makes no external requests from the guide.
+The release check verifies that the PDF was generated from the current HTML and that the toolkit matches its checksum manifest. Browser checks use a local HTTP server. Raw full employer feeds, complete source captures and the dataset are not redistributed; capture identifiers and hashes describe research provenance.
 
-## Contribute
+</details>
 
-Corrections, clearer explanations, better evaluation protocols, accessibility fixes, and well-sourced updates are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), preserve the difference between requirements and preferences, and attach evidence to factual changes. Keep personal application notes and credentials out of public contributions.
+## License and credits
 
-Maintained by [Md. Jihad](https://github.com/MJmuhammadjihad). Use repository issues for reproducible problems and focused suggestions.
-
-## License
-
-Original code, analysis, documentation, and templates are available under the [MIT License](LICENSE). Third-party quotations and referenced materials retain their own rights; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). No endorsement by a cited employer, platform, or source is implied.
+Maintained by [Md. Jihad](https://github.com/MJmuhammadjihad). Original code, analysis, documentation and templates are [MIT-licensed](LICENSE). Third-party quotations and referenced materials retain their own rights; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Cited employers and platforms do not endorse this guide.

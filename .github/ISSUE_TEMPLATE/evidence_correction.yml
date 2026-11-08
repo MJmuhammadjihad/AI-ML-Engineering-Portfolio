@@ -1,0 +1,63 @@
+name: Correct or update research evidence
+description: Flag an incorrect interpretation, outdated source, eligibility condition, or unsupported claim.
+title: "[Evidence]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help keep observations, recommendations, and eligibility rules distinct. A short attributed passage is enough; please link the original rather than copying an entire page.
+  - type: input
+    id: claim_location
+    attributes:
+      label: Which statement needs correction?
+      description: Give a section, source ID such as S06/H17, or file link.
+    validations:
+      required: true
+  - type: textarea
+    id: existing_statement
+    attributes:
+      label: Exact statement in this guide
+      description: Quote the relevant sentence or summarize precisely if it is in a table.
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Supporting source URL
+      description: Prefer the employer, official documentation, dataset publisher, or original research.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: observed_date
+    attributes:
+      label: Date you accessed or observed the source
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_kind
+    attributes:
+      label: What kind of statement is involved?
+      options:
+        - Explicit requirement or eligibility condition
+        - Preferred qualification or nice-to-have
+        - Responsibility or general expectation
+        - Observed fact or measurement
+        - Projection or surveyed expectation
+        - Recommendation or interpretation
+        - Source availability, ambiguity, attribution, or licensing
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction and supporting passage
+      description: Include a brief exact excerpt and explain why it changes the interpretation. Note uncertainty or conditional/template wording.
+    validations:
+      required: true
+  - type: textarea
+    id: dates_and_scope
+    attributes:
+      label: Dates and scope, if relevant
+      description: Distinguish a page update from its original publication date. For a job, identify geography, degree/enrollment, experience, and required versus preferred wording only where the source actually states them.

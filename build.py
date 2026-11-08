@@ -141,10 +141,12 @@ print(f'Built index.html and downloads: {len(jobs)} postings, {len(sources)} sou
 pdf = ROOT / 'downloads' / (name + '.pdf')
 if pdf.exists():
     files = [ROOT / p for p in ['README.md', 'START-HERE.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md',
-        'CONTRIBUTING.md', 'index.html', 'build.py', 'requirements-build.txt', 'requirements-browser.txt']]
+        'CONTRIBUTING.md', 'CITATION.cff', 'CHANGELOG.md', 'index.html', 'build.py', 'requirements-build.txt', 'requirements-browser.txt']]
     files += sorted((ROOT / 'content').glob('*'))
     files += sorted((ROOT / 'templates').glob('*'))
     files += sorted((ROOT / 'tests').glob('*.py'))
+    files += sorted((ROOT / 'docs').glob('*.md'))
+    files += sorted((ROOT / 'assets').glob('*.html'))
     files += sorted((ROOT / 'assets').glob('*.png'))
     files += sorted((ROOT / 'evidence').glob('*.json'))
     files += [ROOT / 'downloads' / (name + suffix) for suffix in ('.html', '.md', '.pdf')]
@@ -157,7 +159,7 @@ if pdf.exists():
                          compression=zipfile.ZIP_DEFLATED) as archive:
         for path in files:
             entry = zipfile.ZipInfo('AI-ML-Engineering-Portfolio/' + str(path.relative_to(ROOT)),
-                                    date_time=(2026, 11, 7, 0, 0, 0))
+                                    date_time=(2026, 11, 8, 0, 0, 0))
             entry.compress_type = zipfile.ZIP_DEFLATED
             entry.external_attr = 0o644 << 16
             archive.writestr(entry, path.read_bytes())

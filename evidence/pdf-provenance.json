@@ -1,5 +1,5 @@
 {
-  "htmlSha256": "8c367717cc69d429cccafce342870f46daba4ce21c56da52ce1a2610b1ee100c",
-  "pdfSha256": "9a72744a4b3bd19eab4a1a838de55525f0749cbb3ea8bfc748f92fb4f02f98c5",
+  "htmlSha256": "486838993ea6132fd60c932dd5db1703ebc899666fe8edbf62e45ecd23355cc5",
+  "pdfSha256": "f09321970ba5917d7561021bc632c31f8a12e6ff58defc9f52600ea53b6f8c67",
   "method": "Chromium print-to-PDF of the complete generated guide; appendix details expanded before printing"
 }

@@ -1,0 +1,40 @@
+name: Report a guide or website problem
+description: Help fix a broken link, confusing step, display issue, or reproducible build failure.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A small, specific report is useful. Search existing issues first and include only information you are comfortable making public.
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      description: Link to the page, section, file, or downloadable version.
+      placeholder: Guide section 5, portable HTML v1.1.0, or a repository path
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What happened, and how can we reproduce it?
+      description: Include the smallest sequence of actions or command that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Explain the useful behavior or clearer wording you expected.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser or build environment, if relevant
+      placeholder: Browser/version and screen size, or Python/version and operating system
+  - type: textarea
+    id: supporting_evidence
+    attributes:
+      label: Supporting evidence, if available
+      description: A screenshot, short error message, or proposed correction helps. Remove credentials and personal application details.

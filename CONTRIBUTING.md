@@ -2,6 +2,21 @@
 
 Help make the guide more accurate, useful, and easy to inspect. Focused corrections are welcome: source interpretation, evaluation methodology, broken links, unclear instructions, accessibility, and reproducible build problems.
 
+## Start with one useful improvement
+
+You do not need to be an experienced ML engineer to contribute. Try a documented command from a fresh environment, identify a confusing sentence, check a source's current wording, or test the guide with a keyboard and a narrow screen. Report what you actually observed and suggest the smallest improvement that addresses it.
+
+Choose the entry point that fits your work:
+
+| You have… | Start here |
+| --- | --- |
+| A broken link, display issue, or failed command | [Report a guide or website problem](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/issues/new?template=bug_report.yml) |
+| A factual correction or changed job/source wording | [Correct research evidence](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/issues/new?template=evidence_correction.yml) |
+| A real project and one technical question | [Request focused project feedback](https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio/issues/new?template=project_feedback.yml) |
+| Work you would like others to learn from | [Community showcase](docs/PROJECT-SHOWCASE.md) |
+
+Feedback and review depend on maintainer availability. A specific report or a small correction is valuable without a large rewrite.
+
 ## Propose a useful change
 
 Before a large rewrite, describe the problem and proposed scope in an issue. For a small correction, a focused pull request is enough. Explain what changed, why, and how you checked it.
@@ -28,6 +43,8 @@ python tests/check_release.py
 For content changes, refresh the maintained PDF as well as the generated HTML, Markdown, and toolkit. Inspect the print output and verify that the downloadable copies match the release. Do not assume the standard build regenerates the PDF.
 
 Run `python tests/check_browser.py` after installing `requirements-browser.txt` and Chromium through Playwright; then run `python build.py` again to package the refreshed files. See the README for the complete commands. The release check rejects a PDF whose recorded source hash differs from the current HTML.
+
+If a full browser setup is unavailable, you can still submit a small source correction. State which checks you ran and which generated files need help refreshing; do not claim a passing check you did not execute.
 
 For presentation changes, check narrow mobile and desktop widths, keyboard navigation, visible focus, readable tables, and operation with JavaScript disabled. Avoid introducing external runtime dependencies into the portable guide without a clear need and an explicit design discussion.
 

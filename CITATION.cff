@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If this field guide helps your work, cite the version you used and link the repository."
+type: software
+title: "AI & ML Engineering Portfolio: A Portfolio Field Guide"
+authors:
+  - family-names: "Jihad"
+    given-names: "Md."
+    website: "https://github.com/MJmuhammadjihad"
+version: 1.1.0
+date-released: 2026-11-08
+repository-code: "https://github.com/MJmuhammadjihad/AI-ML-Engineering-Portfolio"
+url: "https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/"
+license: MIT
+abstract: >-
+  An AI-assisted, research-informed guide to choosing, building, evaluating,
+  and presenting an AI or machine learning engineering portfolio. It includes
+  two flagship project briefs, a foundation tool, reliability exercises,
+  dated hiring evidence, and reusable execution and publishing templates.
+  Proposed projects are not claims of completed systems or hiring outcomes.
+  Third-party quotations and referenced materials retain their own rights.
+keywords:
+  - AI engineering
+  - machine learning
+  - portfolio
+  - evaluation
+  - reproducibility
+  - career development

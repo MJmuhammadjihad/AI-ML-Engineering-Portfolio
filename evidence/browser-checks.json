@@ -42,5 +42,15 @@
     }
   ],
   "noJavaScript": "passed",
+  "planner": {
+    "calculations": "passed",
+    "rolePriority": "passed",
+    "optInPersistence": "passed",
+    "markdownExport": "passed",
+    "resetConfirmation": "passed",
+    "storageFailureFallback": "passed",
+    "malformedStateFallback": "passed"
+  },
+  "socialCard": "1200x630 generated",
   "pdf": "generated"
 }

@@ -5,7 +5,7 @@
   "sourceDocuments": 25,
   "researchCaptureChecks": "Verified during original research; public build does not redistribute or re-fetch raw source pages",
   "internalLinkTargetsVerified": true,
-  "htmlBytes": 141854,
+  "htmlBytes": 166001,
   "markdownWords": 12886,
   "markdownBuildDependency": "3.8.2"
 }

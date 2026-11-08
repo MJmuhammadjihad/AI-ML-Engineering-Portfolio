@@ -1,14 +1,15 @@
-First public edition of the AI & ML Engineering Portfolio field guide.
+Choose a portfolio direction, plan a realistic study week, and keep the evidence you need to build. This release makes the field guide easier to start, revisit, share, and improve.
 
-- Two flagship project briefs: Demand Replay and Evidence Desk.
-- A foundation CSV project, reliability release plan, and contribution strategy.
-- Evaluation, experiment, README, case-study, publishing, and application templates.
-- A 24-week planning scaffold with evidence gates.
-- Twenty reviewed job postings from eleven employers and twenty-five source documents.
-- Portable light-theme HTML, editable Markdown, printable PDF, and toolkit ZIP.
+- **Personal planning:** choose an Applied AI, ML Engineering or exploratory path; adjust study time; export a Markdown plan; track self-assessed checkpoints with optional local saving.
+- **Clearer entry points:** redesigned README, direct project and template links, stronger guide navigation and a share card.
+- **Discoverability:** canonical and social metadata, a sitemap and citation information.
+- **Useful participation:** focused bug/evidence/project-feedback forms, a showcase submission guide, contribution prompts and share-ready post drafts.
+- **Updated downloads:** refreshed portable HTML, Markdown, PDF and toolkit ZIP with consistent source and checksum records.
 
-Prepared 7 November 2026. This is AI-assisted research and project guidance, not a claim of completed ML systems or measured project performance. The hiring sample is purposive, dated, and not a global census.
+The study estimate uses the guide's authored 864-hour first-pass allowance. It is a planning heuristic, not a measured learning curve or hiring forecast. Checkpoints record self-assessment, not verified competence.
 
-Original material is MIT-licensed; third-party source materials retain their own rights.
+The hiring review still covers 20 postings from 11 employers and 25 source documents, reviewed 7 November 2026. This release does not claim new market research, completed portfolio projects, measured model results, or hiring outcomes.
 
-Validation: five browser viewport sizes, keyboard navigation, no-JavaScript behavior, internal links, PDF provenance, CSV schemas, and toolkit checksums.
+Original code, analysis and templates are MIT-licensed; third-party materials retain their own rights.
+
+Validation includes responsive and keyboard behavior, planner calculations and state handling, Markdown export, no-JavaScript access, publication metadata, PDF provenance and toolkit consistency.

@@ -1,0 +1,56 @@
+name: Share a project and request focused feedback
+description: Show real work inspired by the guide and ask one specific engineering question.
+title: "[Project]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Small finished tools are welcome. Share what you actually built, label unmeasured results, and ask one focused question. Feedback depends on contributor availability; this is not a hiring or certification service.
+  - type: input
+    id: project_url
+    attributes:
+      label: Public project or case-study URL
+      description: Link to code or an inspectable artifact you have permission to share.
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current status
+      options:
+        - Finished foundation tool
+        - Working prototype, evaluation incomplete
+        - Evaluated project release
+        - Reliability release or controlled drill
+        - Submitted contribution
+        - Reviewed or merged contribution
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What did you build or change?
+      description: State the user/task, your contribution, and material collaborators or AI assistance.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What can a reviewer inspect?
+      description: Link a small run, test, evaluation, or failure example. If reporting a metric, give its baseline, sample size, split and actual result; otherwise say it is not measured.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: One specific feedback question
+      description: For example, whether a forecast feature is available at prediction time, or whether an abstention rubric is clear.
+    validations:
+      required: true
+  - type: checkboxes
+    id: showcase_opt_in
+    attributes:
+      label: Optional showcase permission
+      options:
+        - label: You may consider my public project link and the summary above for the community showcase, with credit. I understand that submission does not guarantee inclusion or endorsement.

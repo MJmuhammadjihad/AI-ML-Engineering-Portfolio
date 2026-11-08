@@ -28,7 +28,7 @@ jobs:
           import shutil
           site = Path('_site')
           site.mkdir(exist_ok=True)
-          for name in ('index.html', '.nojekyll'):
+          for name in ('index.html', '.nojekyll', 'sitemap.xml'):
               shutil.copy2(name, site / name)
           for name in ('downloads', 'assets'):
               shutil.copytree(name, site / name, dirs_exist_ok=True)

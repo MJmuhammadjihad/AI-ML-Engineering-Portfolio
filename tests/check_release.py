@@ -1,6 +1,7 @@
 """Verify the public release artifacts without fetching mutable external sources."""
 import csv
 import hashlib
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
@@ -13,7 +14,26 @@ ids = re.findall(r'\bid="([^"]+)"', page)
 assert len(ids) == len(set(ids))
 assert all(target in ids for target in re.findall(r'href="#([^"]+)"', page))
 assert not re.search(r'__[A-Z_]+__', page)
-assert not re.search(r'<(?:script|link|img|iframe)[^>]*(?:src|href)=[\"\']https?://', page)
+class ResourceCheck(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.canonical = []
+        self.preview = []
+    def handle_starttag(self, tag, attributes):
+        a = dict(attributes)
+        if tag == 'link' and a.get('rel') == 'canonical':
+            self.canonical.append(a.get('href'))
+            return
+        if tag == 'meta' and a.get('property') == 'og:image':
+            self.preview.append(a.get('content'))
+        if tag in {'script','link','img','iframe'}:
+            assert not a.get('src', a.get('href', '')).startswith(('http:', 'https:')), (tag, a)
+resources = ResourceCheck()
+resources.feed(page)
+assert resources.canonical == ['https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/']
+assert resources.preview == ['https://mjmuhammadjihad.github.io/AI-ML-Engineering-Portfolio/assets/social-preview.png']
+assert (ROOT / 'assets/social-preview.png').read_bytes().startswith(b'\x89PNG')
+assert 'portfolio-planner' in ids
 assert 'AI-assisted' in page and 'unfinished' in page
 assert (ROOT / 'downloads/AI-ML-Hiring-Portfolio-Plan.pdf').read_bytes().startswith(b'%PDF')
 for filename in ('LICENSE', 'THIRD_PARTY_NOTICES.md', 'README.md'):
