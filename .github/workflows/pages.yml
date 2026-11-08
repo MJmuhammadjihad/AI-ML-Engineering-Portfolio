@@ -1,0 +1,53 @@
+name: Publish portfolio guide
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the committed guide and downloads
+        run: python tests/check_release.py
+      - name: Prepare the static site
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          site = Path('_site')
+          site.mkdir(exist_ok=True)
+          for name in ('index.html', '.nojekyll'):
+              shutil.copy2(name, site / name)
+          for name in ('downloads', 'assets'):
+              shutil.copytree(name, site / name, dirs_exist_ok=True)
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the guide
+        id: deployment
+        uses: actions/deploy-pages@v4
