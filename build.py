@@ -1,6 +1,7 @@
 """Build the portable field guide from authored analysis and reviewed evidence.
 
-Build dependency: Python-Markdown 3.8.2. No runtime dependency in the HTML.
+Build dependency: Python-Markdown pinned in requirements-build.txt.
+No runtime dependency in the HTML.
 Raw source captures stay in the research workspace; the toolkit contains
 short attributed excerpts and provenance rather than full employer feeds.
 """
