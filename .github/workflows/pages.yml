@@ -33,7 +33,7 @@ jobs:
           for name in ('downloads', 'assets'):
               shutil.copytree(name, site / name, dirs_exist_ok=True)
           PY
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
