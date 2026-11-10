@@ -37,6 +37,7 @@ The authored guide and presentation template live in `content/`. Evidence summar
 ```bash
 python -m pip install -r requirements-build.txt
 python build.py
+python -m unittest discover -s tests -p 'test_*.py'
 python tests/check_release.py
 ```
 

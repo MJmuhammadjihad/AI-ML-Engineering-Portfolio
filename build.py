@@ -141,7 +141,7 @@ print(f'Built index.html and downloads: {len(jobs)} postings, {len(sources)} sou
 pdf = ROOT / 'downloads' / (name + '.pdf')
 if pdf.exists():
     files = [ROOT / p for p in ['README.md', 'START-HERE.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md',
-        'CONTRIBUTING.md', 'CITATION.cff', 'CHANGELOG.md', 'index.html', 'build.py', 'requirements-build.txt', 'requirements-browser.txt']]
+        'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff', 'CHANGELOG.md', 'index.html', 'build.py', 'requirements-build.txt', 'requirements-browser.txt']]
     files += sorted((ROOT / 'content').glob('*'))
     files += sorted((ROOT / 'templates').glob('*'))
     files += sorted((ROOT / 'tests').glob('*.py'))

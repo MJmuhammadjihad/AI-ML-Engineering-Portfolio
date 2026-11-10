@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import zipfile
+from archive_integrity import verify_archive
 
 ROOT = Path(__file__).resolve().parents[1]
 page = (ROOT / 'index.html').read_text()
@@ -46,14 +47,8 @@ assert len(jobs) == 20 and len({j['employer'] for j in jobs}) == 11
 assert jobs[16]['sourceId'] == 'H17' and jobs[16]['reviewWarnings']
 sources = json.loads((ROOT / 'evidence/source-ledger.json').read_text())
 assert len(sources) == 25 and len({s['finalUrl'] for s in sources}) == 25
-manifest = json.loads((ROOT / 'downloads/toolkit-manifest.json').read_text())
 with zipfile.ZipFile(ROOT / 'downloads/AI-ML-Hiring-Portfolio-Toolkit.zip') as archive:
-    assert archive.testzip() is None
-    for path, record in manifest.items():
-        content = (ROOT / path).read_bytes()
-        assert hashlib.sha256(content).hexdigest() == record['sha256'], path
-        assert len(content) == record['bytes'], path
-        assert archive.read('AI-ML-Engineering-Portfolio/' + path) == content, path
+    verify_archive(archive, ROOT)
     for name in ('LICENSE', 'THIRD_PARTY_NOTICES.md'):
         assert 'AI-ML-Engineering-Portfolio/' + name in archive.namelist()
 stamp = json.loads((ROOT / 'evidence/pdf-provenance.json').read_text())

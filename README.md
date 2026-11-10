@@ -69,6 +69,7 @@ With Python and an isolated virtual environment:
 ```bash
 python -m pip install -r requirements-build.txt
 python build.py
+python -m unittest discover -s tests -p 'test_*.py'
 python tests/check_release.py
 ```
 
